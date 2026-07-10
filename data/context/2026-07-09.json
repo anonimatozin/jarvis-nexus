@@ -1,0 +1,84 @@
+{
+  "uso": {
+    "explorer.exe": 70.047382,
+    "reg.exe": 5.185807,
+    "code.exe": 215.227599,
+    "python.exe": 25.084518,
+    "chrome.exe": 185.094163
+  },
+  "mudancas": [
+    {
+      "de": null,
+      "para": "explorer.exe",
+      "titulo": "Desligar o Windows",
+      "quando": "2026-07-09T19:12:53.940185"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "reg.exe",
+      "titulo": "C:\\Windows\\SYSTEM32\\reg.exe",
+      "quando": "2026-07-09T19:12:58.945105"
+    },
+    {
+      "de": "reg.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-07-09T19:13:04.130912"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "pythonw.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-07-09T19:14:09.173374"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "README.md - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-07-09T19:27:34.051792"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-07-09T19:27:44.166514"
+    },
+    {
+      "de": "python.exe",
+      "para": "code.exe",
+      "titulo": "README.md - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-07-09T19:27:49.167433"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "python",
+      "quando": "2026-07-09T19:28:54.191963"
+    },
+    {
+      "de": "python.exe",
+      "para": "code.exe",
+      "titulo": "README.md - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-07-09T19:29:14.275562"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-07-09T19:47:17.007141"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Nova guia - Google Chrome",
+      "quando": "2026-07-09T19:49:17.092087"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-07-09T19:52:22.186250"
+    }
+  ],
+  "atualizado": "2026-07-09T19:52:28.928630"
+}

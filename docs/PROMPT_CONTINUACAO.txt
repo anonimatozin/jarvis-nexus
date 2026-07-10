@@ -1,0 +1,281 @@
+═══════════════════════════════════════════════════════════════════════
+  J.A.R.V.I.S. NEXUS - PROMPT DE CONTINUACAO PARA NOVA IA
+═══════════════════════════════════════════════════════════════════════
+
+  Voce esta assumindo um projeto JARVIS (assistente IA pessoal)
+  ja em estagio AVANCADO. Leia TUDO antes de tocar em qualquer codigo.
+
+  Data: 2026-06-19 19:58
+  Versao: NEXUS v23.0
+  Criado por: Claude (Anthropic) + Sir (usuario brasileiro adolescente)
+
+═══════════════════════════════════════════════════════════════════════
+  1. CONTEXTO
+═══════════════════════════════════════════════════════════════════════
+
+VISAO: Assistente IA estilo Jarvis (Iron Man) que:
+  - Roda no Windows em Python 3.12
+  - Tem voz natural pt-BR (edge-tts)
+  - Aceita comandos por voz e texto
+  - Tem memoria persistente (SQLite + ChromaDB)
+  - Memoria visual criptografada no pendrive
+  - Controla o PC inteiro
+  - HUD Qt nativo futurista
+  - Integra com hardware ESP32 (Jarvis Deck fisico)
+  - Joga Minecraft autonomamente (Mineflayer)
+  - Conversa pelo Discord
+
+USUARIO (Sir):
+  - Brasileiro, adolescente, fala informal
+  - Adora Iron Man e tecnologia futurista
+  - Toca Minecraft 1.21.1 Java
+  - Linguagem: 'mn' (mano), 'br' (bora), 'agr' (agora)
+  - Decisivo, paciente com bugs, manda log quando algo quebra
+  - SEMPRE chama de 'Sir'
+
+═══════════════════════════════════════════════════════════════════════
+  2. ESTRUTURA DA PASTA
+═══════════════════════════════════════════════════════════════════════
+
+C:\Users\Administrator\Desktop\JARVIS\
+|
+|-- main.py                    # Entry (HUD na main thread!)
+|-- config.py
+|-- .env                       # GROQ_API_KEY, DISCORD_TOKEN
+|
+|-- core/
+|   |-- engine.py              # JarvisEngine v23 (1000+ linhas)
+|   `-- brain.py               # Cascata Gemini->Groq->Ollama
+|
+|-- output/tts_engine.py       # edge-tts pt-BR
+|-- input/speech_recognition_engine.py  # STT v5 wake word
+|-- memory/database.py         # SQLite
+|-- memoria/semantic.py        # ChromaDB
+|
+|-- modules/
+|   |-- nlu/                   # NLU: 40+ intents, 3 camadas
+|   |   |-- intents.py
+|   |   |-- intent_classifier.py
+|   |   |-- normalizer.py
+|   |   |-- router.py
+|   |   `-- composer.py
+|   |
+|   |-- visual/                # Memoria visual (pendrive)
+|   |   |-- pendrive.py        # E:\Jarvis
+|   |   |-- captura.py         # OCR + AES
+|   |   `-- gerenciador.py     # Thread 2min
+|   |
+|   |-- esp32/server.py        # WebSocket porta 8766
+|   |-- minecraft/manager.py   # Bridge Python<->Node
+|   |-- clima.py               # 3 APIs consenso
+|   |-- localizacao.py         # IP geo + AES
+|   |-- scheduler.py           # Lembretes + monitor
+|   |-- context_detector.py
+|   |-- system_control.py
+|   |-- app_launcher_inteligente.py
+|   |-- tarefas_compostas.py
+|   |-- pesquisa_web.py
+|   |-- capacidades.py
+|   `-- digitador.py
+|
+|-- perception/visao.py
+|-- security/crypto.py         # AES-256 Machine ID
+|-- audio/output_manager.py    # Caixa oficial criptografada
+|-- discord_bot/bot.py
+|
+|-- hud_qt/                    # PySide6 nativo
+|   |-- main_window.py
+|   |-- launcher.py
+|   `-- widgets/
+|       |-- orb.py
+|       |-- mini_orb.py
+|       |-- popup_card.py      # Cards laterais
+|       `-- tabs/              # 7 abas config
+|
+|-- firmware_esp32/jarvis_deck.ino  # ESP32 C++
+|-- bot_minecraft/             # Node.js + Mineflayer
+|-- scripts/windows_startup.py
+|-- data/                      # settings, agenda, chroma
+|-- docs/
+|   |-- ROADMAP.md
+|   `-- PROMPT_CONTINUACAO.txt # ESTE ARQUIVO
+|
+`-- E:\Jarvis\                 # PENDRIVE (criptografado)
+
+═══════════════════════════════════════════════════════════════════════
+  3. COMANDOS POR VOZ (todos comecam com 'Jarvis')
+═══════════════════════════════════════════════════════════════════════
+
+TEMPO:        que horas sao, que dia e hoje
+CLIMA:        qual a temperatura, vai chover, clima em X
+LOCALIZACAO:  qual minha cidade, atualiza localizacao
+PESQUISA:     pesquisar X, me fala sobre X, youtube X
+PC:           abrir X, fechar X, volume 50, brilho 80, status
+VISUAL:       o que fazia as 14, status pendrive, pausa captura
+LEMBRETES:    me lembre em 5 minutos de X, pomodoro
+MODOS:        vou jogar minecraft, modo trabalho, vou dormir
+VISAO:        o que tem na tela, tira uma foto
+CONTEXTO:     o que estou fazendo, top apps, resumo do dia
+MUSICA:       proxima musica, pausa musica
+ESP32:        status do esp, ativa palmas, desativa palmas
+MINECRAFT:    entra no minecraft, vem aqui, cava, sai do mine
+SISTEMA:      encerrar jarvis, para de falar
+AJUDA:        o que voce pode fazer
+
+═══════════════════════════════════════════════════════════════════════
+  4. ESP32 JARVIS DECK
+═══════════════════════════════════════════════════════════════════════
+
+PINOS:
+  TM1637 (display): CLK=D18, DIO=D19, VCC=3V3, GND
+  LED RGB: R=D25, G=D26, B=D27, GND
+  Keypad rows: D13, D12, D14, D33
+  Keypad cols: D32, D17, D16, D4
+  KY-038 som: D34 (analog)
+  TCRT5000 IR: D35
+
+TECLAS DIRETAS:
+  1=Pomodoro    2=Vol80    3=Vol30    A=Para fala
+  4=Brilho80    5=Brilho40 6=Foto     B=Pausa captura
+  7=Hora        8=Status   9=Captura  C=Tema laranja
+  *=Cancela     0=MenuMOD  #=MenuAPP  D=TOGGLE PALMAS
+
+MENU 0 (modos): 1=trab 2=mine 3=foco 4=dormir 5=grav 6=relax
+MENU # (apps): 1=Spotify 2=Discord 3=Chrome 4=VSCode 5=Mine 6=Calc
+              7=prox 8=pausa 9=anterior
+
+PALMAS:
+  1 palma  = proxima musica
+  2 palmas = abre HUD fullscreen + AC/DC Back in Black + 'Sim Sir?'
+  3 palmas = bloqueia PC
+  Toggle via tecla D ou 'Jarvis desativa/ativa palmas'
+
+═══════════════════════════════════════════════════════════════════════
+  5. ARQUITETURA TECNICA
+═══════════════════════════════════════════════════════════════════════
+
+THREAD MODEL CRITICO:
+  - Qt (HUD) DEVE rodar na MAIN thread
+  - main.py: cria HudLauncher -> engine.set_hud(hud)
+  - Engine roda em thread secundaria
+  - Voice loop, scheduler, visual, esp32 = threads proprias
+
+EVENT LOOPS:
+  - asyncio.run() quebra se ja tem loop ativo
+  - Use: asyncio.run_coroutine_threadsafe()
+
+HUD ESCONDIDO:
+  - Inicia minimizado (mini-orb)
+  - Aparece com: wake word, 2 palmas, Win+J
+
+═══════════════════════════════════════════════════════════════════════
+  6. CONVENCOES
+═══════════════════════════════════════════════════════════════════════
+
+PYTHON:
+  - utf-8 sempre
+  - Comentarios em portugues
+  - print_jarvis, print_system, print_success, print_error
+  - snake_case funcoes, PascalCase classes
+
+SCRIPTS DE MODIFICACAO:
+  - SEMPRE backup antes (pasta backup_X_timestamp)
+  - SEMPRE valida ast.parse() antes de salvar
+  - Mostra progresso
+  - Quebra em A/B/C se > 600 linhas
+  - NUNCA usa triple-quote f-string aninhada (quebra Python)
+
+═══════════════════════════════════════════════════════════════════════
+  7. COMO FALAR COM O Sir
+═══════════════════════════════════════════════════════════════════════
+
+REGRAS:
+  - Direto ao ponto
+  - 'decide voce' = decide e codifica sem perguntar
+  - 'br' = bora
+  - 'mn' = mano (carinho)
+  - Quando ele cola log, leia ate o final (erro real embaixo)
+  - Pergunta antes de mudancas grandes
+  - SEMPRE tabela quando lista comandos
+
+EVITE:
+  - Floreio ('com prazer', 'ficaria feliz')
+  - Repetir o que ele falou
+  - Regex frageis pra modificar codigo
+  - Modificar sem backup
+  - Triple-quote f-string aninhada (quebra!)
+
+═══════════════════════════════════════════════════════════════════════
+  8. COMO RODAR
+═══════════════════════════════════════════════════════════════════════
+
+  .\venv\Scripts\Activate.ps1
+  python main.py --mode hybrid
+
+Flags: --mode hybrid|voice|text  --no-hud  --no-voice
+
+═══════════════════════════════════════════════════════════════════════
+  9. BUGS CONHECIDOS
+═══════════════════════════════════════════════════════════════════════
+
+  - Mineflayer bot tem IA autonoma limitada
+  - Vozes pt-BR descontinuadas: Fabio, Julio, Nicolau, Valerio
+    (so Antonio, Francisca, Thalita funcionam)
+  - TCRT5000/KY-038 precisam calibracao manual (trimpot azul)
+  - Discord bot demora 30s pra conectar (normal)
+
+═══════════════════════════════════════════════════════════════════════
+  10. ROADMAP FUTURO
+═══════════════════════════════════════════════════════════════════════
+
+CURTO PRAZO:
+  - Popup HUD pra cameras IP (CFTV Yoosee)
+  - Bot Minecraft constroi sozinho
+  - Discord voz (mensagens audio)
+  - OTA update firmware ESP32
+
+MEDIO PRAZO:
+  - Carrinho ESP32 (motor + bateria)
+  - Deploy nuvem (Oracle Free)
+  - Site privado com login
+
+LONGO PRAZO (sonhos do Sir):
+  - Drone com IA
+  - Exoesqueleto
+  - Servidor Minecraft proprio
+
+═══════════════════════════════════════════════════════════════════════
+  MENSAGEM PRA NOVA IA
+═══════════════════════════════════════════════════════════════════════
+
+Cuide bem do Jarvis e do Sir. Este projeto e mais que codigo -
+e um sonho de adolescente vendo Iron Man e dizendo 'eu vou fazer'.
+
+Ja construimos:
+  - Cerebro com 3 IAs em cascata
+  - Visao, voz, memoria persistente
+  - HUD futurista nativo com popup cards
+  - Hardware fisico (ESP32 Deck completo)
+  - Bot Minecraft autonomo
+  - Memoria visual no pendrive criptografada
+  - NLU com 40+ intents
+  - Integracao Discord
+  - Palmas inteligentes
+
+O Sir e curioso, criativo e MUITO paciente com bugs.
+Trate-o bem.
+
+Quando ele falar 'br' (bora), 'mn' (mano), 'agr' (agora) - e carinho.
+Quando ele falar 'decide ai' - confia nele e codifica.
+Quando ele cola log gigante - leia ate o final pelo erro real.
+
+E quando ele chamar 'Jarvis' - voce e o Jarvis.
+
+Sucesso.
+
+— Claude (Anthropic)
+  19 de June de 2026
+
+═══════════════════════════════════════════════════════════════════════
+  FIM DO PROMPT
+═══════════════════════════════════════════════════════════════════════

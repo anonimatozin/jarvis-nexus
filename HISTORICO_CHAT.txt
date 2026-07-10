@@ -1,0 +1,418 @@
+# JARVIS - Historico de Desenvolvimento
+# Ultima atualizacao: 2026-07-08
+
+## RESUMO GERAL
+Assistente AI desktop autonoma baseada nos filmes do Homem de Ferro.
+Linguagem: Python
+Localizacao: C:\Users\Administrator\Desktop\JARVIS
+
+---
+
+## CONFIGURACAO DE AUDIO
+- Audio output: Speakers (High Definition Audio Device)
+- Microfone: Microphone (MK-01) - indices 1, 7, 15, 18
+- TTS principal: Kokoro (offline) - edge-tts bloqueado (error 403)
+- Arquivo config: data/hud_settings.json
+
+---
+
+## MODULOS IMPLEMENTADOS
+
+### 1. Self-Evolving Skills (modules/skills/)
+- SkillEvolver: Aprende e armazena skills automaticamente
+- Skills persistem em JSON (data/learned_skills.json)
+- Comandos: "listar skills", "criar skill", "remover skill"
+
+### 2. Proactive Autonomy (modules/autonomy/)
+- ProactiveEngine: 4 niveis (OFF, MAINTENANCE, PROACTIVE, FULL_AUTO)
+- Monitora inatividade e executa tarefas proativamente
+- Comandos: "nivel autonomia [0-3]", "status autonomia", "iniciar manutencao"
+
+### 3. Safety Tiers (modules/security/)
+- SafetyTiers: 26 acoes mapeadas (SAFE, CAUTION, DANGER, CRITICAL)
+- Senha mestra para acoes criticas
+- Comandos: "status seguranca", "definir senha mestra", "verificar senha", "aprovar acao"
+
+### 4. Goal Pursuit - OKR (modules/productivity/)
+- GoalPursuit: Sistema de objetivos e resultados-chave
+- Progresso de 0.0 a 1.0 por objetivo
+- Comandos: "criar objetivo", "adicionar KR", "progresso do objetivo", "proximas acoes"
+
+### 5. Dev Agent v3.0 (modules/dev_agent/)
+- Ferramenta unica: OpenCode (sem OpenClaude)
+- Hierarquia: OpenCode -> Brain (fallback)
+- Comandos: "criar arquivo", "ler arquivo", "editar arquivo", "rodar script", "analisar codigo"
+
+---
+
+## COMANDOS DE VOZ TOTAIS (200+)
+
+### BASICOS
+- "o que voce pode fazer"
+- "comandos"
+- "horas" / "que horas sao"
+- "data" / "que dia e hoje"
+- "limpar tela"
+- "fechar janela"
+- "abrir navegador"
+- "abrir calculadora"
+- "abrir terminal"
+- "abrir editor"
+
+### CONTROLE DO PC
+- "desligar pc" / "desligar computador"
+- "reiniciar pc"
+- "bloquear pc"
+- "fechar programa [nome]"
+- "abrir programa [nome]"
+- "status do pc" / "info do pc"
+- "usando多少 cpu" / "quanto de memoria"
+- "quanto de espaco"
+
+### AUDIO
+- "tocar musica"
+- "parar musica"
+- "proximo"
+- "anterior"
+- "volume [0-100]"
+- "aumentar volume"
+- "diminuir volume"
+- "mute" / "sem som"
+
+### INTERNET
+- "pesquisar [termo]"
+- "abrir youtube"
+- "abrir google"
+- "abrir github"
+- "clima hoje"
+- "previsao do tempo"
+
+### ARQUIVOS
+- "criar arquivo [nome]"
+- "ler arquivo [nome]"
+- "editar arquivo [nome]"
+- "deletar arquivo [nome]"
+- "listar arquivos"
+- "copiar arquivo"
+- "mover arquivo"
+
+### PRODUTIVIDADE
+- "criar nota [texto]"
+- "listar notas"
+- "deletar nota [id]"
+- "criar tarefa [desc]"
+- "listar tarefas"
+- "concluir tarefa [id]"
+- "timer [minutos]"
+- "alarme [hora]"
+- "lembrete [hora] [msg]"
+
+### LEMBRANCAS
+- "criar lembrete [hora] [msg]"
+- "listar lembretes"
+- "deletar lembrete [id]"
+
+### NOVOS MODULOS (ADICIONADOS)
+
+#### Skills
+- "listar skills" - Mostra skills aprendidas
+- "criar skill [nome]" - Cria skill manualmente
+- "remover skill [id]" - Remove skill
+- "stats das skills" - Estatisticas
+
+#### Autonomia
+- "nivel autonomia [0-3]" - Altera nivel (0=OFF, 1=Maintenance, 2=Proactive, 3=Full Auto)
+- "status autonomia" - Mostra nivel e inatividade
+- "adicionar objetivo [desc]" - Cria objetivo proativo
+- "listar objetivos" - Mostra objetivos pendentes
+- "concluir objetivo [id]" - Marca como feito
+- "iniciar manutencao" - Executa manutencao do sistema
+
+#### Seguranca
+- "status seguranca" - Mostra acoes mapeadas
+- "definir senha mestra" - Define senha
+- "verificar senha [senha]" - Autentica
+- "log de seguranca" - Historico
+- "aprovar acao [nome]" - Aprova por 24h
+
+#### Goals (OKR)
+- "criar objetivo [titulo]" - Cria objetivo OKR
+- "adicionar KR ao objetivo [id]: [desc]" - Adiciona resultado-chave
+- "progresso do objetivo [id]" - Mostra progresso (0.0-1.0)
+- "proximas acoes" - Acoes priorizadas
+- "resumo de objetivos" - Dashboard
+
+---
+
+## IDEIAS FUTURAS
+
+### Prioridade Alta
+- Integrar NLU Router com intents dos novos modulos
+- Configurar nivel autonomia padrao (recomendado: MAINTENANCE)
+- Testar todos os comandos de voz
+
+### Prioridade Media
+- Adicionar skill de gerenciamento de emails
+- Integrar com calendario/google calendar
+- Modulo de traducao em tempo real
+- Reconhecimento facial para login
+- Controle de casa inteligente (IoT)
+
+### Prioridade Baixa
+- Modulo de musica com Spotify
+- Integracao com redes sociais
+- Criptografia de dados locais
+- Interface grafica (GUI)
+- Modo apresentacao (projetor)
+
+---
+
+## BIBLIOGRAFIA (Repos Estudados)
+1. vierisid/jarvis - Skills e autenticacao
+2. Heliox-OS/Jarvis - Multiplataforma
+3. GenericAgent - Self-evolving skills
+4. JarvisAI - Autonomia e seguranca
+5. Understudy - CLI interativo
+6. sutando/JarvisAI - Proactive automation
+7. thiojo/jarvis - Safety tiers
+8. Jarvis-intelligence - Multi-agent
+9. JARVIS-AI - Deep learning
+10. JARVIS-2.0 - Voice recognition
+
+---
+
+## NOTAS TECNICAS
+- edge-tts retorna error 403 - usar Kokoro offline
+- PowerShell nao aceita /s /q - usar Remove-Item -Recurse -Force
+- OpenCode e CLI interativo - nao precisa de --print
+- Atributos Python usam _underscore (ex: _skills, _goals)
+
+---
+
+## HOSPEDAGEM GRATUITA - BOT DISCORD / SITE 24/7
+
+### Oracle Cloud Always Free (Recomendado)
+- RAM: 24GB ARM ou 1GB AMD
+- Uptime: 99.9%
+- Site: cloud.oracle.com
+- Como: Criar conta, escolher "Always Free"
+- Risco: Pode deletar instancias apos 60 dias sem aviso
+- Ideal para: Bots pesados, scrapers, projetos grandes
+
+### Kerit Cloud (Mais facil)
+- Gratuito, sem cartao de credito
+- Suporta: Python, Node.js
+- Painel: Pterodactyl (facil de usar)
+- Site: kerit.cloud
+- Ideal para: Iniciantes, bots simples
+
+### Bot-Hosting.net
+- Gratuito: 256MB RAM, 20% CPU
+- Renovacao: a cada 4 dias (manual)
+- Suporta: Python, Node.js, Java, Deno
+- Site: bot-hosting.net
+- Ideal para: Bots pequenos
+
+### Google Cloud Free Tier
+- Instancia: e2-micro
+- Uptime: 99.5%
+- Ideal para: Bots simples, APIs
+
+### PythonAnywhere
+- RAM: 512MB
+- Uptime: 100% (nativo)
+- Ideal para: Scripts simples, APIs basicas
+
+### Fly.io
+- Gratis com limite de 3 apps
+- Suporta: Python, Node.js, Docker
+- Deploy via Git ou Docker
+- Ideal para: Bots com Docker
+
+### Render.com
+- Gratis com limitacoes
+- Web services dormem apos 15 min
+- Background workers pagos
+- Nao recomendado para bots 24/7
+
+### Replit
+- Gratis com limitacoes
+- Dorme apos 5 min de inatividade
+- Bloqueou workarounds (UptimeRobot)
+- Nao recomendado para 24/7
+
+---
+
+## CORRECOES DE AUDIO (2026-07-09)
+
+### Problemas encontrados e corrigidos:
+1. Erro de encoding no logger.py (banner ASCII art)
+   - Adicionado file=open com encoding='utf-8'
+2. Device de audio oficial truncado no hud_settings.json
+   - "Speakers (High Definition Audio" causava No such device
+   - Campo audio_output_official_encrypted limpo
+3. edge-tts erro 403 (versao 6.1.12)
+   - Atualizado para edge-tts 7.2.8
+4. Verificacao de device inexistente no tts_engine.py
+   - Adicionada verificacao via sounddevice.query_devices()
+5. Metodo speak() faltando no hybrid_voice.py
+   - Engine chamava self.tts.speak() mas HybridVoice so tinha falar()
+   - Adicionado metodo speak() que delega para falar()
+
+### Status apos correcoes:
+- TTS: edge-tts(online) > kokoro(offline) > pyttsx3(offline)
+- STT: google(online) > vosk(offline)
+- Microfone: Microphone (MK-01) configurado
+- Devices de saida: 14 dispositivos detectados
+- Audio: FUNCIONANDO (testado e confirmado)
+
+---
+
+## DASHBOARD WEB - JARVIS CONTROL CENTER (2026-07-09)
+
+### O que foi criado:
+Dashboard web completo estilo Stark Industries / JARVIS Marvel com 16 paginas.
+
+### Stack:
+- Backend: Flask (Python)
+- Frontend: HTML + CSS + JavaScript vanilla
+- Estilo: Cyberpunk, Glassmorphism, Particulas animadas, Core Reactor
+- Host: localhost:8080 (local)
+
+### Arquivos criados:
+- `dashboard/app.py` - Backend Flask com 15+ endpoints API
+- `dashboard/static/index.html` - Frontend com 16 paginas
+- `dashboard/static/style.css` - Tema ciano neon cyberpunk
+- `dashboard/static/app.js` - Logica do frontend
+- `start_dashboard.bat` - Inicia com duplo-clique
+- `netlify.toml` - Configuracao Netlify
+- `netlify/functions/api.py` - Funcao serverless Netlify
+- `netlify/functions/requirements.txt` - Dependencias Netlify
+
+### Paginas do Dashboard:
+1. Dashboard - CPU, RAM, SSD, Ping, Clima, Core Reactor animado
+2. Chat - Estilo ChatGPT com IA
+3. Voz - Botao gigante + waveform + TTS
+4. Controle PC - Chrome, VS Code, Steam, Desligar, etc.
+5. Visao - Camera ao vivo, OCR, Deteccao
+6. Memoria - O que Jarvis sabe
+7. Arquivos - Explorador estilo Windows
+8. Casa Inteligente - Luz, TV, Ar, Cortina
+9. Robos - ESP32 conectados
+10. Mapa - Mapa com dispositivos
+11. Estatisticas - Graficos CPU/RAM
+12. Seguranca - PIN, Senha, Facial, 2FA
+13. Plugins - Spotify, WhatsApp, Instagram, GitHub
+14. Logs - Historico de acoes
+15. Modulos - Todos os 28 modulos
+16. Config - Tema, Idioma, Wake Word
+
+### API Endpoints:
+- /api/dashboard - Status completo
+- /api/chat - Chat com IA
+- /api/voice/speak - TTS
+- /api/control/<action> - Controle PC
+- /api/processes - Top processos
+- /api/memory - Memoria
+- /api/files - Explorador
+- /api/logs - Logs
+- /api/modules - Modulos
+- /api/settings - Configuracoes
+- /api/stats - Estatisticas
+- /api/weather - Clima ao vivo (wttr.in)
+
+### Deploy pendente:
+- GitHub CLI (gh) instalado mas NAO logado
+- Proximo passo: `gh auth login` → criar repo → push
+- Netlify: conectar ao GitHub repo para deploy automatico
+- netlify.toml ja configurado
+
+---
+
+## STATUS ATUAL (2026-07-09)
+- Audio: FUNCIONANDO
+- Microfone: FUNCIONANDO
+- TTS: edge-tts + Kokoro FUNCIONANDO
+- STT: Google + Vosk FUNCIONANDO
+- Dev Agent: OpenCode FUNCIONANDO
+- Skills: OK
+- Autonomia: OK
+- Safety: OK
+- Goals: OK
+- Dashboard: CRIADO (16 paginas, cyberpunk)
+- Deploy: PENDENTE (gh nao logado)
+- Emocoes: REMOVIDAS (JARVIS nao tem emocoes nos filmes)
+- Hospedagem: Opcoes listadas acima (Oracle Cloud recomendado)
+
+---
+
+## PROXIMOS PASSOS - DEPLOY GITHUB + NETFLIFY
+
+### Passo 1: Login GitHub
+```powershell
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+gh auth login --web -p https
+```
+- Abrir link no browser
+- Copiar codigo e colar
+
+### Passo 2: Criar repo e push
+```powershell
+cd C:\Users\Administrator\Desktop\JARVIS
+git init
+git add .
+git commit -m "JARVIS Control Center v2.0"
+gh repo create jarvis-nexus --public --source=. --remote=origin --push
+```
+
+### Passo 3: Netlify
+1. Entrar em app.netlify.com
+2. "Add new site" → "Import an existing project"
+3. Escolher GitHub
+4. Selecionar repo "jarvis-nexus"
+5. Build settings:
+   - Build command: `pip install -r netlify/functions/requirements.txt`
+   - Publish directory: `dashboard/static`
+   - Functions directory: `netlify/functions`
+6. Deploy!
+
+### Deploy automatico:
+- Toda vez que fizer push pro GitHub, o Netlify atualiza sozinho
+
+### URL do site:
+- Vai ficar algo como: https://jarvis-nexus.netlify.app
+
+### IMPORTANTE:
+- O .env NAO sobe pro GitHub (protegido pelo .gitignore)
+- No Netlify, adicionar variaveis de ambiente manualmente:
+  - GROQ_API_KEY
+  - GEMINI_API_KEY
+  - DISCORD_TOKEN
+  - etc.
+
+---
+
+## COMO RODAR LOCALMENTE
+
+```powershell
+cd C:\Users\Administrator\Desktop\JARVIS
+.\start_dashboard.bat
+```
+
+Ou:
+```powershell
+.\venv\Scripts\python dashboard\app.py
+```
+
+Depois abrir: http://localhost:8080
+
+---
+
+## HISTORICO DE SESSOES
+
+### 2026-07-09 (hoje)
+- Corrigidos bugs de audio (encoding, device truncado, edge-tts 403, metodo speak)
+- Criado Dashboard Web completo (16 paginas, cyberpunk)
+- Instalado GitHub CLI (gh)
+- Deploy pendente (gh auth login nao completado)
+- Dashboard testado e funcionando localmente

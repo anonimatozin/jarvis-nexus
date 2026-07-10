@@ -1,0 +1,133 @@
+{
+  "uso": {
+    "code.exe": 6452.912853,
+    "python.exe": 85.018271,
+    "applicationframehost.exe": 20.006688,
+    "chrome.exe": 470.099876,
+    "reg.exe": 5.001543,
+    "shellexperiencehost.exe": 5.000908
+  },
+  "mudancas": [
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-07-08T10:54:00.202415"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-07-08T10:54:40.213615"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-07-08T10:55:40.857678"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-07-08T10:55:55.860539"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-07-08T10:59:03.064710"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-07-08T10:59:23.068560"
+    },
+    {
+      "de": "python.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-07-08T10:59:38.071403"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-07-08T10:59:48.073373"
+    },
+    {
+      "de": "python.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-07-08T11:00:13.078602"
+    },
+    {
+      "de": "code.exe",
+      "para": "applicationframehost.exe",
+      "titulo": "Configurações",
+      "quando": "2026-07-08T11:00:18.079635"
+    },
+    {
+      "de": "applicationframehost.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-07-08T11:00:38.086323"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-07-08T11:04:01.798952"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-07-08T11:04:26.819340"
+    },
+    {
+      "de": "python.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-07-08T11:04:41.822610"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "python",
+      "quando": "2026-07-08T11:05:01.826239"
+    },
+    {
+      "de": "python.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-07-08T11:05:11.829352"
+    },
+    {
+      "de": null,
+      "para": "chrome.exe",
+      "titulo": "Suspeita de conta comprometida e V2E ativada sem minha autorização – Discord - G",
+      "quando": "2026-07-08T17:01:41.619122"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "reg.exe",
+      "titulo": "C:\\Windows\\SYSTEM32\\reg.exe",
+      "quando": "2026-07-08T17:08:06.706015"
+    },
+    {
+      "de": "reg.exe",
+      "para": "shellexperiencehost.exe",
+      "titulo": "Controle de Volume",
+      "quando": "2026-07-08T17:08:11.707558"
+    },
+    {
+      "de": "shellexperiencehost.exe",
+      "para": "chrome.exe",
+      "titulo": "Ben 10 - Episódio 25 - Dr. Animal e o Raio Mutante - Google Chrome",
+      "quando": "2026-07-08T17:08:16.708466"
+    }
+  ],
+  "atualizado": "2026-07-08T17:10:11.215623"
+}

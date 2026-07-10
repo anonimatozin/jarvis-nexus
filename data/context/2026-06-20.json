@@ -1,0 +1,1219 @@
+{
+  "uso": {
+    "explorer.exe": 280.15946500000007,
+    "taskmgr.exe": 140.643216,
+    "chrome.exe": 8566.371287000002,
+    "spotifysetup.exe": 15.03975,
+    "spotify.exe": 170.035355,
+    "code.exe": 2261.234441,
+    "reg.exe": 5.00194,
+    "python.exe": 1053.7020969999999,
+    "arduino ide.exe": 1076.2445510000002,
+    "javaw.exe": 2998.5185899999997,
+    "searchapp.exe": 5.001018,
+    "powershell.exe": 15.006083
+  },
+  "mudancas": [
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "python",
+      "quando": "2026-06-20T15:39:27.012891"
+    },
+    {
+      "de": "python.exe",
+      "para": "code.exe",
+      "titulo": "fix_popup_visivel.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T15:39:42.016258"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T15:40:22.025000"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-20T15:40:27.026146"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T15:40:32.026502"
+    },
+    {
+      "de": null,
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T15:44:53.757730"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "python.exe",
+      "titulo": "python",
+      "quando": "2026-06-20T15:46:14.731907"
+    },
+    {
+      "de": "python.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T15:46:49.737870"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "fix_popup_reset.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T15:47:29.775810"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T15:47:44.779188"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "python.exe",
+      "titulo": "python",
+      "quando": "2026-06-20T15:51:09.960690"
+    },
+    {
+      "de": "python.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T15:51:24.963058"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "jarvis_deck.ino - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T15:53:30.021637"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T15:53:40.022594"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-20T15:54:30.032022"
+    },
+    {
+      "de": "python.exe",
+      "para": "code.exe",
+      "titulo": "server.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T15:54:35.032754"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T15:54:50.033789"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "server.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T15:58:40.158442"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T15:58:50.160256"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "upgrade_esp32_interativo.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T15:59:10.166697"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "fix_engine_esp32.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T16:01:44.292861"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "python",
+      "quando": "2026-06-20T16:02:39.545311"
+    },
+    {
+      "de": "python.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T16:02:49.548951"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "Program Manager",
+      "quando": "2026-06-20T16:06:44.638725"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "arduino ide.exe",
+      "titulo": "Arduino IDE",
+      "quando": "2026-06-20T16:06:49.642909"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T16:07:09.689548"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-20T16:08:24.803653"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T16:08:54.885065"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-20T16:10:54.938897"
+    },
+    {
+      "de": "python.exe",
+      "para": "code.exe",
+      "titulo": "fix_engine_esp32.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T16:10:59.939312"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T16:11:14.944016"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-20T16:21:45.383440"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T16:21:50.387609"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "python.exe",
+      "titulo": "python",
+      "quando": "2026-06-20T16:22:00.396253"
+    },
+    {
+      "de": null,
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T16:24:49.261563"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "python.exe",
+      "titulo": "python",
+      "quando": "2026-06-20T16:25:21.532961"
+    },
+    {
+      "de": "python.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T16:25:26.533562"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "python.exe",
+      "titulo": "python",
+      "quando": "2026-06-20T16:25:36.535026"
+    },
+    {
+      "de": "python.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T16:25:46.536454"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "fix_display_simples_v2.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T16:28:36.577570"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T16:28:46.581032"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "manager.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T16:28:51.582365"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T16:28:56.587913"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "manager.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T16:29:01.588286"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T16:29:16.591718"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "manager.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T16:29:21.592891"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T16:29:36.595152"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "manager.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T16:29:41.595823"
+    },
+    {
+      "de": null,
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1 - Um jogador",
+      "quando": "2026-06-20T16:58:11.596872"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "code.exe",
+      "titulo": "instalar_legiao_parte2.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T16:59:04.010001"
+    },
+    {
+      "de": "code.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1 - Multijogador (LAN)",
+      "quando": "2026-06-20T16:59:19.020859"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-20T16:59:39.028941"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "code.exe",
+      "titulo": "instalar_legiao_parte2.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T16:59:44.029581"
+    },
+    {
+      "de": "code.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1 - Multijogador (LAN)",
+      "quando": "2026-06-20T17:00:04.033873"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "code.exe",
+      "titulo": "instalar_legiao_parte2.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T17:00:09.035702"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T17:00:14.038098"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1",
+      "quando": "2026-06-20T17:00:49.051524"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "searchapp.exe",
+      "titulo": "Pesquisar",
+      "quando": "2026-06-20T17:01:19.112585"
+    },
+    {
+      "de": "searchapp.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1 - Multijogador (LAN)",
+      "quando": "2026-06-20T17:01:24.113603"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T17:01:29.119914"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1 - Multijogador (LAN)",
+      "quando": "2026-06-20T17:01:44.128073"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-20T17:02:29.231522"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1 - Multijogador (LAN)",
+      "quando": "2026-06-20T17:02:34.249199"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-20T17:03:09.301309"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T17:03:14.303053"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1 - Multijogador (LAN)",
+      "quando": "2026-06-20T17:03:19.307769"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T17:03:29.311039"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1 - Multijogador (LAN)",
+      "quando": "2026-06-20T17:03:39.312711"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "code.exe",
+      "titulo": "instalar_legiao_parte2.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T17:04:04.331836"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-20T17:04:15.338356"
+    },
+    {
+      "de": null,
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1",
+      "quando": "2026-06-20T17:11:29.043997"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T17:12:16.005164"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1 - Um jogador",
+      "quando": "2026-06-20T17:12:26.006662"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-20T17:12:36.013062"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "code.exe",
+      "titulo": "fix_legiao_v2.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T17:12:41.013555"
+    },
+    {
+      "de": "code.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1 - Multijogador (LAN)",
+      "quando": "2026-06-20T17:12:46.013989"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-20T17:13:21.034603"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "code.exe",
+      "titulo": "fix_legiao_v2.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T17:13:26.036644"
+    },
+    {
+      "de": "code.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1 - Multijogador (LAN)",
+      "quando": "2026-06-20T17:13:41.045660"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-20T17:20:08.238069"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T17:20:13.241063"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1 - Multijogador (LAN)",
+      "quando": "2026-06-20T17:20:18.242292"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-20T17:24:45.042772"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1",
+      "quando": "2026-06-20T17:24:50.044219"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T17:24:55.044915"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "fix_legiao_inteligente.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T17:44:56.869652"
+    },
+    {
+      "de": "code.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1",
+      "quando": "2026-06-20T17:45:38.017607"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T17:45:48.033664"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1 - Um jogador",
+      "quando": "2026-06-20T17:45:58.035460"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "code.exe",
+      "titulo": "fix_legiao_inteligente.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T17:47:09.999979"
+    },
+    {
+      "de": "code.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1 - Multijogador (LAN)",
+      "quando": "2026-06-20T17:47:30.022349"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "code.exe",
+      "titulo": "fix_legiao_inteligente.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T17:55:31.463443"
+    },
+    {
+      "de": null,
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T18:25:37.068473"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1",
+      "quando": "2026-06-20T18:25:52.953564"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-20T18:26:57.983779"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "code.exe",
+      "titulo": "instalar_jarvis_smart_parte3.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T18:27:02.985004"
+    },
+    {
+      "de": "code.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1",
+      "quando": "2026-06-20T18:27:12.986593"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-20T18:27:17.988693"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T18:27:22.989343"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "instalar_jarvis_smart_parte3.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T18:27:48.006515"
+    },
+    {
+      "de": "code.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1",
+      "quando": "2026-06-20T18:28:08.009774"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T18:28:13.012504"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1",
+      "quando": "2026-06-20T18:28:53.046316"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T18:29:03.049172"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1",
+      "quando": "2026-06-20T18:29:13.051249"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T18:29:23.054713"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "instalar_jarvis_smart_parte3.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T18:29:48.064685"
+    },
+    {
+      "de": null,
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T18:32:05.762361"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1",
+      "quando": "2026-06-20T18:32:18.857758"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T18:33:44.812060"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1 - Multijogador (servidor de terceiros)",
+      "quando": "2026-06-20T18:33:59.816788"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-20T18:34:04.817025"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "code.exe",
+      "titulo": "instalar_jarvis_smart_parte3.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T18:34:09.817656"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T18:34:39.887589"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1 - Multijogador (servidor de terceiros)",
+      "quando": "2026-06-20T18:34:49.915037"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T18:35:54.975111"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "instalar_jarvis_smart_parte3.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T18:35:59.976063"
+    },
+    {
+      "de": "code.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1",
+      "quando": "2026-06-20T18:36:14.982809"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "fix_nlu_quebrado.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T18:40:26.948985"
+    },
+    {
+      "de": "code.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1",
+      "quando": "2026-06-20T18:40:52.513641"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "code.exe",
+      "titulo": "fix_nlu_quebrado.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T18:40:57.515380"
+    },
+    {
+      "de": "code.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1",
+      "quando": "2026-06-20T18:41:17.573013"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "code.exe",
+      "titulo": "fix_nlu_quebrado.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T18:41:22.573968"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T18:41:42.582641"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "fix_nlu_quebrado.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T18:41:52.583989"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T18:42:27.591732"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "powershell.exe",
+      "titulo": "",
+      "quando": "2026-06-20T18:42:32.599149"
+    },
+    {
+      "de": "powershell.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T18:42:47.605232"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "fix_intents_server.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T18:45:22.105107"
+    },
+    {
+      "de": "code.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1",
+      "quando": "2026-06-20T18:45:42.635132"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "code.exe",
+      "titulo": "fix_intents_server.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T18:46:22.643618"
+    },
+    {
+      "de": "code.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1",
+      "quando": "2026-06-20T18:46:27.655495"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "code.exe",
+      "titulo": "fix_intents_server.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T18:48:09.979282"
+    },
+    {
+      "de": "code.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1 - Multijogador (servidor de terceiros)",
+      "quando": "2026-06-20T18:48:24.997140"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T18:48:30.066992"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-20T18:48:45.071248"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "code.exe",
+      "titulo": "fix_intents_server.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T18:48:50.072291"
+    },
+    {
+      "de": "code.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1",
+      "quando": "2026-06-20T18:49:00.100717"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "code.exe",
+      "titulo": "fix_intents_server.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T18:49:05.101759"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T18:49:10.103530"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "fix_entrar_bot.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T18:51:26.383152"
+    },
+    {
+      "de": "code.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1",
+      "quando": "2026-06-20T18:51:52.317730"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "code.exe",
+      "titulo": "fix_entrar_bot.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T18:53:03.351615"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T18:53:13.353824"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1 - Multijogador (servidor de terceiros)",
+      "quando": "2026-06-20T18:53:28.357004"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "code.exe",
+      "titulo": "fix_entrar_bot.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T18:56:08.976162"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T18:56:18.977585"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "fix_entrar_bot.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T18:57:29.042437"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T18:57:44.056965"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1",
+      "quando": "2026-06-20T18:57:54.084891"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "code.exe",
+      "titulo": "fix_final_simples.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T18:57:59.086073"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-20T18:58:04.086820"
+    },
+    {
+      "de": "python.exe",
+      "para": "code.exe",
+      "titulo": "fix_final_simples.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T18:58:09.125817"
+    },
+    {
+      "de": null,
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1",
+      "quando": "2026-06-20T18:59:01.770326"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-20T19:00:25.835255"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "code.exe",
+      "titulo": "fix_final_simples.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T19:00:30.839419"
+    },
+    {
+      "de": "code.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1",
+      "quando": "2026-06-20T19:00:35.840111"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "code.exe",
+      "titulo": "fix_final_simples.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T19:03:01.007337"
+    },
+    {
+      "de": "code.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1 - Multijogador (servidor de terceiros)",
+      "quando": "2026-06-20T19:03:16.031583"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "code.exe",
+      "titulo": "fix_final_simples.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T19:04:21.140090"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "instalar_ia_gemini_mc.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T19:13:10.127181"
+    },
+    {
+      "de": "code.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1",
+      "quando": "2026-06-20T19:14:32.039122"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T19:15:32.218370"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1 - Multijogador (servidor de terceiros)",
+      "quando": "2026-06-20T19:15:57.242530"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "code.exe",
+      "titulo": "instalar_ia_gemini_mc.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T19:16:42.351172"
+    },
+    {
+      "de": "code.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1 - Multijogador (servidor de terceiros)",
+      "quando": "2026-06-20T19:16:47.399070"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "legiao_fase1_base.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T19:29:08.602088"
+    },
+    {
+      "de": "code.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1",
+      "quando": "2026-06-20T19:30:05.063598"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-20T19:31:10.291933"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T19:31:15.339915"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1 - Multijogador (servidor de terceiros)",
+      "quando": "2026-06-20T19:31:25.401024"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "code.exe",
+      "titulo": "legiao_fase1_base.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T19:31:40.488984"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "legiao_fase1_v2_correto.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T19:37:54.757294"
+    },
+    {
+      "de": "code.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1",
+      "quando": "2026-06-20T19:38:07.876028"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-20T19:39:07.936289"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "code.exe",
+      "titulo": "legiao_fase1_v2_correto.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T19:39:12.937029"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T19:39:27.949942"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "javaw.exe",
+      "titulo": "Minecraft 1.21.1 - Multijogador (servidor de terceiros)",
+      "quando": "2026-06-20T19:39:32.951714"
+    },
+    {
+      "de": "javaw.exe",
+      "para": "code.exe",
+      "titulo": "legiao_fase1_v2_correto.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T19:40:33.029418"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T19:41:04.390454"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "fix_remove_sig_camera.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T21:38:37.453555"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T21:38:42.454516"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "devices.json - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T21:39:33.464042"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T21:39:48.472075"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-20T21:45:08.848088"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T21:45:18.851425"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "devices.json - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T21:45:33.913441"
+    },
+    {
+      "de": null,
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T21:59:03.422409"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-20T21:59:13.424170"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T21:59:18.424896"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-20T21:59:39.475978"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T21:59:54.478653"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-20T22:00:49.496896"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T22:01:34.516432"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-20T22:01:44.519278"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T22:02:04.574124"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "patch_esp32_fila_ble3.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-20T22:02:34.634826"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-20T22:02:54.695627"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-20T22:02:59.696324"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "python.exe",
+      "titulo": "python",
+      "quando": "2026-06-20T22:18:25.727535"
+    }
+  ],
+  "atualizado": "2026-06-20T22:31:10.882021"
+}

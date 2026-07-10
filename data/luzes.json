@@ -1,0 +1,54 @@
+{
+  "luzes": {
+    "quarto": {
+      "id": "eba2219d6c730ac01ax9b0",
+      "key": "X6mWa$U:Z]GI4o3G",
+      "ip": "192.168.0.101",
+      "version": "3.5",
+      "tipo": "switch",
+      "nome_falado": "luz do quarto",
+      "aliases": [
+        "quarto",
+        "meu quarto",
+        "luz",
+        "abajur"
+      ]
+    },
+    "mae": {
+      "id": "eb814c6db70e78a68544gp",
+      "key": "Qy`B6mVweihcpuU>",
+      "ip": "192.168.0.102",
+      "version": "3.5",
+      "tipo": "switch",
+      "nome_falado": "luz do quarto da mae",
+      "aliases": [
+        "mae",
+        "mãe",
+        "quarto da mae",
+        "quarto da mãe",
+        "quarto mae",
+        "quarto mãe",
+        "luz da mae",
+        "luz da mãe",
+        "da mae",
+        "da mãe",
+        "mae quarto"
+      ]
+    },
+    "lampada": {
+      "id": "eb4c1flipmwayae6",
+      "key": "5FECC17494713B45",
+      "ip": null,
+      "version": "3.5",
+      "tipo": "bulb_rgb",
+      "nome_falado": "lampada",
+      "aliases": [
+        "lampada",
+        "abajur rgb",
+        "luz colorida",
+        "led",
+        "rgb"
+      ]
+    }
+  }
+}

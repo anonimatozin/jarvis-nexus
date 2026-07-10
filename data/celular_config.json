@@ -1,0 +1,28 @@
+{
+  "devices": {},
+  "aliases": {
+    "meu celular": "default",
+    "celular": "default",
+    "phone": "default",
+    "android": "default"
+  },
+  "apps_favoritos": {
+    "instagram": "com.instagram.android",
+    "whatsapp": "com.whatsapp",
+    "telegram": "org.telegram.messenger",
+    "youtube": "com.google.android.youtube",
+    "chrome": "com.android.chrome",
+    "spotify": "com.spotify.music",
+    "twitter": "com.twitter.android",
+    "tiktok": "com.zhiliaoapp.musically",
+    "netflix": "com.netflix.mediaclient",
+    "maps": "com.google.android.apps.maps",
+    "camera": "com.android.camera",
+    "galeria": "com.google.android.apps.photos"
+  },
+  "configuracoes": {
+    "auto_screenshot": false,
+    "notificacoes_polling_seg": 60,
+    "backup_automatico": false
+  }
+}

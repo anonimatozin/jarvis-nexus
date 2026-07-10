@@ -1,0 +1,235 @@
+{
+  "uso": {
+    "chrome.exe": 1020.2337860000001,
+    "discord.exe": 180.30637399999998,
+    "explorer.exe": 10.001144,
+    "python.exe": 150.02319899999998,
+    "code.exe": 146.313476,
+    "searchapp.exe": 5.001593
+  },
+  "mudancas": [
+    {
+      "de": null,
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-18T21:09:27.071356"
+    },
+    {
+      "de": null,
+      "para": "discord.exe",
+      "titulo": "@J.A.R.V.I.S - Discord",
+      "quando": "2026-06-18T21:37:21.422604"
+    },
+    {
+      "de": "discord.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-18T21:37:41.696569"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "python.exe",
+      "titulo": "python",
+      "quando": "2026-06-18T21:37:46.696897"
+    },
+    {
+      "de": "python.exe",
+      "para": "code.exe",
+      "titulo": "fix_thread_qt.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-18T21:38:46.705813"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-18T21:38:51.706538"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "fix_thread_qt.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-18T21:42:11.737581"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "script6_wake_clima.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-18T21:56:35.097064"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "python",
+      "quando": "2026-06-18T21:57:01.070244"
+    },
+    {
+      "de": "python.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-18T21:57:06.070776"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "script6_wake_clima.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-18T21:57:11.072011"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-18T21:57:16.072985"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "script6_wake_clima.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-18T21:59:31.096256"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-18T21:59:41.099814"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "script6_wake_clima.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-18T22:01:06.113867"
+    },
+    {
+      "de": null,
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-18T22:09:38.931618"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-18T22:10:44.018456"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "temperatura cruzeiro do oeste - Pesquisa Google - Google Chrome",
+      "quando": "2026-06-18T22:10:49.019272"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-18T22:13:09.035961"
+    },
+    {
+      "de": null,
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-18T22:21:02.507356"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "script8_clima_consenso.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-18T22:22:57.521101"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-18T22:23:07.523537"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "script8_clima_consenso.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-18T22:23:17.524139"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-18T22:23:27.524554"
+    },
+    {
+      "de": "python.exe",
+      "para": "code.exe",
+      "titulo": "script8_clima_consenso.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-18T22:23:47.526800"
+    },
+    {
+      "de": "code.exe",
+      "para": "discord.exe",
+      "titulo": "@J.A.R.V.I.S - Discord",
+      "quando": "2026-06-18T22:23:57.528696"
+    },
+    {
+      "de": "discord.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-18T22:24:22.532252"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "discord.exe",
+      "titulo": "@J.A.R.V.I.S - Discord",
+      "quando": "2026-06-18T22:26:47.558792"
+    },
+    {
+      "de": "discord.exe",
+      "para": "searchapp.exe",
+      "titulo": "Pesquisar",
+      "quando": "2026-06-18T22:28:12.581339"
+    },
+    {
+      "de": "searchapp.exe",
+      "para": "code.exe",
+      "titulo": "script8_clima_consenso.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-18T22:28:17.582932"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-18T22:28:22.583800"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "script9a_memoria_visual.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-18T22:55:23.405389"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-18T22:55:38.716203"
+    },
+    {
+      "de": "python.exe",
+      "para": "code.exe",
+      "titulo": "script9a_memoria_visual.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-18T22:56:23.723610"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-18T22:56:43.728768"
+    },
+    {
+      "de": "python.exe",
+      "para": "code.exe",
+      "titulo": "script9a_memoria_visual.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-18T22:57:03.732866"
+    },
+    {
+      "de": "code.exe",
+      "para": "discord.exe",
+      "titulo": "@J.A.R.V.I.S - Discord",
+      "quando": "2026-06-18T22:57:33.746318"
+    }
+  ],
+  "atualizado": "2026-06-18T22:58:23.752624"
+}

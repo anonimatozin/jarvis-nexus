@@ -1,0 +1,1218 @@
+{
+  "uso": {
+    "discord.exe": 305.288533,
+    "chrome.exe": 5450.819192999998,
+    "explorer.exe": 294.944975,
+    "setup-stub.exe": 25.010137,
+    "firefox.exe": 3733.5608139999986,
+    "reg.exe": 15.003998000000001,
+    "arduino ide.exe": 1702.2225769999995,
+    "code.exe": 10997.054185,
+    "python.exe": 72.284334,
+    "powershell.exe": 10.000743,
+    "dwm.exe": 46.279344
+  },
+  "mudancas": [
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "config.h - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T17:01:36.016674"
+    },
+    {
+      "de": "code.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:01:46.019491"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "powershell - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T17:01:51.022139"
+    },
+    {
+      "de": "code.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:02:06.048778"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "powershell - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T17:02:21.104650"
+    },
+    {
+      "de": "code.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:02:26.107819"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "powershell - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T17:02:41.121002"
+    },
+    {
+      "de": "code.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:02:46.122031"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "powershell - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T17:02:51.123423"
+    },
+    {
+      "de": "code.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:02:56.137899"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "rgb.h - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T17:03:26.145130"
+    },
+    {
+      "de": "code.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:03:51.150606"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "rgb.h - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T17:04:06.152981"
+    },
+    {
+      "de": "code.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:05:11.202154"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T17:06:16.215825"
+    },
+    {
+      "de": "code.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:06:31.220517"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T17:07:31.239715"
+    },
+    {
+      "de": "code.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:07:56.250808"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "matriz.h - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T17:08:11.254065"
+    },
+    {
+      "de": "code.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:08:21.258340"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "animacoes.h - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T17:08:26.272658"
+    },
+    {
+      "de": "code.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:09:06.308647"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "animacoes.h - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T17:10:11.343699"
+    },
+    {
+      "de": "code.exe",
+      "para": "explorer.exe",
+      "titulo": "JARVIS",
+      "quando": "2026-06-24T17:10:16.347786"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "code.exe",
+      "titulo": "animacoes.h - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T17:11:06.371086"
+    },
+    {
+      "de": "code.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:12:26.382683"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "animacoes.h - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T17:12:36.387700"
+    },
+    {
+      "de": "code.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:12:46.392925"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "animacoes.h - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T17:12:51.394428"
+    },
+    {
+      "de": "code.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:13:01.399139"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "controle.h - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T17:13:06.399807"
+    },
+    {
+      "de": "code.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:13:16.427467"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "controle.h - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T17:13:21.474552"
+    },
+    {
+      "de": "code.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:13:31.505370"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "menu_config.h - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T17:13:36.536531"
+    },
+    {
+      "de": "code.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:14:06.582580"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "menu_config.h - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T17:14:11.583362"
+    },
+    {
+      "de": "code.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:14:16.583971"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "ws_handler.h - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T17:14:21.650856"
+    },
+    {
+      "de": "code.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:14:31.703615"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "jarvis_deck.ino - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T17:31:27.080505"
+    },
+    {
+      "de": "code.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T17:32:22.142835"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:32:47.153746"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T17:33:02.155290"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:33:47.164006"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T17:34:17.177068"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:34:22.177746"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T17:34:27.178634"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:34:32.182273"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T17:34:37.182707"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:34:52.184033"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T17:34:57.184932"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:35:02.185861"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T17:35:07.186074"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:35:22.195672"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T17:35:27.196871"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:36:12.224091"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "explorer.exe",
+      "titulo": "firmware_esp32",
+      "quando": "2026-06-24T17:36:17.224904"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "arduino ide.exe",
+      "titulo": "Arduino IDE",
+      "quando": "2026-06-24T17:36:27.229133"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-24T17:41:07.306375"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T17:41:17.309184"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:41:37.349074"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T17:41:42.349223"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:43:42.450854"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T17:44:47.522222"
+    },
+    {
+      "de": "code.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T17:45:07.541354"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:46:22.668157"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T17:46:52.683985"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:47:02.685987"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T17:47:07.686820"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:47:27.689974"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T17:47:32.694397"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:47:37.696079"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "reg.exe",
+      "titulo": "C:\\Windows\\SYSTEM32\\reg.exe",
+      "quando": "2026-06-24T17:48:17.780695"
+    },
+    {
+      "de": "reg.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T17:48:22.781989"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-24T17:48:52.803361"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "Nova guia - Google Chrome",
+      "quando": "2026-06-24T17:48:57.803832"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T17:50:37.837484"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-24T17:50:47.839634"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "arduino ide.exe",
+      "titulo": "Arduino IDE",
+      "quando": "2026-06-24T17:50:52.895554"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-24T17:51:58.013808"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T17:53:43.263110"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-24T17:55:08.425506"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T17:57:23.499462"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-24T18:00:08.696477"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck - rgb.h | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T18:00:43.709157"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-24T18:01:43.723704"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck - rgb.h | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T18:01:48.724696"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-24T18:01:58.725884"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck - rgb.h | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T18:02:03.727243"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-24T18:05:29.453218"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck - rgb.h | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T18:08:15.635303"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-24T18:08:20.635567"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck - rgb.h | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T18:08:45.642005"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-24T18:09:15.674339"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck - rgb.h | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T18:09:45.683074"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-24T18:10:15.686411"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T18:20:51.401083"
+    },
+    {
+      "de": "code.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck - rgb.h | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T18:21:21.411015"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-24T18:23:01.701560"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T18:30:16.861368"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-24T18:30:46.903118"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T18:30:51.979559"
+    },
+    {
+      "de": "code.exe",
+      "para": "arduino ide.exe",
+      "titulo": "Arduino IDE",
+      "quando": "2026-06-24T18:30:57.006856"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-24T18:31:37.050924"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck - rgb.h | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T18:32:17.066838"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-24T18:32:47.075866"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck - rgb.h | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T18:37:37.376201"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-24T18:38:17.382243"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck - rgb.h | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T18:38:27.382816"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-24T18:38:32.383338"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck - rgb.h | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T18:38:52.389801"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-24T18:39:22.415006"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T18:47:17.526183"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-24T18:47:52.547036"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck - rgb.h | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T18:48:07.550611"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T18:48:12.551371"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-24T18:48:17.552406"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T18:51:07.618330"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Discord - Google Chrome",
+      "quando": "2026-06-24T18:53:02.647635"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T18:53:32.689984"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-24T18:55:27.749865"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T18:55:42.767919"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "patch_lamp_ble_esp32.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T19:02:51.283572"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-24T19:03:36.293411"
+    },
+    {
+      "de": "python.exe",
+      "para": "code.exe",
+      "titulo": "patch_lamp_ble_esp32.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T19:03:41.294466"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-24T20:58:09.970438"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "patch_lamp_ble_esp32.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T20:58:51.089455"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-24T21:06:33.749709"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T21:12:58.844097"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T21:25:22.793699"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-24T21:26:12.836136"
+    },
+    {
+      "de": "python.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T21:26:27.842389"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "python",
+      "quando": "2026-06-24T21:26:47.851158"
+    },
+    {
+      "de": "python.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T21:27:02.853648"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-24T21:27:17.855901"
+    },
+    {
+      "de": "python.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T21:27:22.856227"
+    },
+    {
+      "de": "code.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-24T21:27:27.860087"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T21:27:37.862204"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T21:38:37.852903"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "python",
+      "quando": "2026-06-24T21:39:37.946164"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T21:58:30.852488"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Jarvis Turbo Explicado - Google Chrome",
+      "quando": "2026-06-24T21:58:50.855754"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T21:59:25.885330"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Jarvis Turbo Explicado - Google Chrome",
+      "quando": "2026-06-24T21:59:30.900796"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T22:01:40.942844"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Jarvis Turbo Explicado - Google Chrome",
+      "quando": "2026-06-24T22:02:55.961767"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T22:05:31.002049"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Jarvis Turbo Explicado - Google Chrome",
+      "quando": "2026-06-24T22:05:36.007094"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T22:08:16.046122"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-24T22:09:26.205840"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T22:09:51.266212"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-24T22:10:31.281562"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "firefox.exe",
+      "titulo": "Mozilla Firefox",
+      "quando": "2026-06-24T22:14:31.457502"
+    },
+    {
+      "de": null,
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T22:17:38.212959"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T22:19:33.279242"
+    },
+    {
+      "de": "code.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T22:21:13.323537"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T22:23:53.486118"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T22:25:08.453849"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "python",
+      "quando": "2026-06-24T22:26:09.090794"
+    },
+    {
+      "de": "python.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T22:26:24.095895"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Jarvis Turbo Explicado - Google Chrome",
+      "quando": "2026-06-24T22:26:44.099317"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T22:29:09.327016"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Jarvis Turbo Explicado - Google Chrome",
+      "quando": "2026-06-24T22:30:29.412084"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T22:30:34.413589"
+    },
+    {
+      "de": "code.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-24T22:30:39.416055"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "arduino ide.exe",
+      "titulo": "Arduino IDE",
+      "quando": "2026-06-24T22:30:49.417879"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T22:31:29.551183"
+    },
+    {
+      "de": "code.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T22:33:14.756636"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T22:33:49.849391"
+    },
+    {
+      "de": null,
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T22:34:19.069841"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T22:34:24.070777"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T22:34:29.072594"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Jarvis Turbo Explicado - Google Chrome",
+      "quando": "2026-06-24T22:34:34.073564"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-24T22:34:39.074655"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T22:34:44.079952"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T22:34:49.080348"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-24T22:35:29.089203"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "patch_lamp_ble_esp32.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T22:36:55.488857"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T22:38:48.197914"
+    },
+    {
+      "de": "code.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T22:39:23.393067"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "powershell.exe",
+      "titulo": "",
+      "quando": "2026-06-24T22:40:59.978178"
+    },
+    {
+      "de": "powershell.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T22:41:09.978921"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T22:41:14.981193"
+    },
+    {
+      "de": "code.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T22:41:19.982058"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T22:42:20.028063"
+    },
+    {
+      "de": "code.exe",
+      "para": "firefox.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models — Mozilla Firefox",
+      "quando": "2026-06-24T22:42:30.029770"
+    },
+    {
+      "de": "firefox.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T22:42:40.031082"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T22:49:59.808807"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "python",
+      "quando": "2026-06-24T22:58:43.529009"
+    },
+    {
+      "de": "python.exe",
+      "para": "dwm.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator] (Not Responding)",
+      "quando": "2026-06-24T22:59:00.798118"
+    },
+    {
+      "de": "dwm.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T22:59:47.077462"
+    },
+    {
+      "de": "code.exe",
+      "para": "discord.exe",
+      "titulo": "Discord",
+      "quando": "2026-06-24T23:00:07.085060"
+    },
+    {
+      "de": "discord.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-24T23:00:12.086024"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T23:00:47.119258"
+    },
+    {
+      "de": "code.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-24T23:08:13.839650"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T23:10:04.414035"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Jarvis Turbo Explicado - Google Chrome",
+      "quando": "2026-06-24T23:11:51.672359"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-24T23:13:23.405371"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "code.exe",
+      "titulo": "patch_lamp_ble_esp32.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-24T23:13:37.634562"
+    }
+  ],
+  "atualizado": "2026-06-24T23:13:48.391144"
+}

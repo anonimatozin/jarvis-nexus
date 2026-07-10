@@ -1,0 +1,21 @@
+{
+  "uso": {
+    "explorer.exe": 10.008319,
+    "chrome.exe": 110.06073699999999
+  },
+  "mudancas": [
+    {
+      "de": null,
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-05-31T08:49:34.920235"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "127.0.0.1:5555",
+      "quando": "2026-05-31T08:49:44.928554"
+    }
+  ],
+  "atualizado": "2026-05-31T08:51:34.989291"
+}

@@ -1,0 +1,54 @@
+{
+  "uso": {
+    "discord.exe": 170.063153,
+    "explorer.exe": 5.001305,
+    "notepad.exe": 440.3551529999999,
+    "code.exe": 502.648236,
+    "chrome.exe": 40.010488
+  },
+  "mudancas": [
+    {
+      "de": null,
+      "para": "discord.exe",
+      "titulo": "discord.com/login - Discord",
+      "quando": "2026-06-25T15:15:32.222484"
+    },
+    {
+      "de": "discord.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-25T15:18:22.285637"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "notepad.exe",
+      "titulo": "atualizacao.txt - Bloco de Notas",
+      "quando": "2026-06-25T15:18:27.286942"
+    },
+    {
+      "de": "notepad.exe",
+      "para": "code.exe",
+      "titulo": "Visual Studio Code",
+      "quando": "2026-06-25T15:25:47.642095"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-25T16:39:58.366116"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "SmartThings - Google Chrome",
+      "quando": "2026-06-25T16:41:00.842220"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-25T16:41:40.852708"
+    }
+  ],
+  "atualizado": "2026-06-25T16:49:01.024840"
+}

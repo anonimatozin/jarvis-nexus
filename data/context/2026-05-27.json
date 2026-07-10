@@ -1,0 +1,52 @@
+{
+  "uso": {
+    "explorer.exe": 40.005843999999996,
+    "chrome.exe": 19100.62778,
+    "searchapp.exe": 5.00129
+  },
+  "mudancas": [
+    {
+      "de": null,
+      "para": "explorer.exe",
+      "titulo": "Program Manager",
+      "quando": "2026-05-27T17:15:47.004891"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "Google Chrome",
+      "quando": "2026-05-27T17:16:17.009034"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-05-27T20:27:44.949166"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "searchapp.exe",
+      "titulo": "Pesquisar",
+      "quando": "2026-05-27T20:27:49.950315"
+    },
+    {
+      "de": "searchapp.exe",
+      "para": "chrome.exe",
+      "titulo": "Nova guia - Google Chrome",
+      "quando": "2026-05-27T20:27:54.951605"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "Program Manager",
+      "quando": "2026-05-27T22:21:47.305832"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "Picture-in-picture",
+      "quando": "2026-05-27T22:21:52.306384"
+    }
+  ],
+  "atualizado": "2026-05-27T22:34:52.642804"
+}

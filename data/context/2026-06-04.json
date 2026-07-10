@@ -1,0 +1,216 @@
+{
+  "uso": {
+    "code.exe": 135.112408,
+    "chrome.exe": 1430.8856960000003,
+    "explorer.exe": 420.38163299999997,
+    "notepad.exe": 30.005554,
+    "cmd.exe": 85.266098
+  },
+  "mudancas": [
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": ".env - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-04T19:26:54.052384"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-04T19:27:19.064154"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": ".env - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-04T19:28:49.125547"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena AI: The Official AI Ranking & LLM Leaderboard - Google Chrome",
+      "quando": "2026-06-04T19:29:19.142574"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": ".env - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-04T19:42:29.544596"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-04T19:42:44.617036"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "criar_hud_qt_parte2.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-04T19:43:09.633176"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-04T19:43:39.637295"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "criar_hud_qt_parte2.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-04T19:43:49.637893"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-04T19:43:59.641046"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "criar_hud_qt_parte2.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-04T19:44:04.641965"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-04T19:44:29.645864"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "Downloads",
+      "quando": "2026-06-04T19:47:14.676436"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "IA Offline e SEM RASTROS: Como Instalar Inteligência Artificial no Computador ou",
+      "quando": "2026-06-04T19:47:19.677322"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "VENTOY (E:)",
+      "quando": "2026-06-04T19:47:24.678101"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-04T19:53:40.037019"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "VENTOY (E:)",
+      "quando": "2026-06-04T19:57:40.114773"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "notepad.exe",
+      "titulo": "iniciar.txt - Bloco de Notas",
+      "quando": "2026-06-04T19:57:50.116532"
+    },
+    {
+      "de": "notepad.exe",
+      "para": "explorer.exe",
+      "titulo": "VENTOY (E:)",
+      "quando": "2026-06-04T19:58:05.119670"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "IA Offline e SEM RASTROS: Como Instalar Inteligência Artificial no Computador ou",
+      "quando": "2026-06-04T19:58:10.126852"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "VENTOY (E:)",
+      "quando": "2026-06-04T19:58:15.127859"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "notepad.exe",
+      "titulo": "*iniciar.txt - Bloco de Notas",
+      "quando": "2026-06-04T19:58:20.129907"
+    },
+    {
+      "de": "notepad.exe",
+      "para": "explorer.exe",
+      "titulo": "VENTOY (E:)",
+      "quando": "2026-06-04T19:58:35.132323"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "cmd.exe",
+      "titulo": "C:\\Windows\\system32\\cmd.exe",
+      "quando": "2026-06-04T19:58:55.143163"
+    },
+    {
+      "de": "cmd.exe",
+      "para": "chrome.exe",
+      "titulo": "IA Offline e SEM RASTROS: Como Instalar Inteligência Artificial no Computador ou",
+      "quando": "2026-06-04T19:59:35.156346"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "cmd.exe",
+      "titulo": "C:\\Windows\\system32\\cmd.exe",
+      "quando": "2026-06-04T19:59:55.183087"
+    },
+    {
+      "de": "cmd.exe",
+      "para": "chrome.exe",
+      "titulo": "IA Offline e SEM RASTROS: Como Instalar Inteligência Artificial no Computador ou",
+      "quando": "2026-06-04T20:00:10.194562"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "cmd.exe",
+      "titulo": "C:\\Windows\\system32\\cmd.exe",
+      "quando": "2026-06-04T20:00:50.208872"
+    },
+    {
+      "de": "cmd.exe",
+      "para": "chrome.exe",
+      "titulo": "127.0.0.1:5555 - Google Chrome",
+      "quando": "2026-06-04T20:01:05.293143"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "cmd.exe",
+      "titulo": "C:\\Windows\\system32\\cmd.exe",
+      "quando": "2026-06-04T20:01:15.397763"
+    },
+    {
+      "de": "cmd.exe",
+      "para": "chrome.exe",
+      "titulo": "IA Offline e SEM RASTROS: Como Instalar Inteligência Artificial no Computador ou",
+      "quando": "2026-06-04T20:01:20.553466"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "cmd.exe",
+      "titulo": "C:\\Windows\\system32\\cmd.exe",
+      "quando": "2026-06-04T20:01:30.699095"
+    },
+    {
+      "de": "cmd.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-04T20:01:40.700561"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "main_window.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-04T20:01:55.703773"
+    }
+  ],
+  "atualizado": "2026-06-04T20:02:19.133058"
+}

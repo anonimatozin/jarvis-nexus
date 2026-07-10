@@ -1,0 +1,554 @@
+{
+  "uso": {
+    "chrome.exe": 8246.363162,
+    "explorer.exe": 60.01712800000001,
+    "code.exe": 230.11007299999997,
+    "notepad.exe": 35.009153999999995,
+    "cmd.exe": 450.149203,
+    "searchapp.exe": 30.006929,
+    "powershell.exe": 375.1129930000001
+  },
+  "mudancas": [
+    {
+      "de": null,
+      "para": "chrome.exe",
+      "titulo": "Arena AI: The Official AI Ranking & LLM Leaderboard - Google Chrome",
+      "quando": "2026-05-28T12:20:08.965042"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-05-28T12:20:48.979790"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-05-28T12:20:53.980515"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": ".env - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-05-28T12:21:24.018677"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-05-28T12:21:29.019675"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "notepad.exe",
+      "titulo": "fix_suicida_v2.py - Bloco de Notas",
+      "quando": "2026-05-28T12:21:34.020341"
+    },
+    {
+      "de": "notepad.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-05-28T12:21:39.021247"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-05-28T12:21:59.026900"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": ".env - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-05-28T12:22:04.028135"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-05-28T12:22:09.028510"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "notepad.exe",
+      "titulo": "*criar_ia_hibrida.py - Bloco de Notas",
+      "quando": "2026-05-28T12:22:14.030091"
+    },
+    {
+      "de": "notepad.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-05-28T12:22:19.030968"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": ".env - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-05-28T12:30:34.208332"
+    },
+    {
+      "de": "code.exe",
+      "para": "cmd.exe",
+      "titulo": "Administrador: C:\\Windows\\system32\\cmd.exe",
+      "quando": "2026-05-28T12:30:54.211115"
+    },
+    {
+      "de": "cmd.exe",
+      "para": "chrome.exe",
+      "titulo": "O Código do Claude Code VAZOU — Tutorial Completo GRÁTIS no Windows - YouTube - ",
+      "quando": "2026-05-28T12:31:14.215393"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "cmd.exe",
+      "titulo": "Administrador: C:\\Windows\\system32\\cmd.exe",
+      "quando": "2026-05-28T12:31:49.278502"
+    },
+    {
+      "de": "cmd.exe",
+      "para": "chrome.exe",
+      "titulo": "O Código do Claude Code VAZOU — Tutorial Completo GRÁTIS no Windows - YouTube - ",
+      "quando": "2026-05-28T12:31:59.280263"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "cmd.exe",
+      "titulo": "Selecionar Administrador: C:\\Windows\\system32\\cmd.exe",
+      "quando": "2026-05-28T12:32:19.289854"
+    },
+    {
+      "de": "cmd.exe",
+      "para": "chrome.exe",
+      "titulo": "O Código do Claude Code VAZOU — Tutorial Completo GRÁTIS no Windows - YouTube - ",
+      "quando": "2026-05-28T12:32:49.297970"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "Executar",
+      "quando": "2026-05-28T12:34:19.347996"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "searchapp.exe",
+      "titulo": "Pesquisar",
+      "quando": "2026-05-28T12:34:24.349154"
+    },
+    {
+      "de": "searchapp.exe",
+      "para": "chrome.exe",
+      "titulo": "O Código do Claude Code VAZOU — Tutorial Completo GRÁTIS no Windows - YouTube - ",
+      "quando": "2026-05-28T12:34:29.351232"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "powershell.exe",
+      "titulo": "Administrador: Windows PowerShell",
+      "quando": "2026-05-28T12:34:44.354433"
+    },
+    {
+      "de": "powershell.exe",
+      "para": "chrome.exe",
+      "titulo": "O Código do Claude Code VAZOU — Tutorial Completo GRÁTIS no Windows - YouTube - ",
+      "quando": "2026-05-28T12:38:54.394410"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "powershell.exe",
+      "titulo": "Administrador: Windows PowerShell",
+      "quando": "2026-05-28T12:39:09.399042"
+    },
+    {
+      "de": "powershell.exe",
+      "para": "chrome.exe",
+      "titulo": "O Código do Claude Code VAZOU — Tutorial Completo GRÁTIS no Windows - YouTube - ",
+      "quando": "2026-05-28T12:39:24.405781"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "cmd.exe",
+      "titulo": "claude",
+      "quando": "2026-05-28T12:39:29.407767"
+    },
+    {
+      "de": "cmd.exe",
+      "para": "chrome.exe",
+      "titulo": "O Código do Claude Code VAZOU — Tutorial Completo GRÁTIS no Windows - YouTube - ",
+      "quando": "2026-05-28T12:39:34.409917"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "powershell.exe",
+      "titulo": "Administrador: Windows PowerShell",
+      "quando": "2026-05-28T12:39:49.412321"
+    },
+    {
+      "de": "powershell.exe",
+      "para": "chrome.exe",
+      "titulo": "O Código do Claude Code VAZOU — Tutorial Completo GRÁTIS no Windows - YouTube - ",
+      "quando": "2026-05-28T12:39:54.412899"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "powershell.exe",
+      "titulo": "Administrador: Windows PowerShell",
+      "quando": "2026-05-28T12:39:59.413611"
+    },
+    {
+      "de": "powershell.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-05-28T12:40:19.460975"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "O Código do Claude Code VAZOU — Tutorial Completo GRÁTIS no Windows - YouTube - ",
+      "quando": "2026-05-28T12:40:24.463095"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "powershell.exe",
+      "titulo": "✳ OpenClaude",
+      "quando": "2026-05-28T12:40:44.469106"
+    },
+    {
+      "de": "powershell.exe",
+      "para": "chrome.exe",
+      "titulo": "O Código do Claude Code VAZOU — Tutorial Completo GRÁTIS no Windows - YouTube - ",
+      "quando": "2026-05-28T12:40:59.471645"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "powershell.exe",
+      "titulo": "✳ OpenClaude",
+      "quando": "2026-05-28T12:41:29.477995"
+    },
+    {
+      "de": "powershell.exe",
+      "para": "code.exe",
+      "titulo": ".env - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-05-28T12:41:49.483817"
+    },
+    {
+      "de": "code.exe",
+      "para": "powershell.exe",
+      "titulo": "Selecionar ✳ OpenClaude",
+      "quando": "2026-05-28T12:41:54.484429"
+    },
+    {
+      "de": "powershell.exe",
+      "para": "notepad.exe",
+      "titulo": "claude-prompt-8c17d06b-7371-4ffd-b5cb-2cac78a6116b.md - Bloco de Notas",
+      "quando": "2026-05-28T12:42:24.490188"
+    },
+    {
+      "de": "notepad.exe",
+      "para": "powershell.exe",
+      "titulo": "✳ OpenClaude",
+      "quando": "2026-05-28T12:42:29.491096"
+    },
+    {
+      "de": "powershell.exe",
+      "para": "chrome.exe",
+      "titulo": "O Código do Claude Code VAZOU — Tutorial Completo GRÁTIS no Windows - YouTube - ",
+      "quando": "2026-05-28T12:42:49.495311"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "Executar",
+      "quando": "2026-05-28T12:44:14.550489"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "cmd.exe",
+      "titulo": "Administrador: C:\\Windows\\system32\\cmd.exe",
+      "quando": "2026-05-28T12:44:19.551327"
+    },
+    {
+      "de": "cmd.exe",
+      "para": "chrome.exe",
+      "titulo": "COMO USAR OPEN CLAUDE CLI + IA GRÁTIS no Windows e Antigravity 🚀 #OpenClaude #Cl",
+      "quando": "2026-05-28T12:44:34.553920"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "cmd.exe",
+      "titulo": "claude",
+      "quando": "2026-05-28T12:45:14.589979"
+    },
+    {
+      "de": "cmd.exe",
+      "para": "chrome.exe",
+      "titulo": "API Keys | Settings | OpenRouter - Google Chrome",
+      "quando": "2026-05-28T12:46:04.609615"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "cmd.exe",
+      "titulo": "claude",
+      "quando": "2026-05-28T12:46:09.610546"
+    },
+    {
+      "de": "cmd.exe",
+      "para": "chrome.exe",
+      "titulo": "API Keys | Settings | OpenRouter - Google Chrome",
+      "quando": "2026-05-28T12:47:54.629842"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "cmd.exe",
+      "titulo": "✳ Open project",
+      "quando": "2026-05-28T12:48:04.631820"
+    },
+    {
+      "de": "cmd.exe",
+      "para": "chrome.exe",
+      "titulo": "Nova guia - Google Chrome",
+      "quando": "2026-05-28T12:48:59.642444"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "cmd.exe",
+      "titulo": "✳ Open project",
+      "quando": "2026-05-28T12:49:14.645394"
+    },
+    {
+      "de": "cmd.exe",
+      "para": "code.exe",
+      "titulo": "Welcome - Administrator - Visual Studio Code",
+      "quando": "2026-05-28T12:49:24.654697"
+    },
+    {
+      "de": "code.exe",
+      "para": "cmd.exe",
+      "titulo": "✳ Open project",
+      "quando": "2026-05-28T12:49:29.655536"
+    },
+    {
+      "de": "cmd.exe",
+      "para": "chrome.exe",
+      "titulo": "COMO USAR OPEN CLAUDE CLI + IA GRÁTIS no Windows e Antigravity 🚀 #OpenClaude #Cl",
+      "quando": "2026-05-28T12:49:39.671478"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "cmd.exe",
+      "titulo": "✳ Open project",
+      "quando": "2026-05-28T12:50:04.679312"
+    },
+    {
+      "de": "cmd.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-05-28T12:50:09.680002"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "cmd.exe",
+      "titulo": "Administrador: C:\\Windows\\system32\\cmd.exe",
+      "quando": "2026-05-28T12:50:14.683001"
+    },
+    {
+      "de": "cmd.exe",
+      "para": "chrome.exe",
+      "titulo": "COMO USAR OPEN CLAUDE CLI + IA GRÁTIS no Windows e Antigravity 🚀 #OpenClaude #Cl",
+      "quando": "2026-05-28T12:50:29.719405"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "cmd.exe",
+      "titulo": "✳ OpenClaude",
+      "quando": "2026-05-28T12:51:59.739415"
+    },
+    {
+      "de": "cmd.exe",
+      "para": "chrome.exe",
+      "titulo": "Abrir Claude ou OpenClaw - Google Chrome",
+      "quando": "2026-05-28T12:52:54.748292"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "cmd.exe",
+      "titulo": "✳ OpenClaude",
+      "quando": "2026-05-28T12:54:19.764766"
+    },
+    {
+      "de": "cmd.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-05-28T12:54:44.767307"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "cmd.exe",
+      "titulo": "✳ OpenClaude",
+      "quando": "2026-05-28T12:55:04.769346"
+    },
+    {
+      "de": "cmd.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-05-28T12:55:19.772618"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "cmd.exe",
+      "titulo": "✳ OpenClaude",
+      "quando": "2026-05-28T12:55:24.772847"
+    },
+    {
+      "de": "cmd.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-05-28T12:55:39.774821"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "cmd.exe",
+      "titulo": "✳ OpenClaude",
+      "quando": "2026-05-28T12:55:44.775031"
+    },
+    {
+      "de": "cmd.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-05-28T12:55:54.776777"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "searchapp.exe",
+      "titulo": "Pesquisar",
+      "quando": "2026-05-28T13:12:20.074988"
+    },
+    {
+      "de": "searchapp.exe",
+      "para": "notepad.exe",
+      "titulo": "*Sem título - Bloco de Notas",
+      "quando": "2026-05-28T13:12:30.077148"
+    },
+    {
+      "de": "notepad.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-05-28T13:12:40.079082"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": ".env - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-05-28T13:12:55.084219"
+    },
+    {
+      "de": "code.exe",
+      "para": "notepad.exe",
+      "titulo": "*Sem título - Bloco de Notas",
+      "quando": "2026-05-28T13:13:10.086135"
+    },
+    {
+      "de": "notepad.exe",
+      "para": "code.exe",
+      "titulo": ".env - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-05-28T13:13:15.089782"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "API keys | Google AI Studio - Google Chrome",
+      "quando": "2026-05-28T13:13:20.090849"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": ".env - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-05-28T13:14:10.098437"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-05-28T13:14:15.101308"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-05-28T13:14:20.103739"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "notepad.exe",
+      "titulo": "criar_brain_v3.py - Bloco de Notas",
+      "quando": "2026-05-28T13:14:25.104434"
+    },
+    {
+      "de": "notepad.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-05-28T13:14:30.105316"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": ".env - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-05-28T13:18:10.197363"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-05-28T13:18:25.209231"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "criar_brain_v3.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-05-28T13:22:20.341299"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-05-28T13:24:50.428043"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "searchapp.exe",
+      "titulo": "Pesquisar",
+      "quando": "2026-05-28T14:15:44.785433"
+    },
+    {
+      "de": "searchapp.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-05-28T14:15:59.788124"
+    },
+    {
+      "de": null,
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-05-28T16:54:57.690660"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "Google Chrome",
+      "quando": "2026-05-28T16:55:07.693600"
+    },
+    {
+      "de": null,
+      "para": "chrome.exe",
+      "titulo": "Nova guia - Google Chrome",
+      "quando": "2026-05-28T19:50:13.254183"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "taskmgr.exe",
+      "titulo": "Gerenciador de Tarefas",
+      "quando": "2026-05-28T20:11:13.781919"
+    }
+  ],
+  "atualizado": "2026-05-28T20:11:13.782432"
+}

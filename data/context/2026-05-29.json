@@ -1,0 +1,33 @@
+{
+  "uso": {
+    "explorer.exe": 125.03935800000001,
+    "chrome.exe": 5816.6207479999985
+  },
+  "mudancas": [
+    {
+      "de": null,
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-05-29T16:10:49.366674"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-05-29T16:10:59.368903"
+    },
+    {
+      "de": null,
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-05-29T21:01:27.546187"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "Google Chrome",
+      "quando": "2026-05-29T21:03:22.583316"
+    }
+  ],
+  "atualizado": "2026-05-29T22:39:29.194960"
+}

@@ -1,0 +1,20 @@
+{
+  "uso": {
+    "chrome.exe": 435.73239700000005
+  },
+  "mudancas": [
+    {
+      "de": null,
+      "para": "chrome.exe",
+      "titulo": "Nova guia - Google Chrome",
+      "quando": "2026-06-22T13:00:52.164109"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "pythonw.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-22T13:08:07.896506"
+    }
+  ],
+  "atualizado": "2026-06-22T13:08:11.987361"
+}

@@ -1,0 +1,28 @@
+{
+  "uso": {
+    "explorer.exe": 10.008878,
+    "chrome.exe": 20.010797,
+    "taskmgr.exe": 30.003962
+  },
+  "mudancas": [
+    {
+      "de": null,
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-03T12:18:29.457515"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-03T12:18:39.466393"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "taskmgr.exe",
+      "titulo": "Gerenciador de Tarefas",
+      "quando": "2026-06-03T12:18:59.477190"
+    }
+  ],
+  "atualizado": "2026-06-03T12:19:29.481152"
+}

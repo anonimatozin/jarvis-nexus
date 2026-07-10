@@ -1,0 +1,73 @@
+# ═══ AMBIENTE VIRTUAL ═══
+venv/
+.venv/
+env/
+
+# ═══ SEGURANCA ═══
+.env
+.env.*
+*.key
+*.pem
+
+# ═══ PYTHON ═══
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# ═══ ARQUIVOS GRANDES ═══
+*.onnx
+*.bin
+*.wav
+*.mp3
+*.mp4
+*.avi
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.ico
+
+# ═══ DADOS LOCAIS ═══
+*.db
+*.sqlite
+*.log
+*.bak
+data/hud_settings.json
+data/dashboard_logs.json
+data/settings.json
+data/pre_turbo_*/
+memory/memories.json
+
+# ═══ BACKUPS ═══
+backup_*/
+backups_nlu/
+LIXO_BACKUP_*/
+modules/tools/backups_executor/
+
+# ═══ SISTEMA ═══
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# ═══ IDE ═══
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ═══ MINECRAFT ═══
+mc_server/
+bot_minecraft/
+
+# ═══ FIRMWARE ═══
+firmware_esp32/
+
+# ═══ MODELO DE IA ═══
+models/
+kokoro-*.onnx
+voices-*.bin

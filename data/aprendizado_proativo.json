@@ -1,0 +1,90 @@
+{
+  "historico": [
+    {
+      "acao": "criar_codigo",
+      "hora": 14,
+      "dia_semana": 6,
+      "ts": "2026-06-21T14:57:29.670891"
+    },
+    {
+      "acao": "conversar",
+      "hora": 14,
+      "dia_semana": 6,
+      "ts": "2026-06-21T14:59:00.360878"
+    },
+    {
+      "acao": "criar_codigo",
+      "hora": 15,
+      "dia_semana": 6,
+      "ts": "2026-06-21T15:21:49.670054"
+    },
+    {
+      "acao": "criar_codigo",
+      "hora": 16,
+      "dia_semana": 6,
+      "ts": "2026-06-21T16:05:51.067518"
+    },
+    {
+      "acao": "abrir_programa",
+      "hora": 16,
+      "dia_semana": 6,
+      "ts": "2026-06-21T16:23:16.201727"
+    },
+    {
+      "acao": "criar_codigo",
+      "hora": 16,
+      "dia_semana": 6,
+      "ts": "2026-06-21T16:27:06.373680"
+    },
+    {
+      "acao": "criar_codigo",
+      "hora": 16,
+      "dia_semana": 6,
+      "ts": "2026-06-21T16:36:21.187610"
+    },
+    {
+      "acao": "criar_codigo",
+      "hora": 18,
+      "dia_semana": 1,
+      "ts": "2026-06-23T18:31:59.058816"
+    },
+    {
+      "acao": "criar_codigo",
+      "hora": 18,
+      "dia_semana": 1,
+      "ts": "2026-06-23T18:47:12.006486"
+    },
+    {
+      "acao": "criar_codigo",
+      "hora": 18,
+      "dia_semana": 1,
+      "ts": "2026-06-23T18:49:19.892992"
+    },
+    {
+      "acao": "criar_codigo",
+      "hora": 18,
+      "dia_semana": 1,
+      "ts": "2026-06-23T18:56:57.683765"
+    },
+    {
+      "acao": "listar_drives",
+      "hora": 19,
+      "dia_semana": 1,
+      "ts": "2026-06-23T19:18:52.370519"
+    },
+    {
+      "acao": "fechar_programa",
+      "hora": 20,
+      "dia_semana": 1,
+      "ts": "2026-06-23T20:25:33.966598"
+    },
+    {
+      "acao": "rodar_comando",
+      "hora": 20,
+      "dia_semana": 1,
+      "ts": "2026-06-23T20:26:48.569814"
+    }
+  ],
+  "sugestoes_hoje": [],
+  "dia_atual": "2026-06-23"
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "quarto 1",
+    "id": "eb814c6db70e78a68544gp",
+    "key": "Qy`B6mVweihcpuU>",
+    "mac": "38:2c:e5:6b:e9:d8",
+    "uuid": "ec7e56b9dfb96533",
+    "category": "tdq",
+    "product_name": "Smart Switch",
+    "product_id": "vphumtkx1la5dpbf",
+    "biz_type": 18,
+    "model": "",
+    "sub": false,
+    "icon": "https://images.tuyaus.com/smart/icon/ay1531122507771gALCb/7ab84fb587883b5fbe1588fa60d999ba.png"
+  },
+  {
+    "name": "quarto",
+    "id": "eba2219d6c730ac01ax9b0",
+    "key": "X6mWa$U:Z]GI4o3G",
+    "mac": "38:2c:e5:6b:f8:85",
+    "uuid": "bef822b09c3a436e",
+    "category": "tdq",
+    "product_name": "Smart Switch",
+    "product_id": "vphumtkx1la5dpbf",
+    "biz_type": 18,
+    "model": "",
+    "sub": false,
+    "icon": "https://images.tuyaus.com/smart/icon/ay1531122507771gALCb/7ab84fb587883b5fbe1588fa60d999ba.png"
+  },
+  {
+    "name": "Lâmpada",
+    "id": "eb4c1flipmwayae6",
+    "key": "5FECC17494713B45",
+    "mac": "DC:23:51:8A:D1:D4",
+    "uuid": "uuid1ace1ee6907e",
+    "category": "dj",
+    "product_name": "8003 pwmRGBCW ",
+    "product_id": "heflj0rj",
+    "biz_type": 18,
+    "model": "",
+    "sub": false,
+    "icon": "https://images.tuyaus.com/smart/icon/bay1638666472267gXxe/131a6636d0c6deda11f33b0e5f7ba5a7.png"
+  }
+]

@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.A.R.V.I.S. Control Center</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<!-- PARTICLES BACKGROUND -->
+<canvas id="particles"></canvas>
+
+<!-- SIDEBAR -->
+<div id="sidebar-overlay"></div>
+<button id="sidebar-toggle" aria-label="Toggle sidebar">☰</button>
+
+<nav id="sidebar">
+    <div class="sidebar-header">
+        <div class="arc-reactor-small"></div>
+        <span class="sidebar-title">J.A.R.V.I.S.</span>
+    </div>
+    <ul class="nav-menu">
+        <li class="nav-item active" data-page="dashboard"><span class="nav-icon">🏠</span><span class="nav-label">Dashboard</span></li>
+        <li class="nav-item" data-page="chat"><span class="nav-icon">💬</span><span class="nav-label">Chat</span></li>
+        <li class="nav-item" data-page="voice"><span class="nav-icon">🎙</span><span class="nav-label">Voz</span></li>
+        <li class="nav-item" data-page="control"><span class="nav-icon">🖥</span><span class="nav-label">Controle PC</span></li>
+        <li class="nav-item" data-page="vision"><span class="nav-icon">📷</span><span class="nav-label">Visao</span></li>
+        <li class="nav-item" data-page="memory"><span class="nav-icon">🧠</span><span class="nav-label">Memoria</span></li>
+        <li class="nav-item" data-page="files"><span class="nav-icon">📂</span><span class="nav-label">Arquivos</span></li>
+        <li class="nav-item" data-page="smarthome"><span class="nav-icon">🏠</span><span class="nav-label">Casa</span></li>
+        <li class="nav-item" data-page="robots"><span class="nav-icon">🤖</span><span class="nav-label">Robos</span></li>
+        <li class="nav-item" data-page="map"><span class="nav-icon">🌍</span><span class="nav-label">Mapa</span></li>
+        <li class="nav-item" data-page="stats"><span class="nav-icon">📈</span><span class="nav-label">Estatisticas</span></li>
+        <li class="nav-item" data-page="security"><span class="nav-icon">🔒</span><span class="nav-label">Seguranca</span></li>
+        <li class="nav-item" data-page="plugins"><span class="nav-icon">🧩</span><span class="nav-label">Plugins</span></li>
+        <li class="nav-item" data-page="logs"><span class="nav-icon">📜</span><span class="nav-label">Logs</span></li>
+        <li class="nav-item" data-page="modules"><span class="nav-icon">📦</span><span class="nav-label">Modulos</span></li>
+        <li class="nav-item" data-page="config"><span class="nav-icon">⚙</span><span class="nav-label">Config</span></li>
+    </ul>
+    <div class="sidebar-footer">
+        <div class="status-indicator" id="sidebar-status">
+            <span class="status-dot online"></span>
+            <span>Online</span>
+        </div>
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main id="main-content">
+
+    <!-- ═══ DASHBOARD ═══ -->
+    <section class="page active" id="page-dashboard">
+        <div class="page-header">
+            <h1>Dashboard</h1>
+            <div class="header-clock">
+                <span id="dash-time">--:--:--</span>
+                <span id="dash-date">--/--/----</span>
+            </div>
+        </div>
+
+        <!-- CORE REACTOR -->
+        <div class="core-container">
+            <div class="core-reactor" id="core-reactor">
+                <div class="core-ring ring-1"></div>
+                <div class="core-ring ring-2"></div>
+                <div class="core-ring ring-3"></div>
+                <div class="core-center">
+                    <span class="core-label" id="core-label">IDLE</span>
+                </div>
+            </div>
+            <div class="core-status-row">
+                <span class="status-chip" id="jarvis-state">Dormindo</span>
+                <span class="status-chip" id="jarvis-provider">Groq</span>
+            </div>
+        </div>
+
+        <!-- METRICS CARDS -->
+        <div class="metrics-grid">
+            <div class="metric-card glass">
+                <div class="metric-icon">⚡</div>
+                <div class="metric-info">
+                    <div class="metric-value" id="d-cpu">0%</div>
+                    <div class="metric-label">CPU</div>
+                    <div class="metric-bar"><div class="metric-bar-fill" id="d-cpu-bar"></div></div>
+                    <div class="metric-sub" id="d-cpu-sub">-- cores</div>
+                </div>
+            </div>
+            <div class="metric-card glass">
+                <div class="metric-icon">🧠</div>
+                <div class="metric-info">
+                    <div class="metric-value" id="d-ram">0%</div>
+                    <div class="metric-label">RAM</div>
+                    <div class="metric-bar"><div class="metric-bar-fill" id="d-ram-bar"></div></div>
+                    <div class="metric-sub" id="d-ram-sub">-- / -- GB</div>
+                </div>
+            </div>
+            <div class="metric-card glass">
+                <div class="metric-icon">💾</div>
+                <div class="metric-info">
+                    <div class="metric-value" id="d-disk">0%</div>
+                    <div class="metric-label">SSD</div>
+                    <div class="metric-bar"><div class="metric-bar-fill" id="d-disk-bar"></div></div>
+                    <div class="metric-sub" id="d-disk-sub">-- / -- GB</div>
+                </div>
+            </div>
+            <div class="metric-card glass">
+                <div class="metric-icon">🌐</div>
+                <div class="metric-info">
+                    <div class="metric-value" id="d-ping">--ms</div>
+                    <div class="metric-label">PING</div>
+                    <div class="metric-bar"><div class="metric-bar-fill" id="d-ping-bar"></div></div>
+                    <div class="metric-sub" id="d-net-sub">↓ -- ↑ --</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BOTTOM ROW -->
+        <div class="dash-bottom">
+            <div class="glass dash-panel">
+                <h3>Clima</h3>
+                <div class="weather-widget" id="weather-widget">
+                    <div class="weather-temp" id="w-temp">--°</div>
+                    <div class="weather-desc" id="w-desc">Carregando...</div>
+                    <div class="weather-details">
+                        <span id="w-humidity">💧 --%</span>
+                        <span id="w-wind">💨 -- km/h</span>
+                    </div>
+                </div>
+            </div>
+            <div class="glass dash-panel">
+                <h3>Status do Servidor</h3>
+                <div class="info-list">
+                    <div class="info-row"><span>IP:</span><span id="d-ip">127.0.0.1</span></div>
+                    <div class="info-row"><span>Porta:</span><span>8080</span></div>
+                    <div class="info-row"><span>Uptime:</span><span id="d-uptime">--</span></div>
+                    <div class="info-row"><span>Modulos:</span><span id="d-modules">--</span></div>
+                    <div class="info-row"><span>Plataforma:</span><span id="d-platform">--</span></div>
+                </div>
+            </div>
+            <div class="glass dash-panel">
+                <h3>Top Processos</h3>
+                <div id="d-processes" class="process-list">Carregando...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ CHAT ═══ -->
+    <section class="page" id="page-chat">
+        <div class="page-header">
+            <h1>Chat</h1>
+        </div>
+        <div class="chat-container glass">
+            <div class="chat-messages" id="chat-messages">
+                <div class="chat-msg jarvis">
+                    <div class="chat-avatar">🤖</div>
+                    <div class="chat-bubble">Ola, Sir. Como posso ajudar?</div>
+                    <div class="chat-time">--:--</div>
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Digite sua mensagem..." autocomplete="off">
+                <button class="btn-send" id="btn-send">➤</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ VOICE ═══ -->
+    <section class="page" id="page-voice">
+        <div class="page-header">
+            <h1>Controle de Voz</h1>
+        </div>
+        <div class="voice-container">
+            <div class="voice-wave-container glass">
+                <canvas id="voice-wave" width="600" height="150"></canvas>
+            </div>
+            <button class="voice-btn" id="voice-btn">
+                <div class="voice-btn-ring"></div>
+                <span class="voice-btn-icon">🎤</span>
+                <span class="voice-btn-label">Falar com Jarvis</span>
+            </button>
+            <div class="voice-info glass">
+                <div class="voice-status" id="voice-status">Pronto</div>
+                <div class="voice-transcript" id="voice-transcript">...</div>
+                <div class="voice-response" id="voice-response">...</div>
+            </div>
+            <div class="voice-text-input glass">
+                <input type="text" id="voice-text-input" placeholder="Ou digite o texto para Jarvis falar...">
+                <button class="btn-speak" id="btn-speak">🔊 Falar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ PC CONTROL ═══ -->
+    <section class="page" id="page-control">
+        <div class="page-header">
+            <h1>Controle do PC</h1>
+        </div>
+        <div class="control-grid">
+            <button class="control-btn glass" data-action="chrome"><span class="ctrl-icon">🌐</span><span>Chrome</span></button>
+            <button class="control-btn glass" data-action="vscode"><span class="ctrl-icon">💻</span><span>VS Code</span></button>
+            <button class="control-btn glass" data-action="steam"><span class="ctrl-icon">🎮</span><span>Steam</span></button>
+            <button class="control-btn glass" data-action="notepad"><span class="ctrl-icon">📝</span><span>Bloco de Notas</span></button>
+            <button class="control-btn glass" data-action="explorer"><span class="ctrl-icon">📁</span><span>Explorador</span></button>
+            <button class="control-btn glass" data-action="cmd"><span class="ctrl-icon">⌨</span><span>Terminal</span></button>
+            <button class="control-btn glass" data-action="taskmgr"><span class="ctrl-icon">📊</span><span>Gerenciador</span></button>
+            <button class="control-btn glass danger" data-action="lock"><span class="ctrl-icon">🔒</span><span>Bloquear</span></button>
+            <button class="control-btn glass danger" data-action="restart"><span class="ctrl-icon">🔄</span><span>Reiniciar</span></button>
+            <button class="control-btn glass danger" data-action="shutdown"><span class="ctrl-icon">⏻</span><span>Desligar</span></button>
+        </div>
+    </section>
+
+    <!-- ═══ MEMORY ═══ -->
+    <section class="page" id="page-memory">
+        <div class="page-header">
+            <h1>Memoria</h1>
+        </div>
+        <div class="memory-container glass">
+            <div class="memory-header">
+                <input type="text" id="memory-search" placeholder="Buscar na memoria...">
+            </div>
+            <div class="memory-info" id="memory-info">Carregando...</div>
+            <div class="memory-list" id="memory-list">Carregando...</div>
+        </div>
+    </section>
+
+    <!-- ═══ FILES ═══ -->
+    <section class="page" id="page-files">
+        <div class="page-header">
+            <h1>Arquivos</h1>
+        </div>
+        <div class="files-container glass">
+            <div class="files-header">
+                <input type="text" id="files-path" value="C:\Users\Administrator\Desktop\JARVIS" readonly>
+            </div>
+            <div class="files-list" id="files-list">Carregando...</div>
+        </div>
+    </section>
+
+    <!-- ═══ LOGS ═══ -->
+    <section class="page" id="page-logs">
+        <div class="page-header">
+            <h1>Logs</h1>
+            <button class="btn-refresh" id="btn-refresh-logs">↻ Atualizar</button>
+        </div>
+        <div class="logs-container glass">
+            <div id="logs-list" class="logs-list">Carregando...</div>
+        </div>
+    </section>
+
+    <!-- ═══ MODULES ═══ -->
+    <section class="page" id="page-modules">
+        <div class="page-header">
+            <h1>Modulos</h1>
+        </div>
+        <div class="modules-grid" id="modules-grid">Carregando...</div>
+    </section>
+
+    <!-- ═══ CONFIG ═══ -->
+    <section class="page" id="page-config">
+        <div class="page-header">
+            <h1>Configuracoes</h1>
+        </div>
+        <div class="config-container glass">
+            <div class="config-group">
+                <label>Tema</label>
+                <select id="cfg-theme">
+                    <option value="cyan">Cyan</option>
+                    <option value="green">Verde</option>
+                    <option value="orange">Laranja</option>
+                </select>
+            </div>
+            <div class="config-group">
+                <label>Idioma</label>
+                <select id="cfg-language">
+                    <option value="pt-BR">Portugues</option>
+                    <option value="en-US">English</option>
+                    <option value="es">Espanhol</option>
+                </select>
+            </div>
+            <div class="config-group">
+                <label>Wake Word</label>
+                <input type="text" id="cfg-wakeword" value="jarvis">
+            </div>
+            <div class="config-group">
+                <label>Voz TTS</label>
+                <input type="text" id="cfg-tts-voice" value="pt-BR-AntonioNeural">
+            </div>
+            <div class="config-group">
+                <label>Modelo IA</label>
+                <input type="text" id="cfg-model" value="llama-3.3-70b-versatile">
+            </div>
+            <button class="btn-save-config" id="btn-save-config">Salvar Configuracoes</button>
+        </div>
+    </section>
+
+    <!-- ═══ VISION ═══ -->
+    <section class="page" id="page-vision">
+        <div class="page-header">
+            <h1>Visao</h1>
+        </div>
+        <div class="vision-container">
+            <div class="vision-feed glass">
+                <h3>Camera em Tempo Real</h3>
+                <div class="camera-placeholder" id="camera-placeholder">
+                    <span class="camera-icon">📷</span>
+                    <span>Clique para ativar camera</span>
+                </div>
+                <video id="camera-video" autoplay playsinline style="display:none;width:100%;border-radius:8px;"></video>
+                <button class="btn-camera" id="btn-camera">Ativar Camera</button>
+            </div>
+            <div class="vision-info glass">
+                <h3>Deteccao</h3>
+                <div class="vision-features">
+                    <div class="vision-feature">
+                        <span class="vf-icon">👤</span>
+                        <span>Reconhecimento Facial</span>
+                        <span class="vf-status">Setup necessario</span>
+                    </div>
+                    <div class="vision-feature">
+                        <span class="vf-icon">📝</span>
+                        <span>OCR (Leitura de Texto)</span>
+                        <span class="vf-status">Ativo</span>
+                    </div>
+                    <div class="vision-feature">
+                        <span class="vf-icon">📦</span>
+                        <span>Deteccao de Objetos</span>
+                        <span class="vf-status">Setup necessario</span>
+                    </div>
+                    <div class="vision-feature">
+                        <span class="vf-icon">🖥</span>
+                        <span>Analise de Tela</span>
+                        <span class="vf-status">Ativo</span>
+                    </div>
+                </div>
+                <button class="btn-capture" id="btn-capture">Capturar Tela</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ SMART HOME ═══ -->
+    <section class="page" id="page-smarthome">
+        <div class="page-header">
+            <h1>Casa Inteligente</h1>
+        </div>
+        <div class="smarthome-grid">
+            <button class="sh-btn glass" data-device="light">
+                <span class="sh-icon">💡</span>
+                <span class="sh-name">Luz</span>
+                <span class="sh-status">Desligada</span>
+            </button>
+            <button class="sh-btn glass" data-device="tv">
+                <span class="sh-icon">📺</span>
+                <span class="sh-name">TV</span>
+                <span class="sh-status">Desligada</span>
+            </button>
+            <button class="sh-btn glass" data-device="ac">
+                <span class="sh-icon">❄</span>
+                <span class="sh-name">Ar Condicionado</span>
+                <span class="sh-status">Desligado</span>
+            </button>
+            <button class="sh-btn glass" data-device="curtain">
+                <span class="sh-icon">🪟</span>
+                <span class="sh-name">Cortina</span>
+                <span class="sh-status">Fechada</span>
+            </button>
+            <button class="sh-btn glass" data-device="outlet">
+                <span class="sh-icon">🔌</span>
+                <span class="sh-name">Tomada</span>
+                <span class="sh-status">Desligada</span>
+            </button>
+            <button class="sh-btn glass" data-device="speaker">
+                <span class="sh-icon">🔊</span>
+                <span class="sh-name">Caixa de Som</span>
+                <span class="sh-status">Desligada</span>
+            </button>
+        </div>
+        <div class="glass sh-info-panel">
+            <h3>Dispositivos Conectados</h3>
+            <div id="sh-devices-list">Nenhum dispositivo configurado. Use "modules/home_assistant" para adicionar.</div>
+        </div>
+    </section>
+
+    <!-- ═══ ROBOTS ═══ -->
+    <section class="page" id="page-robots">
+        <div class="page-header">
+            <h1>Robos / ESP32</h1>
+        </div>
+        <div class="robots-grid" id="robots-grid">
+            <div class="robot-card glass">
+                <div class="robot-header">
+                    <span class="robot-icon">🤖</span>
+                    <span class="robot-name">ESP32-01</span>
+                    <span class="robot-status online">Online</span>
+                </div>
+                <div class="robot-stats">
+                    <div class="robot-stat"><span>Temp:</span><span>32°C</span></div>
+                    <div class="robot-stat"><span>Bat:</span><span>85%</span></div>
+                    <div class="robot-stat"><span>WiFi:</span><span>-42 dBm</span></div>
+                    <div class="robot-stat"><span>IP:</span><span>192.168.0.50</span></div>
+                </div>
+                <div class="robot-actions">
+                    <button class="btn-robot">Reiniciar</button>
+                    <button class="btn-robot">OTA Update</button>
+                </div>
+            </div>
+        </div>
+        <div class="glass sh-info-panel">
+            <h3>Como Adicionar ESP32</h3>
+            <p style="color:var(--text2);font-size:0.85rem;">Configure o firmware em <code>firmware_esp32/</code> e conecte via WiFi. O ESP32 se registra automaticamente quando envia dados ao servidor.</p>
+        </div>
+    </section>
+
+    <!-- ═══ MAP ═══ -->
+    <section class="page" id="page-map">
+        <div class="page-header">
+            <h1>Mapa</h1>
+        </div>
+        <div class="map-container glass">
+            <div class="map-placeholder">
+                <div class="map-grid"></div>
+                <div class="map-devices">
+                    <div class="map-device" style="top:40%;left:50%;">
+                        <span class="map-dot"></span>
+                        <span class="map-label">PC Principal</span>
+                    </div>
+                    <div class="map-device" style="top:60%;left:30%;">
+                        <span class="map-dot esp"></span>
+                        <span class="map-label">ESP32</span>
+                    </div>
+                    <div class="map-device" style="top:30%;left:70%;">
+                        <span class="map-dot phone"></span>
+                        <span class="map-label">Celular</span>
+                    </div>
+                </div>
+            </div>
+            <div class="map-info glass">
+                <h3>Dispositivos</h3>
+                <div class="map-device-list">
+                    <div class="map-dev-row"><span class="map-dot"></span> PC Principal - 192.168.0.109</div>
+                    <div class="map-dev-row"><span class="map-dot esp"></span> ESP32 - 192.168.0.50</div>
+                    <div class="map-dev-row"><span class="map-dot phone"></span> Celular - Online</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ STATISTICS ═══ -->
+    <section class="page" id="page-stats">
+        <div class="page-header">
+            <h1>Estatisticas</h1>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card glass">
+                <div class="stat-value" id="stat-commands">0</div>
+                <div class="stat-label">Comandos Hoje</div>
+            </div>
+            <div class="stat-card glass">
+                <div class="stat-value" id="stat-responses">0</div>
+                <div class="stat-label">Respostas</div>
+            </div>
+            <div class="stat-card glass">
+                <div class="stat-value" id="stat-uptime">--</div>
+                <div class="stat-label">Tempo Ligado</div>
+            </div>
+            <div class="stat-card glass">
+                <div class="stat-value" id="stat-avg-ram">--</div>
+                <div class="stat-label">RAM Media</div>
+            </div>
+        </div>
+        <div class="glass stats-chart-panel">
+            <h3>Uso de CPU (Ultimas leituras)</h3>
+            <canvas id="stats-cpu-chart" width="800" height="200"></canvas>
+        </div>
+        <div class="glass stats-chart-panel">
+            <h3>Uso de RAM (Ultimas leituras)</h3>
+            <canvas id="stats-ram-chart" width="800" height="200"></canvas>
+        </div>
+    </section>
+
+    <!-- ═══ SECURITY ═══ -->
+    <section class="page" id="page-security">
+        <div class="page-header">
+            <h1>Seguranca</h1>
+        </div>
+        <div class="security-container">
+            <div class="glass security-panel">
+                <h3>Autenticacao</h3>
+                <div class="security-features">
+                    <div class="sec-feature">
+                        <span>🔐</span>
+                        <span>Login por PIN</span>
+                        <label class="toggle"><input type="checkbox" id="sec-pin"><span class="slider"></span></label>
+                    </div>
+                    <div class="sec-feature">
+                        <span>🔑</span>
+                        <span>Senha</span>
+                        <label class="toggle"><input type="checkbox" id="sec-password" checked><span class="slider"></span></label>
+                    </div>
+                    <div class="sec-feature">
+                        <span>👤</span>
+                        <span>Reconhecimento Facial</span>
+                        <label class="toggle"><input type="checkbox" id="sec-face"><span class="slider"></span></label>
+                    </div>
+                    <div class="sec-feature">
+                        <span>📱</span>
+                        <span>2FA</span>
+                        <label class="toggle"><input type="checkbox" id="sec-2fa"><span class="slider"></span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="glass security-panel">
+                <h3>Log de Seguranca</h3>
+                <div id="security-log" class="security-log">
+                    <div class="sec-log-entry"><span class="sec-time">--:--</span> Sistema inicializado</div>
+                </div>
+            </div>
+            <div class="glass security-panel">
+                <h3>Acoes Protegidas</h3>
+                <div class="security-actions">
+                    <div class="sec-action-row"><span>Desligar PC</span><span class="sec-level danger">CRITICO</span></div>
+                    <div class="sec-action-row"><span>Reiniciar PC</span><span class="sec-level danger">CRITICO</span></div>
+                    <div class="sec-action-row"><span>Deletar Arquivo</span><span class="sec-level warning">PERIGO</span></div>
+                    <div class="sec-action-row"><span>Abrir Programa</span><span class="sec-level safe">SEGURO</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ PLUGINS ═══ -->
+    <section class="page" id="page-plugins">
+        <div class="page-header">
+            <h1>Plugins</h1>
+        </div>
+        <div class="plugins-grid">
+            <div class="plugin-card glass installed">
+                <div class="plugin-icon">🤖</div>
+                <div class="plugin-name">Discord Bot</div>
+                <div class="plugin-status">Instalado</div>
+            </div>
+            <div class="plugin-card glass installed">
+                <div class="plugin-icon">🎮</div>
+                <div class="plugin-name">Minecraft</div>
+                <div class="plugin-status">Instalado</div>
+            </div>
+            <div class="plugin-card glass installed">
+                <div class="plugin-icon">💡</div>
+                <div class="plugin-name">Home Assistant</div>
+                <div class="plugin-status">Instalado</div>
+            </div>
+            <div class="plugin-card glass installed">
+                <div class="plugin-icon">📡</div>
+                <div class="plugin-name">ESP32</div>
+                <div class="plugin-status">Instalado</div>
+            </div>
+            <div class="plugin-card glass">
+                <div class="plugin-icon">🎵</div>
+                <div class="plugin-name">Spotify</div>
+                <div class="plugin-status available">Disponivel</div>
+            </div>
+            <div class="plugin-card glass">
+                <div class="plugin-icon">💬</div>
+                <div class="plugin-name">WhatsApp</div>
+                <div class="plugin-status available">Disponivel</div>
+            </div>
+            <div class="plugin-card glass">
+                <div class="plugin-icon">📷</div>
+                <div class="plugin-name">Instagram</div>
+                <div class="plugin-status available">Disponivel</div>
+            </div>
+            <div class="plugin-card glass">
+                <div class="plugin-icon">📧</div>
+                <div class="plugin-name">Email</div>
+                <div class="plugin-status available">Disponivel</div>
+            </div>
+            <div class="plugin-card glass">
+                <div class="plugin-icon">☁</div>
+                <div class="plugin-name">Google Drive</div>
+                <div class="plugin-status available">Disponivel</div>
+            </div>
+            <div class="plugin-card glass">
+                <div class="plugin-icon">🐙</div>
+                <div class="plugin-name">GitHub</div>
+                <div class="plugin-status available">Disponivel</div>
+            </div>
+            <div class="plugin-card glass">
+                <div class="plugin-icon">📺</div>
+                <div class="plugin-name">YouTube</div>
+                <div class="plugin-status available">Disponivel</div>
+            </div>
+            <div class="plugin-card glass">
+                <div class="plugin-icon">🚗</div>
+                <div class="plugin-name">Carro</div>
+                <div class="plugin-status future">Futuro</div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

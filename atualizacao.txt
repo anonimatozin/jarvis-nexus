@@ -1,0 +1,209 @@
+═══════════════════════════════════════════════════════════════
+  JARVIS MEGA UPGRADE - ATUALIZACAO v2.0
+  Data: 25/06/2026 02:30
+═══════════════════════════════════════════════════════════════
+
+Sir, segue resumo completo de todas as melhorias implementadas.
+
+═══════════════════════════════════════════════════════════════
+1. FIXES CRITICOS
+═══════════════════════════════════════════════════════════════
+
+[TURBO MODE - THREAD BUG CORRIGIDO]
+Arquivo: hud_qt/launcher.py
+- O turbo_mode() agora usa QTimer.singleShot(0, ...) pra garantir
+  que todas as operacoes de QWidget rodam na thread principal
+- Antes: crashava quando abria/fechava porque QWidget operations
+  rodavam na engine thread (violacao do Qt threading model)
+- Criados metodos separados _abrir_turbo() e _fechar_turbo()
+- Sinal sig_voltar agora usa named slot (_on_turbo_voltar) ao
+  inves de lambda (evita re-entrancy)
+
+[TURBO WINDOW - CLOSE EVENT CORRIGIDO]
+Arquivo: hud_qt/widgets/turbo_window.py
+- Removido self.sig_voltar.emit() dentro de _voltar() que causava
+  double-close (re-entrant signal)
+- closeEvent() agora desconecta sinais antes de destruir
+- Removido wait(2000) que bloqueava o event loop do Qt
+
+[OPENCODE - CLI FLAG CORRIGIDO]
+Arquivo: modules/dev_agent/agent.py
+- Corrigido de "opencode -p" para "opencode run"
+- O flag -p nao existe no OpenCode v1.17.9, o correto e "run"
+- Agora o OpenCode realmente funciona quando chamado
+
+═══════════════════════════════════════════════════════════════
+2. TTS v5.0 - VOZ MELHORADA
+═══════════════════════════════════════════════════════════════
+
+Arquivo: output/tts_engine.py
+- PRIMARIO: edge-tts pt-BR-AntonioNeural (voz neural Microsoft)
+- FALLBACK: Kokoro pm_alex (offline)
+- Rate: -8% (mais lento, mais natural)
+- Pitch: -2Hz (tom levemente mais grave)
+- Acesso via .env: TTS_RATE, TTS_PITCH
+
+═══════════════════════════════════════════════════════════════
+3. NOVAS FUNCOES - MODULO EXTRAS
+═══════════════════════════════════════════════════════════════
+
+Arquivo: modules/extras/funciones.py (NOVO)
+
+[ TIMER MANAGER ]
+- Criar timers: "timer em 5 minutos"
+- Cancelar timers
+- Listar timers ativos
+
+[ CALCULADORA ]
+- Expressoes matematicas naturais
+- Suporta: soma, subtracao, multiplicacao, divisao
+- Suporta: raiz quadrada, potencia, pi, seno, cosseno
+- Exemplo: "quanto e 25 vezes 4"
+
+[ LEMBRETES ]
+- Criar lembretes: "lembrete de comprar leite"
+- Listar lembretes ativos
+- Remover lembretes
+- Persistencia em data/lembretes.json
+
+[ SISTEMA INFO ]
+- CPU, RAM, disco formatados
+- "status do pc" retorna tudo
+
+[ MONITOR DE PROCESSOS ]
+- Top 5 processos por CPU
+- "quais processos estao pesados"
+
+═══════════════════════════════════════════════════════════════
+4. NOVOS INTENTS NLU
+═══════════════════════════════════════════════════════════════
+
+Adicionados 15+ novos intents ao router.py:
+
+  calcular        - "quanto e 25 vezes 4"
+  timer           - "timer em 5 minutos"
+  listar_timers   - "quais timers estao rodando"
+  lembrete        - "lembrete de ligar medico"
+  listar_lembretes - "meus lembretes"
+  info_sistema    - "status do pc"
+  top_processos   - "processos pesados"
+  limpar_tela     - "limpar tela"
+  mostrar_agenda  - "minha agenda"
+  mostrar_historico - "ultimos comandos"
+  reiniciar_jarvis - "reiniciar jarvis"
+  desligar_pc     - "desligar computador"
+  cancelar_desligamento - "cancelar desligamento"
+  abrir_explorer  - "abrir explorador"
+  fechar_tudo     - "fechar navegadores"
+
+═══════════════════════════════════════════════════════════════
+5. INTELIGENCIA MELHORADA
+═══════════════════════════════════════════════════════════════
+
+Arquivo: core/brain.py
+
+[ SYSTEM_PROMPT v2.1 ]
+- Regras de variedade: Jarvis agora alterna estruturas de frase
+  e nao comeca sempre com "Sir"
+- Consciencia contextual: referencia conversas anteriores
+- Proatividade: sugere coisas relacionadas quando apropriado
+- Humor seco: piadas sutis de IA quando contexto permite
+- Ambiguidade: faz perguntas inteligentes ao inves de "nao entendi"
+
+[ FALLBACK MELHORADO ]
+- 5 categorias de respostas (antes eram 2)
+- 3-4 variacoes por categoria
+- Respostas de sugestao quando usuario parece entediado
+
+═══════════════════════════════════════════════════════════════
+6. FRASES VARIADAS
+═══════════════════════════════════════════════════════════════
+
+Arquivo: core/engine.py
+
+[ INICIO - 10 opcoes ]
+"Pronto pra servir, Sir."
+"Como posso ajudar, Sir?"
+"Estou online, Sir. O que precisa?"
+"Sistemas operacionais. Como posso ajudar?"
+"Todos os sistemas online, Sir."
+"A disposicao, Sir."
+"O que deseja, Sir?"
+"Pronto. Como posso ajudar?"
+"Online e operacional, Sir."
+"Em que posso ajudar, Sir?"
+
+[ SAIDA - 5 opcoes ]
+"Ate logo, Sir."
+"Ate breve, Sir."
+"Encerrando. Ate mais, Sir."
+"Sistemas desligando. Ate logo, Sir."
+"Pronto. Ate quando precisar, Sir."
+
+═══════════════════════════════════════════════════════════════
+7. ESP32 DECK - GAMEPAD INTEGRADO
+═══════════════════════════════════════════════════════════════
+
+Arquivo: modules/esp32/server.py v5
+
+[ ACOES DO GAMEPAD ]
+  A  -> Wake word (ativa escuta)
+  B  -> Cancelar
+  X  -> Play/Pause musica
+  Y  -> Status do PC (CPU/RAM no display)
+  LB -> Musica anterior
+  RB -> Proxima musica
+  L2 -> Volume -
+  R2 -> Volume +
+  LSTICK -> Mute
+  UP/DOWN -> Volume +/- 
+  LEFT/RIGHT -> Brilho +/-
+  SYSTEM -> Desktop (Win+D)
+  BACK -> Alt+Tab
+  RSTICK -> Screenshot
+
+[ DISPLAY ]
+- extrair_numero_display(): mostra numeros quando Jarvis fala
+- enviar_temperatura(): recebe temp do ESP32
+
+═══════════════════════════════════════════════════════════════
+8. BRIGHTNESS FIX
+═══════════════════════════════════════════════════════════════
+
+Arquivo: modules/esp32/server.py
+- Timeout do PowerShell WMI aumentado de 3s para 10s
+- Antes dava timeout todo clique de brilho
+
+═══════════════════════════════════════════════════════════════
+COMO TESTAR
+═══════════════════════════════════════════════════════════════
+
+1. Reinicie o JARVIS: python main.py --mode hybrid
+2. Teste a voz: "Jarvis que horas sao"
+3. Teste calculadora: "quanto e 25 vezes 4"
+4. Teste timer: "timer em 2 minutos"
+5. Teste lembrete: "lembrete de ligar medico"
+6. Teste status: "status do pc"
+7. Teste processos: "processos pesados"
+8. Teste modo turbo: "ativa o modo turbo"
+9. Teste gamepad: todos os botoes do ESP32
+
+═══════════════════════════════════════════════════════════════
+ARQUIVOS MODIFICADOS
+═══════════════════════════════════════════════════════════════
+
+- core/engine.py ............. frases variadas, display deck
+- core/brain.py .............. personalidade v2.1
+- output/tts_engine.py ....... TTS v5.0 edge-tts
+- modules/nlu/router.py ...... 15+ novos intents
+- modules/esp32/server.py .... gamepad, brightness fix
+- modules/dev_agent/agent.py . OpenCode CLI fix
+- hud_qt/launcher.py ........ Turbo thread bug fix
+- hud_qt/widgets/turbo_window.py .. close event fix
+- modules/extras/__init__.py . NOVO modulo
+- modules/extras/funciones.py . NOVO modulo
+- .env ...................... TTS_RATE, TTS_PITCH
+
+═══════════════════════════════════════════════════════════════
+  JARVIS v2.0 - Pronto pra servir, Sir.
+═══════════════════════════════════════════════════════════════

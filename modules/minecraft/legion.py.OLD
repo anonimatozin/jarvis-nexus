@@ -1,0 +1,326 @@
+"""
+Legion Manager - Controla legiao de bots via legion_master.js
+"""
+import asyncio
+import json
+import os
+import subprocess
+import threading
+import time
+import socket
+from pathlib import Path
+
+try:
+    import websockets
+    WS_OK = True
+except ImportError:
+    WS_OK = False
+
+try:
+    import psutil
+    PSUTIL_OK = True
+except ImportError:
+    PSUTIL_OK = False
+
+BOT_DIR = Path("bot_minecraft")
+MASTER_WS_URL = "ws://localhost:8768"
+MASTER_WS_PORT = 8768
+WORKER_WS_PORT = 8767
+
+
+def porta_em_uso(porta):
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.settimeout(0.5)
+    try:
+        return s.connect_ex(("127.0.0.1", porta)) == 0
+    except Exception:
+        return False
+    finally:
+        s.close()
+
+
+def matar_processos_legiao():
+    """Mata legion_master.js e worker_bot.js."""
+    if not PSUTIL_OK:
+        return 0
+    mortos = 0
+    try:
+        for proc in psutil.process_iter(["pid", "name", "cmdline"]):
+            try:
+                if proc.info["name"] and "node" in proc.info["name"].lower():
+                    cmd = " ".join(proc.info.get("cmdline") or [])
+                    if "legion_master" in cmd or "worker_bot" in cmd:
+                        proc.kill()
+                        mortos += 1
+            except (psutil.NoSuchProcess, psutil.AccessDenied):
+                pass
+    except Exception as e:
+        print(f"[LEGION] erro matar: {e}")
+    return mortos
+
+
+class LegionManager:
+    def __init__(self, callback_voz=None, callback_display=None):
+        self.callback_voz = callback_voz
+        self.callback_display = callback_display  # pra ESP32
+
+        self.master_process = None
+        self.ws = None
+        self.loop = None
+        self.thread = None
+        self.conectado = False
+
+        # Estado
+        self.vivos = 0
+        self.total = 0
+        self.cooldowns = 0
+        self.mortes_total = 0
+
+    def iniciar_master(self):
+        """Inicia o legion_master.js sem janela visivel."""
+        if porta_em_uso(MASTER_WS_PORT):
+            print("[LEGION] Master ja rodando")
+            self._iniciar_thread_ws()
+            return True, "Master ja ativo"
+
+        if not (BOT_DIR / "legion_master.js").exists():
+            return False, "legion_master.js nao existe"
+
+        try:
+            # Sem janela CMD no Windows
+            flags = 0
+            if os.name == "nt":
+                flags = subprocess.CREATE_NO_WINDOW
+
+            self.master_process = subprocess.Popen(
+                ["node", "legion_master.js"],
+                cwd=str(BOT_DIR),
+                creationflags=flags,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                stdin=subprocess.DEVNULL,
+            )
+            print(f"[LEGION] Master iniciado PID={self.master_process.pid}")
+            time.sleep(2)
+            self._iniciar_thread_ws()
+            return True, "Master online"
+        except Exception as e:
+            return False, f"Erro: {e}"
+
+    def parar_tudo(self):
+        """Mata master + todos os workers."""
+        try:
+            mortos = matar_processos_legiao()
+            self.conectado = False
+            self.ws = None
+            if self.master_process:
+                try:
+                    self.master_process.terminate()
+                except: pass
+                self.master_process = None
+            print(f"[LEGION] {mortos} processos encerrados")
+            return True
+        except Exception as e:
+            print(f"[LEGION] erro parar: {e}")
+            return False
+
+    def _iniciar_thread_ws(self):
+        if self.thread and self.thread.is_alive():
+            return
+        self.thread = threading.Thread(
+            target=self._ws_loop, daemon=True, name="legion_ws"
+        )
+        self.thread.start()
+
+    def _ws_loop(self):
+        self.loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(self.loop)
+        try:
+            self.loop.run_until_complete(self._conectar_e_escutar())
+        except Exception as e:
+            print(f"[LEGION WS] {e}")
+
+    async def _conectar_e_escutar(self):
+        if not WS_OK:
+            return
+        ws = None
+        for _ in range(20):
+            try:
+                ws = await asyncio.wait_for(
+                    websockets.connect(MASTER_WS_URL),
+                    timeout=2
+                )
+                break
+            except Exception:
+                await asyncio.sleep(1)
+        if not ws:
+            print("[LEGION] Falha conectar master")
+            return
+        self.ws = ws
+        self.conectado = True
+        print("[LEGION] Conectado ao master")
+        try:
+            async for msg in ws:
+                try:
+                    data = json.loads(msg)
+                    self._processar_evento(data)
+                except Exception:
+                    pass
+        except Exception:
+            pass
+        finally:
+            self.conectado = False
+            self.ws = None
+
+    def _processar_evento(self, data):
+        tipo = data.get("tipo")
+
+        if tipo == "status":
+            self.vivos = data.get("vivos", 0)
+            self.total = data.get("total", 0)
+            self.cooldowns = data.get("cooldowns", 0)
+            self.mortes_total = data.get("mortes_total", 0)
+            # Atualiza display ESP32
+            if self.callback_display and self.total > 0:
+                try:
+                    txt = f"{self.vivos:02d}/{self.total:02d}"
+                    self.callback_display(txt)
+                except: pass
+
+        elif tipo == "criados":
+            qtd = data.get("qtd", 0)
+            if self.callback_voz:
+                self.callback_voz(
+                    f"Legiao criada, Sir. {qtd} soldados em formacao."
+                )
+
+        elif tipo == "adicionados":
+            qtd = data.get("qtd", 0)
+            if self.callback_voz:
+                self.callback_voz(
+                    f"Reforco enviado, Sir. {qtd} soldados adicionados."
+                )
+
+        elif tipo == "soldado_morreu":
+            num = data.get("numero")
+            cd = data.get("cooldown_seg", 300)
+            if self.callback_voz:
+                self.callback_voz(
+                    f"Soldado {num} caiu. Reserva ativada. "
+                    f"Cooldown {cd // 60} minutos."
+                )
+
+        elif tipo == "ordem_enviada":
+            ordem = data.get("ordem")
+            qtd = data.get("qtd_soldados", 0)
+            print(f"[LEGION] Ordem '{ordem}' enviada pra {qtd} soldados")
+
+        elif tipo == "dispersados":
+            if self.callback_voz:
+                self.callback_voz("Legiao dispersada, Sir.")
+
+    async def _enviar(self, data):
+        if self.ws:
+            try:
+                await self.ws.send(json.dumps(data))
+            except Exception:
+                pass
+
+    def _send_sync(self, data):
+        """Manda dado pro master de qualquer thread."""
+        if not self.loop or not self.conectado:
+            return False
+        try:
+            asyncio.run_coroutine_threadsafe(
+                self._enviar(data), self.loop
+            )
+            return True
+        except Exception:
+            return False
+
+    # ═══════ COMANDOS PUBLICOS ═══════
+
+    def criar_legiao(self, qtd):
+        """Cria N soldados."""
+        if not self.conectado:
+            ok, msg = self.iniciar_master()
+            if not ok:
+                return False
+            time.sleep(3)
+        return self._send_sync({"tipo": "criar", "qtd": int(qtd)})
+
+    def adicionar(self, qtd):
+        return self._send_sync({"tipo": "adicionar", "qtd": int(qtd)})
+
+    def _mudar_modo(self, modo, **kwargs):
+        """Muda modo tatico da legiao. Master distribui tarefas."""
+        payload = {"tipo": "modo", "modo": modo}
+        payload.update(kwargs)
+        return self._send_sync(payload)
+
+    def seguir(self):
+        return self._mudar_modo("segue_owner")
+
+    def parar(self):
+        return self._mudar_modo("parar")
+
+    def defender(self, centro=None, raio=4):
+        return self._mudar_modo("defender_pos", pos=centro)
+
+    def atacar(self, nome_alvo):
+        return self._mudar_modo("atacar_alvo", alvo=nome_alvo)
+
+    def voltar(self):
+        return self._mudar_modo("segue_owner")
+
+    # Compat
+    def comando(self, ordem, dados=None):
+        return self._mudar_modo(ordem, **(dados or {}))
+
+    def dispersar(self):
+        return self._send_sync({"tipo": "dispersar_tudo"})
+
+    def resetar(self):
+        """Mata master + todos workers + reseta tudo. Comeca do zero."""
+        try:
+            matar_processos_legiao()
+            self.conectado = False
+            self.ws = None
+            self.master_process = None
+            self.vivos = 0
+            self.total = 0
+            self.cooldowns = 0
+            return True
+        except: return False
+
+    def status(self):
+        return {
+            "conectado": self.conectado,
+            "vivos": self.vivos,
+            "total": self.total,
+            "cooldowns": self.cooldowns,
+            "mortes_total": self.mortes_total,
+        }
+
+    def status_texto(self):
+        s = self.status()
+        if not s["conectado"]:
+            return "Legiao offline, Sir."
+        return (
+            f"Legiao de Ferro: {s['vivos']} de {s['total']} vivos. "
+            f"{s['mortes_total']} mortes totais. "
+            f"{s['cooldowns']} em cooldown."
+        )
+
+
+_instance = None
+
+
+def get_legion(callback_voz=None, callback_display=None):
+    global _instance
+    if _instance is None:
+        _instance = LegionManager(
+            callback_voz=callback_voz,
+            callback_display=callback_display,
+        )
+    return _instance

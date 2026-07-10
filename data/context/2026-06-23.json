@@ -1,0 +1,786 @@
+{
+  "uso": {
+    "explorer.exe": 75.773814,
+    "code.exe": 1301.9455160000005,
+    "chrome.exe": 4235.033409,
+    "notepad.exe": 15.011516,
+    "dwm.exe": 58.08095900000001,
+    "python.exe": 70.042832,
+    "spotify.exe": 5.004555,
+    "arduino ide.exe": 936.3821230000001,
+    "winrar.exe": 15.029324,
+    "searchapp.exe": 5.003807,
+    "powershell.exe": 5.000838
+  },
+  "mudancas": [
+    {
+      "de": null,
+      "para": "explorer.exe",
+      "titulo": "Program Manager",
+      "quando": "2026-06-23T15:51:55.885431"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "Google Chrome",
+      "quando": "2026-06-23T15:52:20.901215"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "consertar_tudo.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T16:32:05.979348"
+    },
+    {
+      "de": null,
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T16:34:49.019058"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "consertar_tudo.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T16:35:14.342521"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-23T16:39:04.733895"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "brain.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T17:30:52.659311"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T17:31:27.671268"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-23T17:31:32.672339"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "code.exe",
+      "titulo": "brain.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T17:31:38.397265"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "executor.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T18:29:35.518935"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T18:30:05.572372"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "executor.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T18:30:15.612447"
+    },
+    {
+      "de": "code.exe",
+      "para": "explorer.exe",
+      "titulo": "Program Manager",
+      "quando": "2026-06-23T18:32:17.532385"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "notepad.exe",
+      "titulo": "oi_mundo.py - Bloco de Notas",
+      "quando": "2026-06-23T18:32:22.533257"
+    },
+    {
+      "de": "notepad.exe",
+      "para": "code.exe",
+      "titulo": "executor.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T18:32:32.543666"
+    },
+    {
+      "de": "code.exe",
+      "para": "dwm.exe",
+      "titulo": "JarvisCriacoes",
+      "quando": "2026-06-23T18:32:51.357232"
+    },
+    {
+      "de": "dwm.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T18:33:22.314248"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "executor.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T18:34:18.844365"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T18:34:23.844590"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "executor.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T18:34:28.846905"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T18:44:28.983021"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T18:44:33.983900"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T18:45:09.849108"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T18:45:14.849831"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T18:45:25.180064"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T18:46:05.675341"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T18:46:25.821795"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "NÃO COMPRE O FLIPPER ZERO! É SÉRIO - YouTube - Google Chrome",
+      "quando": "2026-06-23T18:46:35.824491"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "python.exe",
+      "titulo": "python",
+      "quando": "2026-06-23T18:46:40.824820"
+    },
+    {
+      "de": "python.exe",
+      "para": "dwm.exe",
+      "titulo": "Visual Studio Code (Not Responding)",
+      "quando": "2026-06-23T18:46:50.855199"
+    },
+    {
+      "de": "dwm.exe",
+      "para": "code.exe",
+      "titulo": "Visual Studio Code",
+      "quando": "2026-06-23T18:47:07.897754"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "NÃO COMPRE O FLIPPER ZERO! É SÉRIO - YouTube - Google Chrome",
+      "quando": "2026-06-23T18:47:47.988854"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "dwm.exe",
+      "titulo": "● router.py - JARVIS - Visual Studio Code [Administrator] (Not Responding)",
+      "quando": "2026-06-23T18:48:20.433603"
+    },
+    {
+      "de": "dwm.exe",
+      "para": "code.exe",
+      "titulo": "● router.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T18:48:30.514991"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T18:49:34.326304"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "● router.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T18:49:39.326845"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T18:50:19.333689"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "● router.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T18:50:29.336415"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-23T18:50:44.726078"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T18:55:59.833820"
+    },
+    {
+      "de": "code.exe",
+      "para": "explorer.exe",
+      "titulo": "JarvisCriacoes",
+      "quando": "2026-06-23T18:57:30.333313"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "notepad.exe",
+      "titulo": "calculadora.py - Bloco de Notas",
+      "quando": "2026-06-23T18:57:35.334359"
+    },
+    {
+      "de": "notepad.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T18:57:40.335466"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-23T18:58:00.337967"
+    },
+    {
+      "de": "python.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T18:58:45.348602"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "JarvisCriacoes",
+      "quando": "2026-06-23T18:58:55.351091"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T18:59:00.351713"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T18:59:05.353803"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T18:59:15.355802"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Discord | Amigos - Google Chrome",
+      "quando": "2026-06-23T18:59:20.357793"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T18:59:50.360840"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-23T19:00:05.367493"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T19:00:36.425832"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "(89) Discord | @J.A.R.V.I.S - Google Chrome",
+      "quando": "2026-06-23T19:01:11.437661"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "spotify.exe",
+      "titulo": "Spotify Free",
+      "quando": "2026-06-23T19:01:26.447993"
+    },
+    {
+      "de": "spotify.exe",
+      "para": "chrome.exe",
+      "titulo": "(89) Discord | @J.A.R.V.I.S - Google Chrome",
+      "quando": "2026-06-23T19:01:31.452548"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T19:02:16.464214"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T19:02:21.464644"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T19:04:41.486564"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T19:04:46.486808"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-23T19:09:16.602438"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-23T19:09:21.603106"
+    },
+    {
+      "de": "python.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T19:09:31.604395"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-23T19:09:36.607665"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T19:09:56.614207"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-23T19:10:31.634177"
+    },
+    {
+      "de": "python.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T19:10:36.634706"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T19:18:22.059783"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T19:18:37.063647"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T19:19:02.069421"
+    },
+    {
+      "de": "code.exe",
+      "para": "explorer.exe",
+      "titulo": "JarvisCriacoes",
+      "quando": "2026-06-23T19:19:07.070300"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "(89) Discord | @J.A.R.V.I.S - Google Chrome",
+      "quando": "2026-06-23T19:19:12.071140"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-23T19:24:37.193247"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T19:28:12.859428"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-23T19:35:18.713464"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T19:35:23.714226"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-23T19:50:44.083585"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Chat with Multiple Frontier AI Models - Google Chrome",
+      "quando": "2026-06-23T19:50:49.084200"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-23T19:55:14.243758"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T19:57:04.518212"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-23T19:58:14.551770"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T19:58:49.568319"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-23T19:59:24.581686"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T19:59:54.587612"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-23T20:00:29.604209"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T20:01:24.630474"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-23T20:01:59.647169"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Histórico de downloads recentes",
+      "quando": "2026-06-23T20:02:44.656506"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-23T20:02:49.657639"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Histórico de downloads recentes",
+      "quando": "2026-06-23T20:03:34.665618"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "winrar.exe",
+      "titulo": "WinRAR",
+      "quando": "2026-06-23T20:03:39.666220"
+    },
+    {
+      "de": "winrar.exe",
+      "para": "explorer.exe",
+      "titulo": "JarvisCriacoes",
+      "quando": "2026-06-23T20:03:44.670283"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "arduino ide.exe",
+      "titulo": "Selecione um arquivo zip contendo a biblioteca que deseja adicionar",
+      "quando": "2026-06-23T20:03:49.671356"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T20:04:09.696581"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-23T20:04:19.722021"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T20:06:14.908651"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-23T20:06:29.917361"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "GitHub - ricardoquesada/bluepad32-arduino: Bluepad32 for Arduino NINA-W10 boards",
+      "quando": "2026-06-23T20:06:59.924649"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-23T20:07:14.941818"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "GitHub - ricardoquesada/bluepad32-arduino: Bluepad32 for Arduino NINA-W10 boards",
+      "quando": "2026-06-23T20:08:24.957785"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-23T20:10:04.976895"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T20:10:29.987457"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-23T20:11:10.154058"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T20:12:00.214270"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "searchapp.exe",
+      "titulo": "Pesquisar",
+      "quando": "2026-06-23T20:17:00.352146"
+    },
+    {
+      "de": "searchapp.exe",
+      "para": "chrome.exe",
+      "titulo": "Instalação | Documentação do Arduino - Google Chrome",
+      "quando": "2026-06-23T20:17:05.355953"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "powershell.exe",
+      "titulo": "Administrador: Windows PowerShell",
+      "quando": "2026-06-23T20:17:10.356969"
+    },
+    {
+      "de": "powershell.exe",
+      "para": "chrome.exe",
+      "titulo": "Instalação | Documentação do Arduino - Google Chrome",
+      "quando": "2026-06-23T20:17:15.357807"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "winrar.exe",
+      "titulo": "Abrir Arquivo - Aviso de Segurança",
+      "quando": "2026-06-23T20:17:35.359965"
+    },
+    {
+      "de": "winrar.exe",
+      "para": "chrome.exe",
+      "titulo": "Instalação | Documentação do Arduino - Google Chrome",
+      "quando": "2026-06-23T20:17:40.363034"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-23T20:17:45.367032"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T20:17:50.367850"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-23T20:18:20.374495"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T20:18:35.390105"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-23T20:18:40.408951"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "explorer.exe",
+      "titulo": "Documentos",
+      "quando": "2026-06-23T20:18:50.448728"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "winrar.exe",
+      "titulo": "Please purchase WinRAR license",
+      "quando": "2026-06-23T20:19:00.475893"
+    },
+    {
+      "de": "winrar.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T20:19:05.498085"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-23T20:19:30.541247"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Primeiros passos | Documentação do Arduino - Google Chrome",
+      "quando": "2026-06-23T20:19:40.544082"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "arduino ide.exe",
+      "titulo": "jarvis_deck | Arduino IDE 2.3.9",
+      "quando": "2026-06-23T20:20:10.560585"
+    },
+    {
+      "de": "arduino ide.exe",
+      "para": "chrome.exe",
+      "titulo": "Primeiros passos | Documentação do Arduino - Google Chrome",
+      "quando": "2026-06-23T20:20:35.563992"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-23T20:20:40.564444"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T20:21:36.081591"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-23T20:22:01.091369"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-23T20:25:27.756265"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "(92) Discord | #【💬】chat-geral | Comunidade do Deivison75 - Google Chrome",
+      "quando": "2026-06-23T20:26:07.764653"
+    }
+  ],
+  "atualizado": "2026-06-23T20:26:37.770013"
+}

@@ -1,0 +1,1 @@
+"""Memoria Semantica do NEXUS."""

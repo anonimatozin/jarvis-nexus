@@ -1,0 +1,24 @@
+[
+  {
+    "id": "task_1781904568143",
+    "tipo": "once",
+    "quando": "2026-06-19 18:54",
+    "mensagem": "Pomodoro terminou.",
+    "dados": {},
+    "criada_em": "2026-06-19T18:29:28.143280",
+    "ativa": false,
+    "ultima_execucao": "2026-06-19T18:54:10.339865",
+    "proxima": "2026-06-19T18:54:00"
+  },
+  {
+    "id": "task_1781904642730",
+    "tipo": "once",
+    "quando": "2026-06-19 18:55",
+    "mensagem": "Pomodoro terminou.",
+    "dados": {},
+    "criada_em": "2026-06-19T18:30:42.730504",
+    "ativa": false,
+    "ultima_execucao": "2026-06-19T18:55:17.305090",
+    "proxima": "2026-06-19T18:55:00"
+  }
+]

@@ -1,0 +1,63 @@
+# ==========================================
+# J.A.R.V.I.S. Requirements v1.3
+# ==========================================
+
+# CORE
+python-dotenv==1.1.0
+edge-tts==6.1.12
+openai==1.78.1
+groq==0.25.0
+
+# IA / LLM
+google-generativeai==0.8.4
+sentence-transformers==3.3.1
+
+# AUDIO
+numpy==2.1.3
+pygame==2.6.1
+kokoro-onnx==0.4.5
+
+# AUTOMACAO
+pyautogui==0.9.54
+psutil==6.1.1
+pycaw==20240210
+screen-brightness-control==0.23.0
+keyboard==0.13.5
+
+# INTERFACE
+websockets==15.0.1
+flask==3.1.1
+PySide6==6.8.1
+
+# PESQUISA / WEB
+duckduckgo-search==7.2.1
+wikipedia==1.4.0
+requests==2.32.3
+beautifulsoup4==4.13.4
+
+# UTILITARIOS
+rich==14.0.0
+schedule==1.2.2
+cryptography==43.0.3
+openpyxl==3.1.5
+pandas==2.2.3
+tinytuya==1.14.1
+
+# NOTIFICACOES
+win10toast==0.9
+
+# VOZ HYBRID (online + offline PT-BR)
+vosk==0.3.45
+piper-tts==1.4.2
+pyaudio==0.2.14
+pyttsx3==2.90
+soundfile==0.13.1
+
+# VISAO / DESKTOP
+opencv-python==4.10.0.84
+pygetwindow==0.0.9
+pytesseract==0.3.13
+
+# DASHBOARD WEB (ja incluido acima)
+# flask==3.1.1   (INTERFACE)
+# psutil==6.1.1  (AUTOMACAO)

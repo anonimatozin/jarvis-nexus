@@ -1,0 +1,1218 @@
+{
+  "uso": {
+    "explorer.exe": 857.545127,
+    "chrome.exe": 9731.939488000009,
+    "notepad.exe": 35.005823,
+    "code.exe": 2751.3488579999994,
+    "python.exe": 45.076905000000004,
+    "spotify.exe": 10.026664,
+    "cmd.exe": 10.001406,
+    "searchapp.exe": 15.043437999999998,
+    "powershell.exe": 5.000628,
+    "openwith.exe": 5.00074,
+    "dwm.exe": 15.324833
+  },
+  "mudancas": [
+    {
+      "de": "explorer.exe",
+      "para": "notepad.exe",
+      "titulo": "PROMPT_CONTINUACAO.txt - Bloco de Notas",
+      "quando": "2026-06-21T08:21:27.822379"
+    },
+    {
+      "de": "notepad.exe",
+      "para": "explorer.exe",
+      "titulo": "docs",
+      "quando": "2026-06-21T08:21:32.823225"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "Chat with Multiple Frontier AI Models - Google Chrome",
+      "quando": "2026-06-21T08:21:37.823756"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "docs",
+      "quando": "2026-06-21T08:29:03.078999"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "code.exe",
+      "titulo": "Visual Studio Code",
+      "quando": "2026-06-21T08:29:08.079223"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Chat with Multiple Frontier AI Models - Google Chrome",
+      "quando": "2026-06-21T08:29:13.099922"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "brain.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T08:29:38.196620"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Chat with Multiple Frontier AI Models - Google Chrome",
+      "quando": "2026-06-21T08:29:43.198057"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "brain.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T08:30:08.202930"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Chat with Multiple Frontier AI Models - Google Chrome",
+      "quando": "2026-06-21T08:30:18.244066"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "intents.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T08:30:23.245562"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Chat with Multiple Frontier AI Models - Google Chrome",
+      "quando": "2026-06-21T08:31:13.268358"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "engine.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T08:31:23.268858"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Chat with Multiple Frontier AI Models - Google Chrome",
+      "quando": "2026-06-21T08:31:28.270303"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "bot.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T08:31:38.274769"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Chat with Multiple Frontier AI Models - Google Chrome",
+      "quando": "2026-06-21T08:31:43.279505"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "bot.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T08:31:48.347050"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Chat with Multiple Frontier AI Models - Google Chrome",
+      "quando": "2026-06-21T08:32:18.357529"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "patch_esp32_fila_ble3.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T08:38:37.085630"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Chat with Multiple Frontier AI Models - Google Chrome",
+      "quando": "2026-06-21T08:39:13.050208"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "consertar_intents_v2.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T09:56:45.454186"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T09:57:16.506421"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "consertar_intents_v2.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T09:58:11.703854"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "python",
+      "quando": "2026-06-21T09:58:31.706328"
+    },
+    {
+      "de": "python.exe",
+      "para": "code.exe",
+      "titulo": "consertar_intents_v2.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T09:58:41.707970"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T09:58:56.711710"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "Downloads",
+      "quando": "2026-06-21T09:59:01.711970"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "code.exe",
+      "titulo": "consertar_intents_v2.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T09:59:31.716026"
+    },
+    {
+      "de": "code.exe",
+      "para": "explorer.exe",
+      "titulo": "Downloads",
+      "quando": "2026-06-21T10:00:26.758578"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T10:01:51.795343"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "consertar_intents_v2.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T10:02:01.797079"
+    },
+    {
+      "de": null,
+      "para": "explorer.exe",
+      "titulo": "Downloads",
+      "quando": "2026-06-21T10:07:00.544465"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T10:08:30.579872"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "",
+      "quando": "2026-06-21T10:12:25.628259"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "code.exe",
+      "titulo": "consertar_handlers.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T10:12:35.629810"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T10:13:10.636835"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "Área de Trabalho",
+      "quando": "2026-06-21T10:13:20.638179"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "consertar_engine_tools.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T10:29:32.794539"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T10:29:42.962185"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "ativar_ollama.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T11:13:55.723283"
+    },
+    {
+      "de": "code.exe",
+      "para": "spotify.exe",
+      "titulo": "Spotify Free",
+      "quando": "2026-06-21T11:17:15.936332"
+    },
+    {
+      "de": "spotify.exe",
+      "para": "code.exe",
+      "titulo": "ativar_ollama.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T11:17:25.962996"
+    },
+    {
+      "de": "code.exe",
+      "para": "explorer.exe",
+      "titulo": "Downloads",
+      "quando": "2026-06-21T11:17:35.964851"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "code.exe",
+      "titulo": "ativar_ollama.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T11:18:41.010692"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "python",
+      "quando": "2026-06-21T11:19:06.015601"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "forcar_tool_first.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T11:22:50.911981"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T11:26:22.526381"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "forcar_tool_first.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T11:48:33.274369"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T11:48:53.298757"
+    },
+    {
+      "de": null,
+      "para": "chrome.exe",
+      "titulo": "(69) Discord | @J.A.R.V.I.S - Google Chrome",
+      "quando": "2026-06-21T11:49:42.422396"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "aplicar_inteligencia_real.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T11:51:14.898280"
+    },
+    {
+      "de": "code.exe",
+      "para": "explorer.exe",
+      "titulo": "Downloads",
+      "quando": "2026-06-21T11:51:19.899182"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T11:51:29.900705"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "aplicar_inteligencia_real.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T11:53:59.935203"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T11:54:19.938714"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "aplicar_inteligencia_real.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T11:58:20.063254"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "(69) Discord | @J.A.R.V.I.S - Google Chrome",
+      "quando": "2026-06-21T11:58:35.066351"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "Área de Trabalho",
+      "quando": "2026-06-21T11:59:10.076066"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T11:59:15.076760"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "aplicar_inteligencia_real.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T11:59:20.077838"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "(69) Discord | @J.A.R.V.I.S - Google Chrome",
+      "quando": "2026-06-21T11:59:25.078582"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "aplicar_inteligencia_real.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T12:19:16.025805"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T12:19:21.026099"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "forcar_tool_executor.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T12:19:36.115230"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-21T12:19:47.448052"
+    },
+    {
+      "de": null,
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T12:20:20.720321"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "forcar_tool_executor.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T12:21:27.765970"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T12:21:37.775367"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-21T12:21:52.778543"
+    },
+    {
+      "de": null,
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T12:23:47.866245"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "Área de Trabalho",
+      "quando": "2026-06-21T12:24:34.270773"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "(70) Discord | @J.A.R.V.I.S - Google Chrome",
+      "quando": "2026-06-21T12:24:49.272844"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "JarvisCriacoes",
+      "quando": "2026-06-21T12:25:29.282067"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T12:25:34.283281"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "consertar_engine_tool.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T12:27:59.311099"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "(70) Discord | @J.A.R.V.I.S - Google Chrome",
+      "quando": "2026-06-21T12:28:04.311731"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "consertar_engine_tool.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T12:32:54.496262"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T12:33:09.547703"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "diag_completo.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T12:33:19.552933"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T12:33:34.555917"
+    },
+    {
+      "de": null,
+      "para": "chrome.exe",
+      "titulo": "Google Chrome",
+      "quando": "2026-06-21T14:04:52.084764"
+    },
+    {
+      "de": null,
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T14:30:34.380030"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "conserto_final.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T14:32:15.675397"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "(70) Discord | @J.A.R.V.I.S - Google Chrome",
+      "quando": "2026-06-21T14:32:20.675730"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-21T14:39:05.801409"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "consertar_brain_tool.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T14:53:34.707200"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Nova guia - Google Chrome",
+      "quando": "2026-06-21T14:53:55.709067"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "consertar_brain_tool.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T14:54:25.717896"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T14:54:40.722915"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "consertar_brain_tool.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T14:56:21.807534"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "(70) Discord | @J.A.R.V.I.S - Google Chrome",
+      "quando": "2026-06-21T14:57:43.842101"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "JarvisCriacoes",
+      "quando": "2026-06-21T14:57:48.843883"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "notepad.exe",
+      "titulo": "cria_um_jogo.py - Bloco de Notas",
+      "quando": "2026-06-21T14:57:53.844572"
+    },
+    {
+      "de": "notepad.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-21T14:57:58.845440"
+    },
+    {
+      "de": "python.exe",
+      "para": "code.exe",
+      "titulo": "consertar_brain_tool.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T14:58:03.845970"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T14:58:08.846445"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "consertar_brain_tool.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T14:58:16.067870"
+    },
+    {
+      "de": null,
+      "para": "chrome.exe",
+      "titulo": "(70) Discord | #【💬】chat-geral | Comunidade do Deivison75 - Google Chrome",
+      "quando": "2026-06-21T15:16:06.983959"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "consertar_tudo_v3.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T15:22:01.011627"
+    },
+    {
+      "de": "code.exe",
+      "para": "notepad.exe",
+      "titulo": "forca.py - Bloco de Notas",
+      "quando": "2026-06-21T15:22:06.022024"
+    },
+    {
+      "de": "notepad.exe",
+      "para": "chrome.exe",
+      "titulo": "(70) Discord | @J.A.R.V.I.S - Google Chrome",
+      "quando": "2026-06-21T15:22:16.023128"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "JarvisCriacoes",
+      "quando": "2026-06-21T15:22:36.026260"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "YouTube - Google Chrome",
+      "quando": "2026-06-21T15:22:46.027976"
+    },
+    {
+      "de": null,
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T15:30:47.080239"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-21T15:31:23.623305"
+    },
+    {
+      "de": "python.exe",
+      "para": "code.exe",
+      "titulo": "consertar_v4.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T15:31:38.696594"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "diag_router.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T15:39:25.831930"
+    },
+    {
+      "de": null,
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T15:45:18.347498"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "consertar_luz_real.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T15:46:29.464412"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T15:46:39.470702"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "consertar_luz_real.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T15:47:54.488081"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-21T15:48:09.540824"
+    },
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "fixar_luz_handler.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T15:48:45.907380"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-21T15:49:37.359682"
+    },
+    {
+      "de": null,
+      "para": "chrome.exe",
+      "titulo": "(70) Discord | #【💬】chat-geral | Comunidade do Deivison75 - Google Chrome",
+      "quando": "2026-06-21T15:51:40.649165"
+    },
+    {
+      "de": null,
+      "para": "chrome.exe",
+      "titulo": "Grok - Google Chrome",
+      "quando": "2026-06-21T15:59:42.888474"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "integrar_opencode.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T16:00:14.214540"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T16:02:08.409606"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-21T16:02:38.413015"
+    },
+    {
+      "de": "python.exe",
+      "para": "code.exe",
+      "titulo": "integrar_opencode.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T16:02:43.413412"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "(70) Discord | @J.A.R.V.I.S - Google Chrome",
+      "quando": "2026-06-21T16:02:53.415519"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "integrar_opencode.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T16:03:14.891551"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T16:03:20.290921"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "integrar_opencode.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T16:03:25.320099"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "(70) Discord | @J.A.R.V.I.S - Google Chrome",
+      "quando": "2026-06-21T16:04:39.942296"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "integrar_opencode.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T16:06:06.802774"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "(70) Discord | @J.A.R.V.I.S - Google Chrome",
+      "quando": "2026-06-21T16:06:11.803158"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "notepad.exe",
+      "titulo": "adivinhacao.py - Bloco de Notas",
+      "quando": "2026-06-21T16:06:16.806411"
+    },
+    {
+      "de": "notepad.exe",
+      "para": "explorer.exe",
+      "titulo": "Program Manager",
+      "quando": "2026-06-21T16:06:21.807408"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T16:06:26.808521"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "integrar_opencode.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T16:06:36.810310"
+    },
+    {
+      "de": null,
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T16:20:05.338356"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "cmd.exe",
+      "titulo": "spotify",
+      "quando": "2026-06-21T16:23:20.990188"
+    },
+    {
+      "de": "cmd.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-21T16:23:25.990581"
+    },
+    {
+      "de": "python.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T16:23:30.990930"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "conserto_final_v5.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T16:23:35.995519"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "OpenCode | O agente de codificação de código aberto com IA - Google Chrome",
+      "quando": "2026-06-21T16:25:29.334932"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "conserto_final_v5.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T16:27:14.019187"
+    },
+    {
+      "de": "code.exe",
+      "para": "explorer.exe",
+      "titulo": "Program Manager",
+      "quando": "2026-06-21T16:27:19.020329"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "code.exe",
+      "titulo": "cobrinha.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T16:27:24.020619"
+    },
+    {
+      "de": "code.exe",
+      "para": "notepad.exe",
+      "titulo": "cobrinha.py - Bloco de Notas",
+      "quando": "2026-06-21T16:27:29.021084"
+    },
+    {
+      "de": "notepad.exe",
+      "para": "code.exe",
+      "titulo": "conserto_final_v5.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T16:27:34.021981"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T16:27:39.022917"
+    },
+    {
+      "de": null,
+      "para": "chrome.exe",
+      "titulo": "(70) Discord | @J.A.R.V.I.S - Google Chrome",
+      "quando": "2026-06-21T16:30:35.677617"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "consertar_multi_e_opencode.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T16:30:40.677773"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T16:31:56.437630"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-21T16:32:01.438323"
+    },
+    {
+      "de": "python.exe",
+      "para": "chrome.exe",
+      "titulo": "(70) Discord | @J.A.R.V.I.S - Google Chrome",
+      "quando": "2026-06-21T16:32:06.439021"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "consertar_multi_e_opencode.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T16:33:41.356565"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T16:34:01.914293"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "consertar_multi_e_opencode.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T16:34:07.819352"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T16:34:13.418869"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "consertar_multi_e_opencode.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T16:34:29.550619"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "(70) Discord | #【💬】chat-geral | Comunidade do Deivison75 - Google Chrome",
+      "quando": "2026-06-21T16:34:37.938167"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "explorer.exe",
+      "titulo": "Program Manager",
+      "quando": "2026-06-21T16:36:30.181310"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "notepad.exe",
+      "titulo": "snake.py - Bloco de Notas",
+      "quando": "2026-06-21T16:36:35.182573"
+    },
+    {
+      "de": "notepad.exe",
+      "para": "explorer.exe",
+      "titulo": "Progresso",
+      "quando": "2026-06-21T16:36:40.183684"
+    },
+    {
+      "de": "explorer.exe",
+      "para": "chrome.exe",
+      "titulo": "Arena | Benchmark & Compare the Best AI Models - Google Chrome",
+      "quando": "2026-06-21T16:36:45.184164"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "consertar_multi_e_opencode.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T16:50:00.438352"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Chat with Multiple Frontier AI Models - Google Chrome",
+      "quando": "2026-06-21T16:50:15.467974"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "engine.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T16:50:20.469411"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Chat with Multiple Frontier AI Models - Google Chrome",
+      "quando": "2026-06-21T16:50:30.470923"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "router.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T16:50:40.472403"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Chat with Multiple Frontier AI Models - Google Chrome",
+      "quando": "2026-06-21T16:50:50.503188"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "executor.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T16:55:20.588691"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "ADEUS, Claude Code! Descubra a Melhor Alternativa GRÁTIS - YouTube - Google Chro",
+      "quando": "2026-06-21T16:56:05.670977"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "executor.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T16:56:25.675842"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "ADEUS, Claude Code! Descubra a Melhor Alternativa GRÁTIS - YouTube - Google Chro",
+      "quando": "2026-06-21T16:58:15.756497"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T16:58:30.759078"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Aprenda Opencode em 15 minutos e saia na frente de todo dev - YouTube - Google C",
+      "quando": "2026-06-21T16:58:35.760232"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "searchapp.exe",
+      "titulo": "Pesquisar",
+      "quando": "2026-06-21T16:59:25.802024"
+    },
+    {
+      "de": "searchapp.exe",
+      "para": "cmd.exe",
+      "titulo": "Administrador: Prompt de Comando",
+      "quando": "2026-06-21T16:59:35.839584"
+    },
+    {
+      "de": "cmd.exe",
+      "para": "searchapp.exe",
+      "titulo": "Pesquisar",
+      "quando": "2026-06-21T16:59:40.840597"
+    },
+    {
+      "de": "searchapp.exe",
+      "para": "powershell.exe",
+      "titulo": "Administrador: Windows PowerShell",
+      "quando": "2026-06-21T16:59:45.846475"
+    },
+    {
+      "de": "powershell.exe",
+      "para": "chrome.exe",
+      "titulo": "Aprenda Opencode em 15 minutos e saia na frente de todo dev - YouTube - Google C",
+      "quando": "2026-06-21T16:59:50.847103"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T17:00:10.877053"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "OpenCode | O agente de codificação de código aberto com IA - Google Chrome",
+      "quando": "2026-06-21T17:00:15.878383"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T17:01:05.889065"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Introdução | OpenCode - Google Chrome",
+      "quando": "2026-06-21T17:01:15.890142"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T17:01:25.894040"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Chat with Multiple Frontier AI Models - Google Chrome",
+      "quando": "2026-06-21T17:01:45.913600"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T17:02:25.924319"
+    },
+    {
+      "de": "code.exe",
+      "para": "openwith.exe",
+      "titulo": "",
+      "quando": "2026-06-21T17:02:40.925578"
+    },
+    {
+      "de": "openwith.exe",
+      "para": "code.exe",
+      "titulo": "config.json - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T17:02:45.926318"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Erro no arquivo config.json - Google Chrome",
+      "quando": "2026-06-21T17:03:30.937270"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "config.json - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T17:03:45.939904"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Aprenda Opencode em 15 minutos e saia na frente de todo dev - YouTube - Google C",
+      "quando": "2026-06-21T17:04:15.975092"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T17:04:25.988192"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Aprenda Opencode em 15 minutos e saia na frente de todo dev - YouTube - Google C",
+      "quando": "2026-06-21T17:04:46.015162"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T17:04:56.024643"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Aprenda Opencode em 15 minutos e saia na frente de todo dev - YouTube - Google C",
+      "quando": "2026-06-21T17:05:16.030126"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "● router.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T17:06:21.053563"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "Chat with Multiple Frontier AI Models - Google Chrome",
+      "quando": "2026-06-21T17:06:31.054848"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T17:06:51.057328"
+    },
+    {
+      "de": "code.exe",
+      "para": "dwm.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator] (Not Responding)",
+      "quando": "2026-06-21T17:09:39.094460"
+    },
+    {
+      "de": "dwm.exe",
+      "para": "code.exe",
+      "titulo": "opencode - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T17:09:54.419293"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "(70) Discord | @J.A.R.V.I.S - Google Chrome",
+      "quando": "2026-06-21T17:15:15.943113"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "code.exe",
+      "titulo": "router.py - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-06-21T17:17:41.847873"
+    },
+    {
+      "de": null,
+      "para": "chrome.exe",
+      "titulo": "doaçao de sangue brasil quantos anos - Pesquisa Google - Google Chrome",
+      "quando": "2026-06-21T19:09:45.140398"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "pythonw.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-06-21T19:12:00.592511"
+    }
+  ],
+  "atualizado": "2026-06-21T19:12:00.592511"
+}

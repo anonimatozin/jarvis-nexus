@@ -1,0 +1,14 @@
+{
+  "tv": {
+    "id": "",
+    "nome": "Samsung Smart TV",
+    "modelo": "Samsung",
+    "alias": ["televisão", "tv", "samsung", "smart tv", "televisao"]
+  },
+  "token": "",
+  "configuracoes": {
+    "auto_ligar": false,
+    "volume_padrao": 20,
+    "input_padrao": "HDMI1"
+  }
+}
