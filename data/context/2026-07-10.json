@@ -1,0 +1,46 @@
+{
+  "uso": {
+    "code.exe": 86.655097,
+    "chrome.exe": 15.00891,
+    "python.exe": 20.005350999999997
+  },
+  "mudancas": [
+    {
+      "de": null,
+      "para": "code.exe",
+      "titulo": "README.md - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-07-10T19:12:31.608758"
+    },
+    {
+      "de": "code.exe",
+      "para": "chrome.exe",
+      "titulo": "web - Google Chrome",
+      "quando": "2026-07-10T19:12:56.630515"
+    },
+    {
+      "de": "chrome.exe",
+      "para": "python.exe",
+      "titulo": "python",
+      "quando": "2026-07-10T19:13:11.639425"
+    },
+    {
+      "de": "python.exe",
+      "para": "code.exe",
+      "titulo": "README.md - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-07-10T19:13:21.641690"
+    },
+    {
+      "de": "code.exe",
+      "para": "python.exe",
+      "titulo": "J.A.R.V.I.S.",
+      "quando": "2026-07-10T19:13:31.644409"
+    },
+    {
+      "de": "python.exe",
+      "para": "code.exe",
+      "titulo": "README.md - JARVIS - Visual Studio Code [Administrator]",
+      "quando": "2026-07-10T19:13:41.647495"
+    }
+  ],
+  "atualizado": "2026-07-10T19:14:33.278116"
+}

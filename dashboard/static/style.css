@@ -169,6 +169,17 @@ body {
     animation: dotPulse 2s infinite;
 }
 
+.status-dot.warning {
+    background: var(--yellow);
+    box-shadow: 0 0 8px var(--yellow);
+    animation: dotPulseWarning 2s infinite;
+}
+
+@keyframes dotPulseWarning {
+    0%, 100% { box-shadow: 0 0 4px var(--yellow); }
+    50% { box-shadow: 0 0 12px var(--yellow); }
+}
+
 @keyframes dotPulse {
     0%, 100% { box-shadow: 0 0 4px var(--green); }
     50% { box-shadow: 0 0 12px var(--green); }

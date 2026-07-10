@@ -239,12 +239,13 @@ function updateJarvisState(state) {
     core.className = "holographic-core";
 
     const map = {
-        "idle":       { label: "Dormindo",   sub: "Sistema ocioso",       cls: "idle",       color: "#00d4ff" },
-        "listening":  { label: "Ouvindo",    sub: "Microfone ativo",      cls: "listening",  color: "#00ff88" },
-        "thinking":   { label: "Pensando",   sub: "Processando...",       cls: "thinking",   color: "#ff8800" },
-        "speaking":   { label: "Falando",    sub: "Reproduzindo audio",   cls: "speaking",   color: "#00d4ff" },
-        "processing": { label: "Processando", sub: "Analisando dados",    cls: "thinking",   color: "#ff8800" },
-        "error":      { label: "Erro",       sub: "Falha no sistema",     cls: "idle",       color: "#ff3366" },
+        "idle":         { label: "Dormindo",     sub: "Sistema ocioso",       cls: "idle",       color: "#00d4ff" },
+        "listening":    { label: "Ouvindo",      sub: "Microfone ativo",      cls: "listening",  color: "#00ff88" },
+        "thinking":     { label: "Pensando",     sub: "Processando...",       cls: "thinking",   color: "#ff8800" },
+        "speaking":     { label: "Falando",      sub: "Reproduzindo audio",   cls: "speaking",   color: "#00d4ff" },
+        "processing":   { label: "Processando",  sub: "Analisando dados",     cls: "thinking",   color: "#ff8800" },
+        "error":        { label: "Erro",         sub: "Falha no sistema",     cls: "idle",       color: "#ff3366" },
+        "disconnected": { label: "Desconectado", sub: "JARVIS não está rodando", cls: "idle",    color: "#666666" },
     };
 
     const s = map[state] || map.idle;
@@ -258,11 +259,15 @@ function updateCore(state) {
     const dot = document.getElementById("sidebar-status").querySelector(".status-dot");
     const dotLabel = document.getElementById("sidebar-status").querySelector("span:last-child");
     dot.className = "status-dot";
-    if (serverOnline) {
-        dot.classList.add("online");
-        dotLabel.textContent = "Online";
+    
+    if (!serverOnline) {
+        dotLabel.textContent = "Servidor Offline";
+    } else if (state === "disconnected") {
+        dot.classList.add("warning");
+        dotLabel.textContent = "JARVIS Desconectado";
     } else {
-        dotLabel.textContent = "Offline";
+        dot.classList.add("online");
+        dotLabel.textContent = "JARVIS Online";
     }
 }
 

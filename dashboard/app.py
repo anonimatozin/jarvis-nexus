@@ -27,6 +27,10 @@ LOGS_FILE = ROOT / "data" / "dashboard_logs.json"
 MEMORY_FILE = ROOT / "memory" / "jarvis_memory.db"
 CHAT_HISTORY = []
 
+# JARVIS connection tracking
+JARVIS_LAST_HEARTBEAT = None
+JARVIS_HEARTBEAT_TIMEOUT = 60  # seconds
+
 def save_log(entry):
     logs = []
     if LOGS_FILE.exists():
@@ -77,11 +81,22 @@ def get_uptime():
     return f"{days}d {hours}h {mins}m"
 
 def get_jarvis_status():
+    # Check if JARVIS is connected based on heartbeat
+    connected = False
+    state = "disconnected"
+    
+    if JARVIS_LAST_HEARTBEAT:
+        elapsed = (datetime.now() - JARVIS_LAST_HEARTBEAT).total_seconds()
+        if elapsed < JARVIS_HEARTBEAT_TIMEOUT:
+            connected = True
+            state = "idle"
+    
     return {
         "name": "J.A.R.V.I.S.",
         "version": "2.0.0",
         "codename": "Nexus",
-        "state": "idle",
+        "state": state,
+        "connected": connected,
         "provider": os.getenv("AI_PROVIDER", "groq"),
         "model": os.getenv("AI_MODEL", "llama-3.3-70b-versatile"),
         "language": "pt-BR",
@@ -631,6 +646,26 @@ def api_vision_analyze():
 def api_vision_clear():
     vision_system.clear_frames()
     return jsonify({"ok": True})
+
+# ══════════════════════════════════════════
+#  ROUTES - HEARTBEAT
+# ══════════════════════════════════════════
+
+@app.route("/api/heartbeat", methods=["POST"])
+def api_heartbeat():
+    global JARVIS_LAST_HEARTBEAT
+    JARVIS_LAST_HEARTBEAT = datetime.now()
+    data = request.json or {}
+    return jsonify({"ok": True, "received": datetime.now().isoformat()})
+
+@app.route("/api/heartbeat", methods=["GET"])
+def api_heartbeat_get():
+    global JARVIS_LAST_HEARTBEAT
+    connected = False
+    if JARVIS_LAST_HEARTBEAT:
+        elapsed = (datetime.now() - JARVIS_LAST_HEARTBEAT).total_seconds()
+        connected = elapsed < JARVIS_HEARTBEAT_TIMEOUT
+    return jsonify({"connected": connected, "last_heartbeat": JARVIS_LAST_HEARTBEAT.isoformat() if JARVIS_LAST_HEARTBEAT else None})
 
 # ══════════════════════════════════════════
 #  ROUTES - JARVIS CONNECTION
