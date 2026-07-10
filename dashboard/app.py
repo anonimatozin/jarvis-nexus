@@ -12,12 +12,16 @@ import subprocess
 import threading
 from datetime import datetime
 from pathlib import Path
-from flask import Flask, jsonify, send_from_directory, request
+from flask import Flask, jsonify, send_from_directory, request, session
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
+from dashboard.auth import login_system
+from dashboard.vision import vision_system
+
 app = Flask(__name__, static_folder="static")
+app.secret_key = os.urandom(24)
 
 LOGS_FILE = ROOT / "data" / "dashboard_logs.json"
 MEMORY_FILE = ROOT / "memory" / "jarvis_memory.db"
@@ -35,6 +39,18 @@ def save_log(entry):
         logs = logs[-500:]
     LOGS_FILE.parent.mkdir(parents=True, exist_ok=True)
     LOGS_FILE.write_text(json.dumps(logs, ensure_ascii=False, indent=2), encoding="utf-8")
+
+def require_auth(f):
+    from functools import wraps
+    @wraps(f)
+    def decorated(*args, **kwargs):
+        token = request.headers.get('Authorization', '').replace('Bearer ', '')
+        if not token:
+            token = session.get('token')
+        if not token or not login_system.validate_session(token):
+            return jsonify({"error": "Unauthorized"}), 401
+        return f(*args, **kwargs)
+    return decorated
 
 # ══════════════════════════════════════════
 #  SYSTEM DATA
@@ -520,9 +536,157 @@ def api_weather():
         return jsonify({"temp": "--", "description": "Indisponivel", "humidity": "--", "wind": "--"})
 
 
+# ══════════════════════════════════════════
+#  ROUTES - AUTH
+# ══════════════════════════════════════════
+
+@app.route("/login")
+def login_page():
+    return login_system.get_login_page()
+
+@app.route("/api/auth/login", methods=["POST"])
+def api_auth_login():
+    data = request.json or {}
+    password = data.get("password", "")
+    ip = request.remote_addr or "unknown"
+
+    success, message, token = login_system.login(password, ip)
+
+    if success:
+        session['token'] = token
+        return jsonify({"success": True, "message": message, "token": token})
+    else:
+        return jsonify({"success": False, "message": message})
+
+@app.route("/api/auth/logout", methods=["POST"])
+def api_auth_logout():
+    token = request.headers.get('Authorization', '').replace('Bearer ', '')
+    login_system.logout(token)
+    session.pop('token', None)
+    return jsonify({"success": True})
+
+@app.route("/api/auth/check")
+def api_auth_check():
+    token = request.headers.get('Authorization', '').replace('Bearer ', '')
+    if login_system.validate_session(token):
+        return jsonify({"authenticated": True})
+    return jsonify({"authenticated": False})
+
+@app.route("/api/auth/change-password", methods=["POST"])
+@require_auth
+def api_auth_change_password():
+    data = request.json or {}
+    old_password = data.get("old_password", "")
+    new_password = data.get("new_password", "")
+
+    success, message = login_system.change_password(old_password, new_password)
+    return jsonify({"success": success, "message": message})
+
+# ══════════════════════════════════════════
+#  ROUTES - VISION/CAMERA
+# ══════════════════════════════════════════
+
+@app.route("/api/vision/frame", methods=["POST"])
+@require_auth
+def api_vision_frame():
+    data = request.json or {}
+    frame_data = data.get("frame", "")
+    source = data.get("source", "webcam")
+
+    if not frame_data:
+        return jsonify({"error": "No frame data"}), 400
+
+    result = vision_system.receive_frame(frame_data, source)
+    return jsonify(result)
+
+@app.route("/api/vision/latest")
+@require_auth
+def api_vision_latest():
+    frame = vision_system.get_latest_frame()
+    if frame:
+        return jsonify({"frame": frame})
+    return jsonify({"frame": None})
+
+@app.route("/api/vision/frames")
+@require_auth
+def api_vision_frames():
+    limit = request.args.get("limit", 10, type=int)
+    frames = vision_system.get_frames(limit)
+    return jsonify({"frames": frames})
+
+@app.route("/api/vision/analyze", methods=["POST"])
+@require_auth
+def api_vision_analyze():
+    data = request.json or {}
+    frame_data = data.get("frame", "")
+
+    if not frame_data:
+        return jsonify({"error": "No frame data"}), 400
+
+    result = vision_system.analyze_frame(frame_data)
+    return jsonify(result)
+
+@app.route("/api/vision/clear", methods=["POST"])
+@require_auth
+def api_vision_clear():
+    vision_system.clear_frames()
+    return jsonify({"ok": True})
+
+# ══════════════════════════════════════════
+#  ROUTES - JARVIS CONNECTION
+# ══════════════════════════════════════════
+
+@app.route("/api/jarvis/status")
+@require_auth
+def api_jarvis_status():
+    try:
+        from core.universal_knowledge import UniversalKnowledge
+        uk = UniversalKnowledge()
+        status = uk.get_status()
+        return jsonify({"connected": True, "status": status})
+    except Exception as e:
+        return jsonify({"connected": False, "error": str(e)})
+
+@app.route("/api/jarvis/command", methods=["POST"])
+@require_auth
+def api_jarvis_command():
+    data = request.json or {}
+    command = data.get("command", "")
+
+    if not command:
+        return jsonify({"error": "No command"}), 400
+
+    try:
+        from core.universal_knowledge import UniversalKnowledge
+        uk = UniversalKnowledge()
+        result = uk.process(command)
+        return jsonify(result)
+    except Exception as e:
+        return jsonify({"success": False, "message": str(e)})
+
+@app.route("/api/jarvis/vision", methods=["POST"])
+@require_auth
+def api_jarvis_vision():
+    data = request.json or {}
+    frame_data = data.get("frame", "")
+
+    if not frame_data:
+        return jsonify({"error": "No frame"}), 400
+
+    try:
+        vision_system.receive_frame(frame_data, "jarvis_vision")
+        return jsonify({
+            "success": True,
+            "message": "Frame recebido. JARVIS pode analisar."
+        })
+    except Exception as e:
+        return jsonify({"success": False, "message": str(e)})
+
+
 if __name__ == "__main__":
     print("=" * 50)
-    print("  J.A.R.V.I.S. Control Center v2.0")
+    print("  J.A.R.V.I.S. Control Center v3.0")
     print("  http://localhost:8080")
+    print("  Login: jarvis2026")
     print("=" * 50)
     app.run(host="0.0.0.0", port=8080, debug=False)

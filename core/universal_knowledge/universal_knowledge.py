@@ -8,6 +8,7 @@ from .modules import (
     SystemModule, WebModule, NotionModule, TelegramModule,
     WhatsAppModule, EmailModule, MemoryModule, NewsModule
 )
+from ..security import SecurityManager, ThreatLevel, AuditLogger
 
 logger = logging.getLogger(__name__)
 
@@ -17,11 +18,13 @@ class UniversalKnowledge:
         self.factory = ModuleFactory(idle_timeout_minutes=5)
         self.knowledge = KnowledgeBase(db_path)
         self.detector = IntentDetector()
+        self.security = SecurityManager()
+        self.audit = AuditLogger()
 
         self._register_modules()
         self._initialize_detector()
 
-        logger.info("UniversalKnowledge inicializado")
+        logger.info("UniversalKnowledge inicializado com segurança habilitada")
 
     def _register_modules(self):
         modules_config = [
@@ -147,7 +150,30 @@ class UniversalKnowledge:
     def process(self, user_input: str) -> Dict[str, Any]:
         logger.info(f"Processando: {user_input}")
 
-        intents = self.detector.detect_intent(user_input)
+        is_safe, sanitized_input, threat_level = self.security.validate_input(user_input, "user")
+
+        if not is_safe:
+            self.audit.log_security_event(
+                event_type="input_blocked",
+                severity="CRITICAL",
+                source="user",
+                details=sanitized_input,
+                blocked=True
+            )
+            return {
+                "success": False,
+                "message": "Comando bloqueado por segurança. Ação não permitida.",
+                "threat_level": threat_level.value
+            }
+
+        if threat_level.value >= ThreatLevel.MEDIUM.value:
+            self.audit.log_event(
+                event_type="threat_detected",
+                threat_level=threat_level.value,
+                user_input=user_input[:500]
+            )
+
+        intents = self.detector.detect_intent(sanitized_input)
 
         if not intents:
             return {
@@ -174,11 +200,38 @@ class UniversalKnowledge:
                 "message": f"Erro ao carregar módulo {module_name}"
             }
 
-        action = self._extract_action(user_input, module_name)
-        params = self._extract_params(user_input, module_name)
+        action = self._extract_action(sanitized_input, module_name)
+        params = self._extract_params(sanitized_input, module_name)
+
+        is_allowed, permission_msg = self.security.check_action_permission(action, module_name, params)
+
+        if not is_allowed:
+            self.audit.log_event(
+                event_type="permission_denied",
+                module=module_name,
+                action=action,
+                user_input=user_input[:500],
+                approved=False,
+                reason=permission_msg
+            )
+            return {
+                "success": False,
+                "message": f"Ação bloqueada: {permission_msg}",
+                "requires_confirmation": True
+            }
 
         try:
             result = module.execute(action, **params)
+
+            self.audit.log_event(
+                event_type="action_executed",
+                module=module_name,
+                action=action,
+                user_input=user_input[:500],
+                system_output=str(result)[:1000],
+                threat_level=threat_level.value,
+                approved=True
+            )
 
             self.knowledge.log_action(
                 module_name=module_name,
@@ -196,6 +249,17 @@ class UniversalKnowledge:
 
         except Exception as e:
             logger.error(f"Erro ao executar: {e}")
+
+            self.audit.log_event(
+                event_type="action_error",
+                module=module_name,
+                action=action,
+                user_input=user_input[:500],
+                system_output=str(e),
+                approved=True,
+                reason=str(e)
+            )
+
             return {
                 "success": False,
                 "message": f"Erro ao executar {action} em {module_name}: {str(e)}"
@@ -339,7 +403,9 @@ class UniversalKnowledge:
             "registered_modules": len(self.factory.get_all_registered()),
             "active_modules": self.factory.get_active_modules(),
             "knowledge_stats": self.knowledge.get_stats(),
-            "keyword_stats": self.detector.get_keyword_stats()
+            "keyword_stats": self.detector.get_keyword_stats(),
+            "security_report": self.security.get_security_report(),
+            "recent_threats": self.audit.get_threat_summary(hours=24)
         }
 
     def shutdown(self):

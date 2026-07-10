@@ -1,0 +1,177 @@
+# JARVIS - Histórico de Upgrades
+# Última atualização: 2026-07-10
+
+---
+
+## UPGRADE RECENTE (2026-07-10)
+
+### 🧠 UNIVERSAL KNOWLEDGE SYSTEM
+**Localização:** `core/universal_knowledge/`
+
+Sistema de conhecimento universal com lazy activation. Módulos ficam "dormindo" e acordam sob demanda.
+
+**Arquitetura:** Híbrida (Factory Pattern + SQLite + Keywords/Semântica)
+
+**Componentes:**
+- `base_module.py` - Classe base (estados: SLEEPING, LOADING, ACTIVE, ERROR)
+- `module_factory.py` - Factory Pattern com Lazy Loading, cleanup automático após 5min
+- `knowledge_base.py` - SQLite (knowledge, module_cache, action_log)
+- `intent_detector.py` - Detecção híbrida: 70% keywords + 30% semântica
+- `universal_knowledge.py` - Orquestrador principal com segurança integrada
+
+**11 Módulos Implementados:**
+
+| Módulo | Descrição | Status |
+|--------|-----------|--------|
+| gmail | Emails via Gmail API | Precisa OAuth2 |
+| calendar | Google Calendar | Precisa OAuth2 |
+| github | Repos/PRs via gh CLI | ✅ Funcional |
+| system | Arquivos, CPU, RAM, disco | ✅ Funcional |
+| web | Busca, clima, downloads | ✅ Funcional |
+| notion | Páginas e databases | Precisa API key |
+| telegram | Mensagens Telegram | Precisa token |
+| whatsapp | WhatsApp Business API | Precisa token |
+| email | IMAP/SMTP genérico | Precisa credenciais |
+| memory | Memória de longo prazo | ✅ Funcional |
+| news | RSS e notícias | ✅ Funcional |
+
+**Performance:**
+- Ativação: < 150ms
+- Idle: < 300MB RAM
+- Cleanup automático após 5 minutos
+
+---
+
+### 🔒 SISTEMA DE SEGURANÇA
+**Localização:** `core/security/`
+
+Proteção contra prompt injection, comandos perigosos e acesso não autorizado.
+
+**Componentes:**
+- `input_sanitizer.py` - Sanitização + Detecção de Injection + Permissões
+- `sandbox.py` - Isolamento de comandos + Controle de arquivos + Segurança de rede
+- `audit_logger.py` - Log completo de ações e eventos de segurança
+
+**Proteções:**
+
+| Proteção | Descrição |
+|----------|-----------|
+| Input Sanitization | 10+ padrões perigosos detectados |
+| Prompt Injection | 25 frases suspeitas + 8 padrões de role |
+| Command Blocking | curl, wget, bash, eval, python -e, etc. |
+| Permission Manager | 7 ações exigem confirmação |
+| Command Sandbox | Isolamento de comandos |
+| File Access Control | Protege .env, credentials, keys |
+| Network Security | HTTPS-only, domínios bloqueados |
+| Audit Log | SQLite com 3 tabelas |
+
+**Ações que exigem confirmação:**
+1. send_email
+2. delete_file
+3. execute_command
+4. access_credentials
+5. modify_system
+6. install_software
+7. change_settings
+
+**Níveis de ameaça:**
+- SAFE (0) - Normal
+- LOW (1) - Informativo
+- MEDIUM (2) - Revisar
+- HIGH (3) - Bloqueado
+- CRITICAL (4) - Ameaça crítica
+
+---
+
+### 📱 GUIAS CRIADOS
+
+| Guia | Descrição | Linhas |
+|------|-----------|--------|
+| UNIVERSAL_KNOWLEDGE_README.md | Documentação do Universal Knowledge | 187 |
+| UNIVERSAL_KNOWLEDGE_BRAINSTORM.md | Brainstorm de design | 217 |
+| WHATSAPP_BOT_GUIDE.md | Guia completo WhatsApp Bot | 315 |
+| .env.example | Template de variáveis de ambiente | 17 vars |
+
+---
+
+### 🧪 TESTES CRIADOS
+
+| Arquivo | Descrição |
+|---------|-----------|
+| test_universal_knowledge.py | Testa 6 comandos + lazy loading |
+| test_security.py | 15 cenários de ameaça + 8 testes de comando |
+
+---
+
+## STATUS ATUAL DO PROJETO
+
+### ✅ FUNCIONANDO
+- Audio (edge-tts + Kokoro offline)
+- Microfone (MK-01)
+- STT (Google + Vosk)
+- Dev Agent (OpenCode)
+- Skills, Autonomia, Safety, Goals
+- Dashboard Web (16 páginas, cyberpunk)
+- Universal Knowledge System (11 módulos)
+- Sistema de Segurança completo
+
+### ⚠️ PENDENTE
+- Deploy GitHub/Netlify (gh auth login)
+- OAuth2 para Gmail/Calendar
+- WhatsApp Bot (precisa token)
+- Telegram Bot (precisa token)
+- Notion API (precisa key)
+
+### 📊 ESTATÍSTICAS
+- Total de módulos: 50+
+- Comandos de voz: 200+
+- Páginas do Dashboard: 16
+- Módulos Universal Knowledge: 11
+- Padrões de segurança: 35+
+- Dependências Python: 63
+
+---
+
+## HISTÓRICO DE SESSÕES
+
+### 2026-07-09
+- Corrigidos bugs de áudio
+- Criado Dashboard Web completo (16 páginas)
+- Instalado GitHub CLI
+- Deploy pendente
+
+### 2026-07-10 (hoje)
+- Criado Universal Knowledge System
+  - ModuleFactory com Lazy Loading
+  - KnowledgeBase com SQLite
+  - IntentDetector híbrido
+  - 11 módulos implementados
+- Criado Sistema de Segurança
+  - InputSanitizer com detecção de injection
+  - CommandSandbox
+  - FileAccessControl
+  - NetworkSecurity
+  - AuditLogger completo
+- Adicionados módulos do OpenClaw
+  - Notion, Telegram, WhatsApp, Email, Memory, News
+- Criado guia WhatsApp Bot
+- Criado guia de segurança
+
+---
+
+## PRÓXIMOS PASSOS
+
+### Prioridade Alta
+1. Configurar OAuth2 para Gmail/Calendar
+2. Implementar WhatsApp Bot com Meta API
+3. Deploy no GitHub + Netlify
+
+### Prioridade Média
+4. Integrar FAISS para busca semântica vetorial
+5. Adicionar mais módulos (Spotify, Slack, etc.)
+6. Dashboard de segurança em tempo real
+
+### Prioridade Baixa
+7. Interface gráfica desktop (PySide6)
+8. Reconhecimento facial para login
+9. Controle de casa inteligente completo

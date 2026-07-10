@@ -773,9 +773,200 @@ async function loadWeather() {
 }
 
 // ══════════════════════════════════════════
+//  AUTH SYSTEM
+// ══════════════════════════════════════════
+let authToken = localStorage.getItem('jarvis_token');
+
+async function checkAuth() {
+    if (!authToken) {
+        window.location.href = '/login';
+        return false;
+    }
+    
+    try {
+        const res = await fetch(`${API}/api/auth/check`, {
+            headers: { 'Authorization': `Bearer ${authToken}` }
+        });
+        const data = await res.json();
+        
+        if (!data.authenticated) {
+            localStorage.removeItem('jarvis_token');
+            window.location.href = '/login';
+            return false;
+        }
+        return true;
+    } catch (e) {
+        return true;
+    }
+}
+
+function authHeaders() {
+    return { 
+        'Authorization': `Bearer ${authToken}`,
+        'Content-Type': 'application/json'
+    };
+}
+
+// ══════════════════════════════════════════
+//  CAMERA/VISION SYSTEM
+// ══════════════════════════════════════════
+let cameraStream = null;
+let isStreaming = false;
+
+async function initVision() {
+    const video = document.getElementById('vision-video');
+    const canvas = document.getElementById('vision-canvas');
+    const btnStart = document.getElementById('btn-start-camera');
+    const btnStop = document.getElementById('btn-stop-camera');
+    const btnCapture = document.getElementById('btn-capture-frame');
+    
+    if (btnStart) {
+        btnStart.addEventListener('click', startCamera);
+    }
+    if (btnStop) {
+        btnStop.addEventListener('click', stopCamera);
+    }
+    if (btnCapture) {
+        btnCapture.addEventListener('click', captureAndSend);
+    }
+}
+
+async function startCamera() {
+    try {
+        const constraints = {
+            video: { 
+                facingMode: 'environment',
+                width: { ideal: 1280 },
+                height: { ideal: 720 }
+            }
+        };
+        
+        cameraStream = await navigator.mediaDevices.getUserMedia(constraints);
+        const video = document.getElementById('vision-video');
+        
+        if (video) {
+            video.srcObject = cameraStream;
+            video.play();
+            isStreaming = true;
+            
+            updateCameraStatus('Online', 'green');
+            autoCaptureFrames();
+        }
+    } catch (e) {
+        console.error('Erro ao acessar câmera:', e);
+        updateCameraStatus('Erro: ' + e.message, 'red');
+    }
+}
+
+function stopCamera() {
+    if (cameraStream) {
+        cameraStream.getTracks().forEach(track => track.stop());
+        cameraStream = null;
+        isStreaming = false;
+        updateCameraStatus('Offline', 'gray');
+    }
+}
+
+function updateCameraStatus(text, color) {
+    const status = document.getElementById('camera-status');
+    if (status) {
+        status.textContent = text;
+        status.style.color = color;
+    }
+}
+
+async function autoCaptureFrames() {
+    if (!isStreaming) return;
+    
+    await captureAndSend();
+    
+    setTimeout(autoCaptureFrames, 2000);
+}
+
+async function captureAndSend() {
+    if (!isStreaming) return;
+    
+    const video = document.getElementById('vision-video');
+    const canvas = document.getElementById('vision-canvas');
+    
+    if (!video || !canvas) return;
+    
+    canvas.width = video.videoWidth || 640;
+    canvas.height = video.videoHeight || 480;
+    
+    const ctx = canvas.getContext('2d');
+    ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+    
+    const frameData = canvas.toDataURL('image/jpeg', 0.5);
+    
+    try {
+        const res = await fetch(`${API}/api/vision/frame`, {
+            method: 'POST',
+            headers: authHeaders(),
+            body: JSON.stringify({
+                frame: frameData,
+                source: 'mobile_camera'
+            })
+        });
+        
+        const data = await res.json();
+        console.log('Frame enviado:', data);
+    } catch (e) {
+        console.error('Erro ao enviar frame:', e);
+    }
+}
+
+// ══════════════════════════════════════════
+//  JARVIS CONNECTION
+// ══════════════════════════════════════════
+async function checkJarvisConnection() {
+    try {
+        const res = await fetch(`${API}/api/jarvis/status`, {
+            headers: authHeaders()
+        });
+        const data = await res.json();
+        
+        const statusEl = document.getElementById('jarvis-connection-status');
+        if (statusEl) {
+            if (data.connected) {
+                statusEl.textContent = 'JARVIS Conectado';
+                statusEl.style.color = '#00ff88';
+            } else {
+                statusEl.textContent = 'JARVIS Desconectado';
+                statusEl.style.color = '#ff4444';
+            }
+        }
+        
+        return data;
+    } catch (e) {
+        console.error('Erro ao verificar JARVIS:', e);
+        return { connected: false };
+    }
+}
+
+async function sendJarvisCommand(command) {
+    try {
+        const res = await fetch(`${API}/api/jarvis/command`, {
+            method: 'POST',
+            headers: authHeaders(),
+            body: JSON.stringify({ command })
+        });
+        
+        return await res.json();
+    } catch (e) {
+        return { success: false, message: e.message };
+    }
+}
+
+// ══════════════════════════════════════════
 //  INIT
 // ══════════════════════════════════════════
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
+    if (!window.location.pathname.includes('/login')) {
+        const isAuth = await checkAuth();
+        if (!isAuth) return;
+    }
+    
     initParticles();
     initNav();
     initChat();
@@ -795,4 +986,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(loadWeather, 300000);
     loadStats();
     setInterval(loadStats, 10000);
+    
+    checkJarvisConnection();
+    setInterval(checkJarvisConnection, 30000);
 });
