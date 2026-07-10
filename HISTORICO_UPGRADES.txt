@@ -1,5 +1,5 @@
 # JARVIS - Histórico de Upgrades
-# Última atualização: 2026-07-10
+# Última atualização: 2026-07-10 (Deploy Railway)
 
 ---
 
@@ -159,12 +159,37 @@ Proteção contra prompt injection, comandos perigosos e acesso não autorizado.
 
 ---
 
+## DEPLOY RAILWAY (2026-07-10)
+
+### ✅ SISTEMA DEPLOYADO
+**Plataforma:** Railway (plano Trial - $5 crédito)
+**URL:** https://jarvis-nexus.up.railway.app
+**Status:** ✅ Ativo
+
+**Arquivos criados para deploy:**
+- `railway.json` - Configuração Railway
+- `Procfile` - Comando gunicorn
+- `requirements_web.txt` - Dependências Linux
+- `runtime.txt` - Python 3.12
+
+**Funcionalidades:**
+- ✅ Login com senha (jarvis2026)
+- ✅ Dashboard com stats do sistema
+- ✅ Chat com JARVIS
+- ✅ Câmera/Vision
+- ✅ Controle de PC (limitado no Linux)
+
+**NOTA:** Railway NÃO é gratuito após trial ($5/mês mínimo).
+**Plano de migração:** Ver `MIGRATION_PLAN.md`
+
+---
+
 ## PRÓXIMOS PASSOS
 
 ### Prioridade Alta
-1. Configurar OAuth2 para Gmail/Calendar
-2. Implementar WhatsApp Bot com Meta API
-3. Deploy no GitHub + Netlify
+1. ✅ Deploy no Railway (FEITO)
+2. Configurar OAuth2 para Gmail/Calendar
+3. Implementar WhatsApp Bot com Meta API
 
 ### Prioridade Média
 4. Integrar FAISS para busca semântica vetorial
