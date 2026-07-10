@@ -1,0 +1,38 @@
+# ==========================================
+# J.A.R.V.I.S. Web Requirements (Linux)
+# For Railway/Render deployment
+# ==========================================
+
+# CORE
+python-dotenv==1.1.0
+edge-tts==6.1.12
+openai==1.78.1
+groq==0.25.0
+
+# IA / LLM
+google-generativeai==0.8.4
+
+# AUTOMACAO (Linux safe only)
+psutil==6.1.1
+
+# INTERFACE / WEB
+websockets==15.0.1
+flask==3.1.1
+gunicorn==22.0.0
+
+# PESQUISA / WEB
+duckduckgo-search==7.2.1
+wikipedia==1.4.0
+requests==2.32.3
+beautifulsoup4==4.13.4
+
+# UTILITARIOS
+rich==14.0.0
+schedule==1.2.2
+cryptography==43.0.3
+openpyxl==3.1.5
+pandas==2.2.3
+
+# VISAO
+opencv-python==4.10.0.84
+pytesseract==0.3.13
