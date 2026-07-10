@@ -151,7 +151,47 @@ PALMAS:
   Toggle via tecla D ou 'Jarvis desativa/ativa palmas'
 
 ═══════════════════════════════════════════════════════════════════════
-  5. ARQUITETURA TECNICA
+   5. DASHBOARD WEB (JARVIS CONTROL CENTER)
+═══════════════════════════════════════════════════════════════════════
+
+ARQUIVOS:
+  dashboard/app.py              # Flask backend (localhost:8080)
+  dashboard/static/index.html   # Frontend (16 paginas)
+  dashboard/static/style.css    # Tema cyberpunk ciano
+  dashboard/static/app.js       # Logica frontend
+  start_dashboard.bat           # Inicia com duplo-clique
+
+PAGINAS: Dashboard, Chat, Voz, Controle PC, Visao, Memoria,
+  Arquivos, Casa, Robos, Mapa, Estatisticas, Seguranca,
+  Plugins, Logs, Modulos, Config
+
+API ENDPOINTS (Flask):
+  /api/health       - Status do servidor
+  /api/dashboard    - CPU, RAM, SSD, Ping, Clima
+  /api/chat         - Chat com IA (POST/GET)
+  /api/voice/speak  - TTS (edge-tts)
+  /api/control/<action> - Chrome, VS Code, Steam, Desligar...
+  /api/processes    - Top processos
+  /api/memory       - Memoria do Jarvis
+  /api/files        - Explorador de arquivos
+  /api/logs         - Historico de acoes
+  /api/modules      - Modulos ativos
+  /api/settings     - Configuracoes (GET/POST)
+  /api/stats        - Estatisticas de uso
+  /api/weather      - Clima (wttr.in)
+
+DEPLOY:
+  GitHub: https://github.com/anonimatozin/jarvis-nexus
+  Netlify: https://jarvis-nexus.netlify.app (auto-deploy no git push)
+  Arquivo guia: DEPLOY_GUIDE.md
+
+CONEXAO COM JARVIS LOCAL:
+  - Local: Flask acessa CPU/RAM/arquivos direto pelo PC
+  - Netlify: site estatico + API serverless limitada
+  - Futuro: tunel Cloudflare ou VPS Oracle para acesso remoto real
+
+═══════════════════════════════════════════════════════════════════════
+   7. ARQUITETURA TECNICA
 ═══════════════════════════════════════════════════════════════════════
 
 THREAD MODEL CRITICO:
@@ -169,7 +209,7 @@ HUD ESCONDIDO:
   - Aparece com: wake word, 2 palmas, Win+J
 
 ═══════════════════════════════════════════════════════════════════════
-  6. CONVENCOES
+   8. CONVENCOES
 ═══════════════════════════════════════════════════════════════════════
 
 PYTHON:
@@ -186,7 +226,7 @@ SCRIPTS DE MODIFICACAO:
   - NUNCA usa triple-quote f-string aninhada (quebra Python)
 
 ═══════════════════════════════════════════════════════════════════════
-  7. COMO FALAR COM O Sir
+   9. COMO FALAR COM O Sir
 ═══════════════════════════════════════════════════════════════════════
 
 REGRAS:
@@ -206,7 +246,7 @@ EVITE:
   - Triple-quote f-string aninhada (quebra!)
 
 ═══════════════════════════════════════════════════════════════════════
-  8. COMO RODAR
+   10. COMO RODAR
 ═══════════════════════════════════════════════════════════════════════
 
   .\venv\Scripts\Activate.ps1
@@ -215,7 +255,7 @@ EVITE:
 Flags: --mode hybrid|voice|text  --no-hud  --no-voice
 
 ═══════════════════════════════════════════════════════════════════════
-  9. BUGS CONHECIDOS
+   11. BUGS CONHECIDOS
 ═══════════════════════════════════════════════════════════════════════
 
   - Mineflayer bot tem IA autonoma limitada
@@ -225,7 +265,7 @@ Flags: --mode hybrid|voice|text  --no-hud  --no-voice
   - Discord bot demora 30s pra conectar (normal)
 
 ═══════════════════════════════════════════════════════════════════════
-  10. ROADMAP FUTURO
+   12. ROADMAP FUTURO
 ═══════════════════════════════════════════════════════════════════════
 
 CURTO PRAZO:
@@ -245,7 +285,33 @@ LONGO PRAZO (sonhos do Sir):
   - Servidor Minecraft proprio
 
 ═══════════════════════════════════════════════════════════════════════
-  MENSAGEM PRA NOVA IA
+   BUGS CONHECIDOS DO DASHBOARD WEB
+═══════════════════════════════════════════════════════════════════════
+
+1. Dashboard "frio" sem o nucleo holografico central
+   - Sidebar carrega, stats basicos aparecem (CPU/RAM/SSD 0%)
+   - Mas falta o nucleo holografico pulsando, status dinamico do Jarvis,
+     clima, ping, particulas - o dashboard parece "morto"
+   - Causa: frontend renderiza mas o componente principal (core reactor)
+     nao tem animacao reativa ao status do Jarvis
+   - Fix: criar um nucleo holografico CSS com aneis girando que muda
+     velocidade/conforme status (azul=dormindo, verde=ouvindo,
+     laranja=pensando, ciano=respondendo)
+
+2. Sidebar nao recolhe em mobile corretamente
+   - O overlay as vezes nao fecha ao clicar fora
+   - Fix: garantir que o overlay tenha evento de click correto
+
+3. API /api/health as vezes retorna 404 no Netlify
+   - O serverless function precisa tratar o path exato
+   - Verificar mapping no netlify.toml
+
+4. Chat nao persiste historico entre paginas
+   - CHAT_HISTORY e uma lista em memoria que reseta se o Flask reinicia
+   - Ideal: salvar em arquivo JSON
+
+═══════════════════════════════════════════════════════════════════════
+   MENSAGEM PRA NOVA IA
 ═══════════════════════════════════════════════════════════════════════
 
 Cuide bem do Jarvis e do Sir. Este projeto e mais que codigo -

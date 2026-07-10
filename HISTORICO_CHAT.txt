@@ -416,3 +416,13 @@ Depois abrir: http://localhost:8080
 - Instalado GitHub CLI (gh)
 - Deploy pendente (gh auth login nao completado)
 - Dashboard testado e funcionando localmente
+
+### 2026-07-10
+- Criado Universal Knowledge System (arquitetura híbrida)
+- ModuleFactory com Lazy Loading (Factory Pattern)
+- KnowledgeBase com SQLite para dados persistentes
+- IntentDetector híbrido (Keywords + Semântica)
+- 5 módulos iniciais: Gmail, Calendar, GitHub, System, Web
+- Módulos dormem e acordam sob demanda
+- Cleanup automático após 5min de inatividade
+- Demo e testes criados

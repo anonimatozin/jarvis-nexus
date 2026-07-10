@@ -109,8 +109,7 @@ function initNav() {
         overlay.classList.toggle("open");
     });
     document.getElementById("sidebar-overlay").addEventListener("click", () => {
-    document.getElementById("sidebar").classList.remove("open");
-    document.getElementById("sidebar-overlay").classList.remove("open");
+        document.getElementById("sidebar").classList.remove("open");
         document.getElementById("sidebar-overlay").classList.remove("open");
     });
 }
@@ -166,24 +165,22 @@ async function refreshDashboard() {
         document.getElementById("dash-date").textContent = d.date;
         document.getElementById("d-uptime").textContent = d.uptime;
         document.getElementById("d-modules").textContent = d.modules_count;
-        document.getElementById("d-platform").textContent = d.jarvis.platform || sys.platform;
-        document.getElementById("jarvis-state").textContent = d.jarvis.state || "Ativo";
+        document.getElementById("d-platform").textContent = d.jarvis.platform || "win32";
         document.getElementById("jarvis-provider").textContent = d.jarvis.provider;
 
-        setMetric("d-cpu", "d-cpu-bar", d.cpu.percent, `${d.cpu.cores} cores`);
-        setMetric("d-ram", "d-ram-bar", d.ram.percent, `${d.ram.used} / ${d.ram.total} GB`);
-        setMetric("d-disk", "d-disk-bar", d.disk.percent, `${d.disk.used} / ${d.disk.total} GB`);
+        setStat("d-cpu", "d-cpu-bar", d.cpu.percent);
+        setStat("d-ram", "d-ram-bar", d.ram.percent);
+        setStat("d-disk", "d-disk-bar", d.disk.percent);
+        setStatPing("d-ping", "d-ping-bar", d.network.ping);
+        setStatUptime("d-uptime", "d-uptime-bar", d.uptime);
 
-        const pingEl = document.getElementById("d-ping");
-        pingEl.textContent = `${d.network.ping}ms`;
-        setBar("d-ping-bar", Math.min(d.network.ping / 2, 100));
-        document.getElementById("d-net-sub").textContent = `↓ ${d.network.recv_mb} MB  ↑ ${d.network.sent_mb} MB`;
+        document.getElementById("d-net-sub").textContent = `↓ ${d.network.recv_mb} MB ↑ ${d.network.sent_mb} MB`;
 
         const procsRes = await fetch(`${API}/api/processes`);
         const procs = await procsRes.json();
         const procsEl = document.getElementById("d-processes");
         if (procs.length === 0) {
-            procsEl.innerHTML = '<div style="color:var(--text3)">Nenhum processo ativo</div>';
+            procsEl.innerHTML = '<div style="color:var(--text3);padding:4px">Nenhum processo ativo</div>';
         } else {
             procsEl.innerHTML = procs.map(p => `
                 <div class="proc-row">
@@ -194,6 +191,9 @@ async function refreshDashboard() {
             `).join("");
         }
 
+        updateJarvisState(d.jarvis.state || "idle");
+        updateCore(d.jarvis.state || "idle");
+
         lastDashData = d;
         if (typeof updateStats === "function") updateStats(d);
         checkConnection();
@@ -203,10 +203,22 @@ async function refreshDashboard() {
     }
 }
 
-function setMetric(valId, barId, pct, sub) {
-    document.getElementById(valId).textContent = `${pct}%`;
+function setStat(valId, barId, pct) {
+    const el = document.getElementById(valId);
+    if (el) el.textContent = `${pct}%`;
     setBar(barId, pct);
-    document.getElementById(valId).closest(".metric-card").querySelector(".metric-sub").textContent = sub;
+}
+
+function setStatPing(valId, barId, ping) {
+    const el = document.getElementById(valId);
+    if (el) el.textContent = `${ping}ms`;
+    setBar(barId, Math.min(ping / 2, 100));
+}
+
+function setStatUptime(valId, barId, uptime) {
+    const el = document.getElementById(valId);
+    if (el) el.textContent = uptime || "--";
+    setBar(barId, 50);
 }
 
 function setBar(id, pct) {
@@ -216,6 +228,42 @@ function setBar(id, pct) {
     bar.classList.remove("warning", "critical");
     if (pct > 90) bar.classList.add("critical");
     else if (pct > 75) bar.classList.add("warning");
+}
+
+function updateJarvisState(state) {
+    const el = document.getElementById("jarvis-state");
+    const sub = document.getElementById("core-substatus");
+    const core = document.getElementById("holographic-core");
+    if (!el) return;
+
+    core.className = "holographic-core";
+
+    const map = {
+        "idle":       { label: "Dormindo",   sub: "Sistema ocioso",       cls: "idle",       color: "#00d4ff" },
+        "listening":  { label: "Ouvindo",    sub: "Microfone ativo",      cls: "listening",  color: "#00ff88" },
+        "thinking":   { label: "Pensando",   sub: "Processando...",       cls: "thinking",   color: "#ff8800" },
+        "speaking":   { label: "Falando",    sub: "Reproduzindo audio",   cls: "speaking",   color: "#00d4ff" },
+        "processing": { label: "Processando", sub: "Analisando dados",    cls: "thinking",   color: "#ff8800" },
+        "error":      { label: "Erro",       sub: "Falha no sistema",     cls: "idle",       color: "#ff3366" },
+    };
+
+    const s = map[state] || map.idle;
+    el.textContent = s.label;
+    el.style.color = s.color;
+    if (sub) sub.textContent = s.sub;
+    core.classList.add(s.cls);
+}
+
+function updateCore(state) {
+    const dot = document.getElementById("sidebar-status").querySelector(".status-dot");
+    const dotLabel = document.getElementById("sidebar-status").querySelector("span:last-child");
+    dot.className = "status-dot";
+    if (serverOnline) {
+        dot.classList.add("online");
+        dotLabel.textContent = "Online";
+    } else {
+        dotLabel.textContent = "Offline";
+    }
 }
 
 function esc(s) { const d = document.createElement("div"); d.textContent = s; return d.innerHTML; }
@@ -713,6 +761,9 @@ async function loadWeather() {
             document.getElementById("w-desc").textContent = w.description || "";
             document.getElementById("w-humidity").textContent = `💧 ${w.humidity}%`;
             document.getElementById("w-wind").textContent = `💨 ${w.wind} km/h`;
+            document.getElementById("w-temp-compact").textContent = `${w.temp}°`;
+            document.getElementById("w-desc-compact").textContent = w.description || "";
+            document.getElementById("w-humidity-compact").textContent = `💧${w.humidity}%`;
         } else {
             document.getElementById("w-desc").textContent = "Clima indisponivel";
         }

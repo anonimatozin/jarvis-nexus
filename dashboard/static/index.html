@@ -51,75 +51,82 @@
 
     <!-- ═══ DASHBOARD ═══ -->
     <section class="page active" id="page-dashboard">
-        <div class="page-header">
-            <h1>Dashboard</h1>
-            <div class="header-clock">
-                <span id="dash-time">--:--:--</span>
-                <span id="dash-date">--/--/----</span>
+        <div class="dash-top-bar">
+            <div class="dash-datetime">
+                <span class="dash-time" id="dash-time">--:--:--</span>
+                <span class="dash-date" id="dash-date">--/--/----</span>
+            </div>
+            <div class="dash-weather-compact">
+                <span id="w-temp-compact">--°</span>
+                <span id="w-desc-compact">--</span>
+                <span id="w-humidity-compact">💧--%</span>
+            </div>
+            <div class="dash-provider">
+                <span id="jarvis-provider">groq</span>
             </div>
         </div>
 
-        <!-- CORE REACTOR -->
-        <div class="core-container">
-            <div class="core-reactor" id="core-reactor">
-                <div class="core-ring ring-1"></div>
-                <div class="core-ring ring-2"></div>
-                <div class="core-ring ring-3"></div>
+        <div class="dash-main">
+            <div class="holographic-core idle" id="holographic-core">
+                <div class="core-ring hr1"></div>
+                <div class="core-ring hr2"></div>
+                <div class="core-ring hr3"></div>
                 <div class="core-center">
-                    <span class="core-label" id="core-label">IDLE</span>
+                    <div class="core-pulse"></div>
+                    <span class="core-icon">✦</span>
                 </div>
+                <div class="core-status" id="jarvis-state">Dormindo</div>
+                <div class="core-substatus" id="core-substatus">Sistema ocioso</div>
             </div>
-            <div class="core-status-row">
-                <span class="status-chip" id="jarvis-state">Dormindo</span>
-                <span class="status-chip" id="jarvis-provider">Groq</span>
+
+            <div class="dash-stats">
+                <div class="stat-item">
+                    <div class="stat-icon">⚡</div>
+                    <div class="stat-body">
+                        <div class="stat-value" id="d-cpu">0%</div>
+                        <div class="stat-label">CPU</div>
+                        <div class="stat-track"><div class="stat-fill" id="d-cpu-bar"></div></div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🧠</div>
+                    <div class="stat-body">
+                        <div class="stat-value" id="d-ram">0%</div>
+                        <div class="stat-label">RAM</div>
+                        <div class="stat-track"><div class="stat-fill" id="d-ram-bar"></div></div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">💾</div>
+                    <div class="stat-body">
+                        <div class="stat-value" id="d-disk">0%</div>
+                        <div class="stat-label">SSD</div>
+                        <div class="stat-track"><div class="stat-fill" id="d-disk-bar"></div></div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🌐</div>
+                    <div class="stat-body">
+                        <div class="stat-value" id="d-ping">--ms</div>
+                        <div class="stat-label">PING</div>
+                        <div class="stat-track"><div class="stat-fill" id="d-ping-bar"></div></div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">⏱</div>
+                    <div class="stat-body">
+                        <div class="stat-value" id="d-uptime">--</div>
+                        <div class="stat-label">UPTIME</div>
+                        <div class="stat-track"><div class="stat-fill" id="d-uptime-bar"></div></div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- METRICS CARDS -->
-        <div class="metrics-grid">
-            <div class="metric-card glass">
-                <div class="metric-icon">⚡</div>
-                <div class="metric-info">
-                    <div class="metric-value" id="d-cpu">0%</div>
-                    <div class="metric-label">CPU</div>
-                    <div class="metric-bar"><div class="metric-bar-fill" id="d-cpu-bar"></div></div>
-                    <div class="metric-sub" id="d-cpu-sub">-- cores</div>
-                </div>
-            </div>
-            <div class="metric-card glass">
-                <div class="metric-icon">🧠</div>
-                <div class="metric-info">
-                    <div class="metric-value" id="d-ram">0%</div>
-                    <div class="metric-label">RAM</div>
-                    <div class="metric-bar"><div class="metric-bar-fill" id="d-ram-bar"></div></div>
-                    <div class="metric-sub" id="d-ram-sub">-- / -- GB</div>
-                </div>
-            </div>
-            <div class="metric-card glass">
-                <div class="metric-icon">💾</div>
-                <div class="metric-info">
-                    <div class="metric-value" id="d-disk">0%</div>
-                    <div class="metric-label">SSD</div>
-                    <div class="metric-bar"><div class="metric-bar-fill" id="d-disk-bar"></div></div>
-                    <div class="metric-sub" id="d-disk-sub">-- / -- GB</div>
-                </div>
-            </div>
-            <div class="metric-card glass">
-                <div class="metric-icon">🌐</div>
-                <div class="metric-info">
-                    <div class="metric-value" id="d-ping">--ms</div>
-                    <div class="metric-label">PING</div>
-                    <div class="metric-bar"><div class="metric-bar-fill" id="d-ping-bar"></div></div>
-                    <div class="metric-sub" id="d-net-sub">↓ -- ↑ --</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- BOTTOM ROW -->
         <div class="dash-bottom">
             <div class="glass dash-panel">
                 <h3>Clima</h3>
-                <div class="weather-widget" id="weather-widget">
+                <div class="weather-widget">
                     <div class="weather-temp" id="w-temp">--°</div>
                     <div class="weather-desc" id="w-desc">Carregando...</div>
                     <div class="weather-details">
@@ -129,13 +136,13 @@
                 </div>
             </div>
             <div class="glass dash-panel">
-                <h3>Status do Servidor</h3>
+                <h3>Servidor</h3>
                 <div class="info-list">
                     <div class="info-row"><span>IP:</span><span id="d-ip">127.0.0.1</span></div>
                     <div class="info-row"><span>Porta:</span><span>8080</span></div>
-                    <div class="info-row"><span>Uptime:</span><span id="d-uptime">--</span></div>
                     <div class="info-row"><span>Modulos:</span><span id="d-modules">--</span></div>
                     <div class="info-row"><span>Plataforma:</span><span id="d-platform">--</span></div>
+                    <div class="info-row"><span>Rede:</span><span id="d-net-sub">↓-- ↑--</span></div>
                 </div>
             </div>
             <div class="glass dash-panel">
