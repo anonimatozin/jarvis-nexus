@@ -18,16 +18,16 @@ pygame==2.6.1
 kokoro-onnx==0.4.5
 
 # AUTOMACAO
-pyautogui==0.9.54
+pyautogui==0.9.54; sys_platform == "win32"
 psutil==6.1.1
-pycaw==20240210
-screen-brightness-control==0.23.0
-keyboard==0.13.5
+pycaw==20240210; sys_platform == "win32"
+screen-brightness-control==0.23.0; sys_platform == "win32"
+keyboard==0.13.5; sys_platform == "win32"
 
 # INTERFACE
 websockets==15.0.1
 flask==3.1.1
-PySide6==6.8.1
+PySide6==6.8.1; sys_platform == "win32"
 
 # PESQUISA / WEB
 duckduckgo-search==7.2.1
@@ -44,18 +44,18 @@ pandas==2.2.3
 tinytuya==1.14.1
 
 # NOTIFICACOES
-win10toast==0.9
+win10toast==0.9; sys_platform == "win32"
 
 # VOZ HYBRID (online + offline PT-BR)
 vosk==0.3.45
 piper-tts==1.4.2
 pyaudio==0.2.14
-pyttsx3==2.90
+pyttsx3==2.90; sys_platform == "win32"
 soundfile==0.13.1
 
 # VISAO / DESKTOP
 opencv-python==4.10.0.84
-pygetwindow==0.0.9
+pygetwindow==0.0.9; sys_platform == "win32"
 pytesseract==0.3.13
 
 # DASHBOARD WEB (ja incluido acima)
