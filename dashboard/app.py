@@ -275,13 +275,29 @@ def process_command(msg):
         else:
             greeting = "Boa noite"
         return f"{greeting}, Sir. Como posso ajudar?"
+    
+    if any(w in lower for w in ["comando", "ajuda", "help", "o que voce faz"]):
+        return """Comandos disponiveis:
+- "hora" / "data" - Mostra hora/data
+- "status do pc" - Mostra CPU/RAM
+- "abrir chrome" - Abre o Chrome
+- "limpar tela" - Limpa o chat
+- "quem e voce" - Sobre mim
+- "obrigado" - De nada!"""
+    
+    if any(w in lower for w in ["teste", "test", "funciona"]):
+        return "Estou funcionando! O chat esta em modo basico. Para IA completa, configure as API keys."
+    
+    return f"Recebi sua mensagem: '{msg}'. Estou em modo basico - configure API keys para respostas inteligentes."
 
     try:
         from core.brain import Brain
         brain = Brain()
         return brain.think(msg)
+    except ImportError:
+        return "Estou em modo basico. Para respostas mais inteligentes, configure as API keys (GROQ, Gemini) no arquivo .env"
     except Exception as e:
-        return f"Processando sua mensagem... (Brain offline: {str(e)[:80]})"
+        return f"Erro ao processar: {str(e)[:100]}"
 
 # ══════════════════════════════════════════
 #  ROUTES - VOICE

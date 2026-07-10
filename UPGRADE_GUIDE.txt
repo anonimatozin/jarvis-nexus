@@ -1,0 +1,168 @@
+# JARVIS Dashboard - Guia de Upgrades e Configuração
+
+## Última Atualização: 2026-07-10
+
+---
+
+## O que foi atualizado
+
+### 1. Chat Funcional (Sem IA)
+- Chat agora funciona com respostas básicas mesmo sem API keys
+- Comandos disponíveis: hora, data, status do PC, ajuda, etc.
+- Mensagem de ajuda: digite "ajuda" ou "comando"
+
+### 2. Status de Conexão Real
+- Dashboard mostra "Desconectado" quando JARVIS não está rodando
+- Status dot fica amarelo quando desconectado
+- Endpoint de heartbeat: `POST /api/heartbeat`
+
+### 3. Câmera via Browser
+- Câmera funciona pelo navegador (não precisa de JARVIS)
+- Clique em "Ativar Camera" na página de Visão
+- Captura de tela disponível
+
+---
+
+## Como Usar
+
+### Acessar o Dashboard
+- **URL:** https://jarvis-nexus.up.railway.app
+- **Login:** `jarvis2026`
+
+### Chat Básico (Sem JARVIS)
+Funciona direto no site, sem precisar ligar o JARVIS:
+- Digite "oi" - Recebe saudação
+- Digite "hora" - Mostra hora atual
+- Digite "data" - Mostra data atual
+- Digite "status do pc" - Mostra CPU/RAM do servidor
+- Digite "ajuda" - Lista todos os comandos
+
+### Câmera
+1. Vá na página "Visão"
+2. Clique "Ativar Camera"
+3. Permita o acesso à câmera
+4. Pronto! Câmera funciona pelo navegador
+
+### Controle de Voz
+1. Vá na página "Voz"
+2. Clique no botão do microfone
+3. Fale algo
+4. O site processa pelo navegador
+
+---
+
+## Configuração de IA (Opcional)
+
+Para ter respostas inteligentes como o JARVIS original:
+
+### Criar arquivo `.env` na raiz do projeto:
+```env
+# Provedor de IA (groq é gratuito)
+AI_PROVIDER=groq
+AI_MODEL=llama-3.3-70b-versatile
+
+# Chave de API do Groq (gratuita)
+GROQ_API_KEY=sua_chave_aqui
+
+# Opcional: Gemini
+# GEMINI_API_KEY=sua_chave_aqui
+```
+
+### Obter chave Groq (gratuita):
+1. Acesse https://console.groq.com
+2. Crie uma conta
+3. Vá em "API Keys"
+4. Crie uma chave
+5. Copie e cole no arquivo `.env`
+
+---
+
+## Deploy Railway
+
+### Status Atual
+- **Plataforma:** Railway (Trial - $5 crédito)
+- **URL:** https://jarvis-nexus.up.railway.app
+- **Duração:** 7-30 dias (depende do uso)
+
+### Quando o Crédito Acabar
+Ver arquivo `MIGRATION_PLAN.md` para migração para Render (gratuito).
+
+---
+
+## Arquivos Importantes
+
+| Arquivo | Descrição |
+|---------|-----------|
+| `dashboard/app.py` | Backend Flask (API) |
+| `dashboard/auth.py` | Sistema de login |
+| `dashboard/vision.py` | Sistema de câmera |
+| `dashboard/static/app.js` | Frontend JavaScript |
+| `dashboard/static/index.html` | Páginas do dashboard |
+| `dashboard/static/style.css` | Estilos Cyberpunk |
+| `.env` | Configurações (não committar!) |
+| `requirements_web.txt` | Dependências Linux |
+| `MIGRATION_PLAN.md` | Plano de migração Railway→Render |
+
+---
+
+## Comandos Úteis
+
+### Rodar Localmente
+```powershell
+cd C:\Users\Administrator\Desktop\JARVIS
+.\venv\Scripts\python dashboard\app.py
+```
+Acesse: http://localhost:8080
+
+### Ver Logs no Railway
+1. Acesse https://railway.app
+2. Selecione o projeto
+3. Vá em "Deployments"
+4. Clique no último deploy
+5. Veja os logs
+
+### Atualizar o Código
+```powershell
+git add -A
+git commit -m "Mensagem"
+git push origin master
+```
+Railway faz deploy automático ao push.
+
+---
+
+## Solução de Problemas
+
+### Chat não responde
+- Verifique se está no modo básico (sem IA)
+- Digite "ajuda" para ver comandos disponíveis
+- Se quiser IA, configure as API keys no `.env`
+
+### Câmera não funciona
+- Verifique se o navegador tem permissão
+- Teste em outro navegador
+- Verifique se o dispositivo tem câmera
+
+### Login não funciona
+- Senha padrão: `jarvis2026`
+- Se esqueceu, delete o arquivo `data/auth_config.json`
+- O sistema cria uma nova senha padrão
+
+### Site muito lento
+- Railway desliga após 15min sem uso
+- Primeira requisição pode demorar ~30s
+- Isso é normal no plano gratuito
+
+---
+
+## Próximos Passos (Quando quiser)
+
+1. **Configurar IA:** Obter chave Groq gratuita
+2. **WhatsApp Bot:** Ver `WHATSAPP_BOT_GUIDE.md`
+3. **Gmail/Calendar:** Configurar OAuth2
+4. **Migrar para Render:** Quando acabar crédito Railway
+
+---
+
+**Última atualização:** 2026-07-10
+**Suporte:** Se der erro, me chama no Instagram
