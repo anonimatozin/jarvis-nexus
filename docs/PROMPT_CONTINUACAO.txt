@@ -185,10 +185,32 @@ DEPLOY:
   Netlify: https://jarvis-nexus.netlify.app (auto-deploy no git push)
   Arquivo guia: DEPLOY_GUIDE.md
 
+NETLIFY REDIRECT (CRITICO):
+  - No Netlify, publish directory = "dashboard/static"
+  - Isso significa que a RAIZ do site e a pasta static/
+  - Mas o HTML usa href="/static/style.css" (precisa do /static/ pra funcionar no Flask local)
+  - Para funcionar no Netlify, netlify.toml tem redirect:
+      from = "/static/*"  to = "/:splat"  status = 200
+  - Isso faz /static/style.css -> /style.css (que existe na raiz do site)
+  - Se adicionar novos arquivos estaticos, eles precisam desse padrao
+
+FLASK LOCAL:
+  - Roda com: .\venv\Scripts\python dashboard\app.py
+  - URL: http://localhost:8080
+  - Flask tem rota propria /static/<path> que serve da pasta static/
+  - O redirect do netlify.toml NAO afeta o Flask (Netlify so entra em cena no deploy)
+
 CONEXAO COM JARVIS LOCAL:
   - Local: Flask acessa CPU/RAM/arquivos direto pelo PC
   - Netlify: site estatico + API serverless limitada
   - Futuro: tunel Cloudflare ou VPS Oracle para acesso remoto real
+
+BUGS CONHECIDOS DO DASHBOARD:
+  1. Dashboard "frio" sem nucleo holografico central (FIXED)
+  2. Sidebar overlay com evento duplicado (FIXED)
+  3. /static/style.css 404 no Netlify sem redirect (FIXED - netlify.toml redirect)
+  4. Chat nao persiste historico entre restart do Flask
+  5. API serverless no Netlify nao acessa CPU/RAM local (limitacao do serverless)
 
 ═══════════════════════════════════════════════════════════════════════
    7. ARQUITETURA TECNICA
